@@ -14,3 +14,5 @@ EcoData/vignettes/EcoData.R
 EcoData/vignettes/DatasetsAccordingToUse.md
 
 EcoData/vignettes/DatasetsAccordingToUse.R
+
+*.gz
