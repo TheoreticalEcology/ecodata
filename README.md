@@ -16,7 +16,7 @@ To install a pre-packaged release (available under releases), use
 devtools::install_url("https://github.com/TheoreticalEcology/ecodata/releases/download/v0.0.0.2/EcoData_0.0.0.2.tar.gz")
 ```
 
-Decide for the version number that you want to install in [https://github.com/florianhartig/DHARMa/releases](https://github.com/florianhartig/DHARMa/releases) 
+Decide for the version number that you want to install in [https://github.com/florianhartig/EcoData/releases](https://github.com/florianhartig/EcoData/releases) 
 
 
 To get an overview about its functionality once the package is installed, run
