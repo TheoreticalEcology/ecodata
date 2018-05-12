@@ -21,89 +21,47 @@ library(EcoData)
 knitr::opts_chunk$set(fig.width=7, fig.height=4.5, fig.align='center', warning=FALSE, message=FALSE, cache = F)
 ```
 
-# Datasets included in EcoData
+# Datasets according to use
 
-A dataset containing observationso items fed to bird nestlings, depending on their attractiveness.
+## Tests
 
-## birdfeeding
+### t-test
 
-```{r}
-str(birdfeeding)
-```
+* datasets::PlantGrowth -> discrete predictors (3 treatments)
+* EcoData::regrowth -> discrete predictors (2 treatments)
 
-## Volcano island
+### ANOVA
 
-```{r}
-str(volcanoisland)
-```
+* datasets::PlantGrowth -> discrete predictors (3 treatments)
 
 
-### Study area
+## Regression
 
-We are looking at the Maunga Whau (Mt Eden), one of about 50 volcanos in the Auckland volcanic field. 
+### Linear regression
 
-A crazy ecologist has created 100 permanent beetle observation plots arcross the volcano (random), and monitored them for 10 years, so you have one observation each year. Below a visualization of the terrain
+* EcoData::solomonislands -> continous predictors (count data, but can be used with linear regression)
+* datasets::airquality -> mostly continous predictors
+* datasets::PlantGrowth -> discrete predictors (3 treatments)
+* EcoData::regrowth -> discrete predictors (2 treatments)
 
+### GLM
 
-```{r, fig.height=7, fig.width = 14}
-par(mfrow = c(1,2))
-contour(x = 1:ncol(volcano), y = 1:nrow(volcano), t(volcano), asp = 1)
-points(volcanoisland$x, volcanoisland$y, cex = volcanoisland$wind)
-persp(volcano)
-```
-
-We have also a bunch of other things going on. For example, 
-
-* Actually, we have two types of beetles. The second type is much more complicated, I'm curious if you find out what's going on with them
-
-* There is the wind, which might depend on other variables 
-
-* There are lizards on the island that eat beetles. The lizards always live at the same place, however, they are hard to spot, so that the ecologist didn't always notice them. However, every time they were spotted, they were also observed. 
-
-* Moreover, the ecologist also did a beetle survival study each year at each site. Don't ask me how he did it, but you have get for each year and each site how many of 20 beetles survived. 
+* EcoData::birdfeeding -> Poisson 
+* EcoData::solomonislands -> Poisson
+* EcoData::volcanoisland -> Poisson, Logistic
+* EcoData::titanic -> Logistic
 
 
-## Question of the study
+### GLMM 
 
-The main question of the study was to understand how beetle abudance depends on altitude. Here is an overview of counts per site and year. 
+* EcoData::volcanoisland -> Random Effects, zero-inflation, spatial effects
+* glmmTMB::owls -> Random Effects, zero-inflation
 
-<font size="4">
-```{r, echo = F, fig.align = "center", fig.width = 10, fig.height = 10, cache = F}
+## MachineLearning
 
-with(volcanoisland, {
+### Classification
 
-plot(year, altitude, cex = beetles/5, pch =2, main = "Beetle counts across altitudinal gradient, triangle is proportional to counts")
-#lines(plot, altitude * 1000)
-#points(unique(plot), unique(altitude * 1000) , pch = 3)
-#text(unique(plot), unique(altitude * 1000) - 50, unique(plot), cex = 0.7 )
-})
-
-
-
-```
-
-
-
-# Other recommended teaching datasets
-
-## Airquality 
-
-```{r}
-str(airquality)
-```
-
-## Owls
-
-```{r}
-str(glmmTMB::Owls)
-```
-
-## PlantGrowth
-
-```{r}
-str(PlantGrowth)
-```
-
+* datasets::iris
 
 
 
