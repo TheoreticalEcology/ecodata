@@ -2,3 +2,15 @@
 .Rhistory
 .RData
 .Ruserdata
+
+*.html
+
+*.png
+
+EcoData/vignettes/EcoData.md
+
+EcoData/vignettes/EcoData.R
+
+EcoData/vignettes/DatasetsAccordingToUse.md
+
+EcoData/vignettes/DatasetsAccordingToUse.R

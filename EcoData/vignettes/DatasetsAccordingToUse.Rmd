@@ -1,0 +1,62 @@
+---
+title: "Datasets according to use"
+author: "Florian Hartig, Theoretical Ecology, University of Regensburg [website](http://www.uni-regensburg.de/biologie-vorklinische-medizin/theoretische-oekologie/mitarbeiter/hartig/)"
+date: "`r Sys.Date()`"
+output: 
+  rmarkdown::html_vignette:
+    toc: true
+vignette: >
+  %\VignetteIndexEntry{Datasets according to use}
+  %\VignetteEngine{knitr::knitr}
+  %\VignetteEncoding{UTF-8}
+abstract: "Datasets according to use"
+---
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.width=7, fig.height=4.5, fig.align='center', warning=FALSE, message=FALSE, cache = F)
+```
+
+# Tests
+
+## t-test
+
+* datasets::PlantGrowth -> discrete predictors (3 treatments)
+* EcoData::regrowth -> discrete predictors (2 treatments)
+
+## ANOVA
+
+* datasets::PlantGrowth -> discrete predictors (3 treatments)
+
+
+# Regression
+
+## Linear regression
+
+* EcoData::solomonislands -> continous predictors (count data, but can be used with linear regression)
+* datasets::airquality -> mostly continous predictors
+* datasets::PlantGrowth -> discrete predictors (3 treatments)
+* EcoData::regrowth -> discrete predictors (2 treatments)
+
+## GLM
+
+* EcoData::birdfeeding -> Poisson 
+* EcoData::solomonislands -> Poisson
+* EcoData::volcanoisland -> Poisson, Logistic
+* EcoData::titanic -> Logistic
+
+
+## GLMM 
+
+* EcoData::volcanoisland -> Random Effects, zero-inflation, spatial effects
+* glmmTMB::owls -> Random Effects, zero-inflation
+
+# MachineLearning
+
+## Classification
+
+* datasets::iris
+
+
+
+
+
