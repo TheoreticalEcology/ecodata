@@ -1,7 +1,8 @@
 # EcoData - a collection of ecological datasets for teaching
 
+The EcoData package is a collection of ecological datasets for teaching.
 
-## Getting EcoData
+## Installing EcoData
 
 If you want to install the current (development) version from this repository, run
 
@@ -32,4 +33,9 @@ If you want to cite the package, use
 ```{r}
 citation("EcoData")
 ```
+
+If you want to know how the (simulated) data was created, check out https://github.com/florianhartig/ecodata/tree/master/DataCreation
+
+
+
 
