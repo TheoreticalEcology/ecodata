@@ -46,10 +46,12 @@ knitr::opts_chunk$set(fig.width=7, fig.height=4.5, fig.align='center', warning=F
 
 ### GLM
 
+
 * EcoData::birdfeeding -> Poisson 
 * EcoData::solomonislands -> Poisson
 * EcoData::volcanoisland -> Poisson, Logistic
-* EcoData::titanic -> Logistic
+* EcoData::titanic -> Logistic 1/0
+* datasets::esoph -> Logistic, k/n
 
 
 ### GLMM 
