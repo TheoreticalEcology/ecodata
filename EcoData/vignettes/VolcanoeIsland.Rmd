@@ -44,7 +44,7 @@ We have also a bunch of other things going on. For example,
 
 * There is the wind, which might depend on other variables 
 
-* There are ducks on the island that eat beetles. The ducks always live at the same place, however, they are hard to spot, so that the ecologist didn't always notice them. However, every time they were spotted, they were also observed. 
+* There are lizards on the island that eat beetles. The lizards always live at the same place, however, they are hard to spot, so that the ecologist didn't always notice them. However, every time they were spotted, they were also observed. 
 
 * Moreover, the ecologist also did a beetle survival study each year at each site. Don't ask me how he did it, but you have get for each year and each site how many of 20 beetles survived. 
 
