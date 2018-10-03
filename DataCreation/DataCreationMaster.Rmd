@@ -162,7 +162,7 @@ data$windObs = exp(log(data$windMean) + rnorm(size, sd = 0.7))
 data$lizards = rep(rbinom(plots, 1, plogis(scale(-unique(data$earth)))), each = replicates)
 data$lizardsObs = data$lizards * rbinom(size, 1, plogis(-data$windObs + 4)  )
 
-data$zeroinflation = rbinom(size,1,0.7 * data$lizards)
+data$zeroinflation = rbinom(size,1,0.7 * (1 - data$lizards))
 
 data$beetles = with(data, rpois(1000, exp(3 + 0.2*sAltitude - 2*sAltitude^2 + 0.3 * habitatQuality + overdispersion + plotRandom[plot]
  + yearRandom[year]) ))
