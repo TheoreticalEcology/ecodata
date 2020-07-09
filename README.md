@@ -1,6 +1,6 @@
 # EcoData - a collection of ecological datasets for teaching
 
-The EcoData package is a collection of ecological datasets for teaching.
+The EcoData package is a collection of ecological datasets for teaching. It also installs a number of R packages that we consider useful for teaching.
 
 ## Installing EcoData
 
