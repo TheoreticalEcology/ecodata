@@ -169,6 +169,24 @@ save(plantcounts, file = "../EcoData/Data/plantcounts.Rdata")
 ```
 
 
+## Anolis
+
+```{r}
+anolisData <- read.csv("./RawData/anolisDataAppended.csv", row.names = 1)
+anolisTree <- ape::read.tree("./RawData/anolis.phy")
+save(anolisData, file = "../EcoData/Data/anolisData.Rdata")
+save(anolisTree, file = "../EcoData/Data/anolisTree.Rdata")
+```
+
+
+## Snouter
+
+```{r}
+snouter <- read.table("./RawData/snouterdata.txt", header=T, sep="\t")
+save(snouter, file = "../EcoData/Data/snouter.Rdata")
+```
+
+
 
 # Simulated Datasets 
 

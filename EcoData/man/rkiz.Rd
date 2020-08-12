@@ -36,6 +36,9 @@ rkiz
 \description{
 Data from the dutch National Institute for Coastal and Marine Management (RIKZ: Rijksinstituut voor Kust en Zee) to investigate the relationship between environmentalfactors and how they might affect benthic fauna.
 }
+\details{
+Downloaded from https://www.uni-koblenz-landau.de/en/campus-landau/faculty7/environmental-sciences/landscape-ecology/Teaching/RIKZ_data/
+}
 \author{
 Florian Hartig
 }

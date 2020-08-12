@@ -258,6 +258,8 @@
 #' RKIZ
 #'
 #' Data from the dutch National Institute for Coastal and Marine Management (RIKZ: Rijksinstituut voor Kust en Zee) to investigate the relationship between environmentalfactors and how they might affect benthic fauna.
+#' 
+#' Downloaded from https://www.uni-koblenz-landau.de/en/campus-landau/faculty7/environmental-sciences/landscape-ecology/Teaching/RIKZ_data/
 #'
 #' @format A 'data.frame':	45 obs. of  17 variables:
 #' \describe{
@@ -333,6 +335,25 @@
 #' @example inst/examples/plantcounts.R
 "plantcounts"
 
+
+#### Snouter #####
+
+#' Snouter
+#' 
+#' Snouter data from Dormann et al., Methods to account for spatial autocorrelation in the analysis of species distributional data: a review Ecography, 2007, 30, 609-628
+#' 
+#' From Wikipedia:
+#' 
+#' Rhinogradentia is a fictitious order of mammal invented by German zoologist Gerolf Steiner. Members of the order, known as rhinogrades or snouters, are characterized by a nose-like feature called a nasorium, which evolved to fulfill a wide variety of functions in different species. Steiner also created a fictional persona, naturalist Harald Stümpke, who is credited as author of the 1957 book Bau und Leben der Rhinogradentia (translated into English in 1967 as The Snouters: Form and Life of the Rhinogrades). According to Steiner, it is the only remaining record of the animals, which were wiped out, along with all the world's Rhinogradentia researchers, when the small Pacific archipelago they inhabited sank into the ocean due to nearby atomic bomb testing.
+#' 
+#' Successfully mimicking a genuine scientific work, Rhinogradentia has appeared in several publications without any note of its fictitious nature, sometimes in connection with April Fools' Day.
+#' 
+#' From the paper: we have a data frame with several snouter response variables (you can thing of those as different studies), of different types (continous, count, binary data). Explanatory variables are x, y rain, djungle!
+#' 
+#' @author Florian Hartig
+#' 
+#' @example inst/examples/snouter.R
+"snouter"
 
 
 
