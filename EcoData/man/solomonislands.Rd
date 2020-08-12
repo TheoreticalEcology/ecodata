@@ -4,13 +4,15 @@
 \name{solomonislands}
 \alias{solomonislands}
 \title{Solomon Islands - Island Biogeography}
-\format{A 'data.frame':	40 obs. of  3 variables:
+\format{
+A 'data.frame':	40 obs. of  3 variables:
 \describe{
   \item{Island}{Island name (chr)}
   \item{Species}{Species richness on the respective island (num)}
   \item{Area}{Island area (num)}
   \item{Distance}{Distance to mainland (num)}
-}}
+}
+}
 \usage{
 solomonislands
 }

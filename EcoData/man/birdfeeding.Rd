@@ -4,12 +4,14 @@
 \name{birdfeeding}
 \alias{birdfeeding}
 \title{Feeding of bird nestlings}
-\format{A 'data.frame': 25 obs. of  2 variables
+\format{
+A 'data.frame': 25 obs. of  2 variables
 \describe{
   \item{feeding}{items fed to a wird}
   \item{attractiveness}{estimated attractiveness of a bird}
   ...
-}}
+}
+}
 \source{
 \url{http://biometry.github.io/APES/}
 }

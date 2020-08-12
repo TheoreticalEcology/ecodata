@@ -4,7 +4,8 @@
 \name{birdabundance}
 \alias{birdabundance}
 \title{Birdabundance}
-\format{A 'data.frame':	56 obs. of  8 variables:
+\format{
+A 'data.frame':	56 obs. of  8 variables:
 \describe{
   \item{SITE}{site ID}
   \item{ABUND}{Bird abundance}
@@ -14,7 +15,8 @@
   \item{YR.ISOL}{Years since the site was isolated / fragmented}
   \item{GRAZE}{Grazing intensity in the surrounding}
   \item{ALT}{Altitude}
-}}
+}
+}
 \source{
 \url{http://biometry.github.io/APES/}
 }

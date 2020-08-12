@@ -1,3 +1,5 @@
+#### Bird attractiveness ####
+
 #' Feeding of bird nestlings
 #'
 #' A dataset containing observationso items fed to bird nestlings,
@@ -14,6 +16,8 @@
 #' @source \url{http://biometry.github.io/APES/}
 "birdfeeding"
 
+
+#### Bird abundance ####
 
 #' Birdabundance
 #'
@@ -309,3 +313,27 @@
 #' }
 #' @author Florian Hartig
 "cement"
+
+
+#### Plantcounts ####
+
+#' Plantcounts
+#' 
+#' Number of plant species in a grid of quadrants around Regensburg. 
+#' Variables
+#' 
+#' \describe{
+#'   \item{richness}{plant "species" richness. No. of plant taxa records (species, including some aggregates) in map quadrants (Topographische Karte, "Viertelmesstischblatt"), ca. 1980. from Mergenthaler, O. 1982: Verbreitungsatlas zur Flora von Regensburg. In: Hoppea, Denkschriften der Regensburgischen Botanischen Gesellschaft. Bd. 40, S. V-XII, 1-297. http://digital.bib-bvb.de/view/bvbmets/viewer.0.6.4.jsp?folder_id=0&dvs=1597093892683~24&pid=1537325&locale=de&usePid1=true&usePid2=true}
+#'   \item{tk}{quadrant id (Topographische Karte)}
+#'   \item{area}{quadrant area}
+#'   \item{agrarea}{fraction of agricultural area per quadrant (agricultural landuse classes without forest, from https://doi.pangaea.de/10.1594/PANGAEA.910837)}
+#' }
+#' @author Lukas Heiland, Florian Hartig
+#' 
+#' @example inst/examples/plantcounts.R
+"plantcounts"
+
+
+
+
+ 

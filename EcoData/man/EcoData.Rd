@@ -3,7 +3,6 @@
 \docType{package}
 \name{EcoData}
 \alias{EcoData}
-\alias{EcoData-package}
 \title{EcoData - A collection of ecological datasets for teaching}
 \description{
 A collection of ecological datasets for teaching

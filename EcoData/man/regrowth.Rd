@@ -4,12 +4,14 @@
 \name{regrowth}
 \alias{regrowth}
 \title{Regrowth}
-\format{A 'data.frame':	40 obs. of  3 variables:
+\format{
+A 'data.frame':	40 obs. of  3 variables:
 \describe{
   \item{Root}{Root biomass (num)}
   \item{Fruit}{Fruit biomass (num)}
   \item{Grazing}{Grazed or not (factor)}
-}}
+}
+}
 \usage{
 regrowth
 }

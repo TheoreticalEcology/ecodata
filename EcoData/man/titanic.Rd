@@ -4,15 +4,17 @@
 \name{titanic}
 \alias{titanic}
 \title{Titanic data}
-\format{A 'data.frame':	1310 obs. of  14 variables:
+\format{
+A 'data.frame':	1310 obs. of  14 variables:
 \describe{
   \item{pclass}{Passenger class (int)}
   \item{survived}{Did the passenger survive (int, 1 = survived)}
   \item{name}{Pasenger name (character)}
   \item{sex}{Passenger sex (factor)}
   \item{age}{Passenger age (factor)}
-  \item{...}{further variables} 
-}}
+  \item{...}{further variables}
+}
+}
 \source{
 \url{http://biostat.mc.vanderbilt.edu/wiki/Main/DataSets}
 }
