@@ -114,6 +114,54 @@ devtools::use_data(students, pkg = "../EcoData/.", overwrite = T)
 ```
 
 
+## Nitrofen
+
+```{r}
+nitrofen = read.csv("./RawData/nitrofen.csv")
+devtools::use_data(nitrofen, pkg = "../EcoData/.", overwrite = T)
+```
+
+
+## Melanoma
+
+```{r}
+melanoma = read.csv("./RawData/Melanoma.csv")
+devtools::use_data(nitrofen, pkg = "../EcoData/.", overwrite = T)
+```
+
+
+## Arthritis
+
+```{r}
+arthritis = read.csv("./RawData/Arthritis.csv")
+devtools::use_data(arthritis, pkg = "../EcoData/.", overwrite = T)
+```
+
+
+## RKIZ
+
+```{r}
+rkiz = read.table("./RawData/RKIZGroups.txt")
+devtools::use_data(rkiz, pkg = "../EcoData/.", overwrite = T)
+```
+
+
+## Streams
+
+```{r}
+streams = read.table("./RawData/streams.txt")
+devtools::use_data(streams, pkg = "../EcoData/.", overwrite = T)
+```
+
+
+## Cement
+
+```{r}
+cement = read.csv("./RawData/cement.csv")
+devtools::use_data(cement, pkg = "../EcoData/.", overwrite = T)
+```
+
+
 
 # Simulated Datasets 
 
