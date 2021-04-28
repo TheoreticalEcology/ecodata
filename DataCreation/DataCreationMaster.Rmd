@@ -245,4 +245,3 @@ sim.dat$Y <- binaryPGLMM.sim(Y ~ X1, phy=phy, data=sim.dat, s2=.5,
 volcanoisland = volcanoisland[,c(1:6,10:11,13:17, 19:21)]
 devtools::use_data(volcanoisland, pkg = "../EcoData/.", overwrite = T)
 ```
-
