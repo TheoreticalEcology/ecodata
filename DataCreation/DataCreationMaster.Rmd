@@ -118,7 +118,7 @@ devtools::use_data(students, pkg = "../EcoData/.", overwrite = T)
 
 ```{r}
 nitrofen = read.csv("./RawData/nitrofen.csv")
-save(nitrofen, file = "../EcoData/Data/nitrofen.Rdata")
+devtools::use_data(nitrofen, pkg = "../EcoData/.", overwrite = T)
 ```
 
 
@@ -126,7 +126,8 @@ save(nitrofen, file = "../EcoData/Data/nitrofen.Rdata")
 
 ```{r}
 melanoma = read.csv("./RawData/Melanoma.csv")
-save(melanoma, file = "../EcoData/Data/melanoma.Rdata")
+devtools::use_data(melanoma, pkg = "../EcoData/.", overwrite = T)
+
 ```
 
 
@@ -134,7 +135,7 @@ save(melanoma, file = "../EcoData/Data/melanoma.Rdata")
 
 ```{r}
 arthritis = read.csv("./RawData/Arthritis.csv")
-save(arthritis, file = "../EcoData/Data/arthritis.Rdata")
+devtools::use_data(arthritis, pkg = "../EcoData/.", overwrite = T)
 ```
 
 
@@ -142,7 +143,7 @@ save(arthritis, file = "../EcoData/Data/arthritis.Rdata")
 
 ```{r}
 rikz = read.table("./RawData/RIKZGroups.txt")
-save(rkiz, file = "../EcoData/Data/rikz.Rdata")
+devtools::use_data(rikz, pkg = "../EcoData/.", overwrite = T)
 ```
 
 
@@ -150,7 +151,7 @@ save(rkiz, file = "../EcoData/Data/rikz.Rdata")
 
 ```{r}
 streams = read.table("./RawData/streams.txt")
-save(streams, file = "../EcoData/Data/streams.Rdata")
+devtools::use_data(streams, pkg = "../EcoData/.", overwrite = T)
 ```
 
 
@@ -158,14 +159,14 @@ save(streams, file = "../EcoData/Data/streams.Rdata")
 
 ```{r}
 cement = read.csv("./RawData/cement.csv")
-save(cement, file = "../EcoData/Data/cement.Rdata")
+devtools::use_data(cement, pkg = "../EcoData/.", overwrite = T)
 ```
 
 ## Plants
 
 ```{r}
 plantcounts <- read.csv("./RawData/Plants.csv")
-save(plantcounts, file = "../EcoData/Data/plantcounts.Rdata")
+devtools::use_data(plantcounts, pkg = "../EcoData/.", overwrite = T)
 ```
 
 
@@ -174,8 +175,8 @@ save(plantcounts, file = "../EcoData/Data/plantcounts.Rdata")
 ```{r}
 anolisData <- read.csv("./RawData/anolisDataAppended.csv", row.names = 1)
 anolisTree <- ape::read.tree("./RawData/anolis.phy")
-save(anolisData, file = "../EcoData/Data/anolisData.Rdata")
-save(anolisTree, file = "../EcoData/Data/anolisTree.Rdata")
+devtools::use_data(anolisData, pkg = "../EcoData/.", overwrite = T)
+devtools::use_data(anolisTree, pkg = "../EcoData/.", overwrite = T)
 ```
 
 
@@ -183,7 +184,7 @@ save(anolisTree, file = "../EcoData/Data/anolisTree.Rdata")
 
 ```{r}
 snouter <- read.table("./RawData/snouterdata.txt", header=T, sep="\t")
-save(snouter, file = "../EcoData/Data/snouter.Rdata")
+devtools::use_data(snouter, pkg = "../EcoData/.", overwrite = T)
 ```
 
 
