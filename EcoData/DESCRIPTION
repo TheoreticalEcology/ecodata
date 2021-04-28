@@ -15,6 +15,6 @@ License: GPL (>= 3)
 URL: https://github.com/TheoreticalEcology/
 BugReports: https://github.com/TheoreticalEcology/ecodata/issues
 Encoding: UTF-8
-LazyData: true
+LazyData: TRUE
 RoxygenNote: 7.1.1
 VignetteBuilder: knitr
