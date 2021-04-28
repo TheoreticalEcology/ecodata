@@ -74,7 +74,7 @@ usethis::use_data(arthritis, overwrite = T)
 
 
 
-## RKIZ
+## RIKZ
 
 
 rikz = read.table("../DataCreation/RawData/RIKZGroups.txt")
@@ -120,3 +120,4 @@ usethis::use_data(anolisTree, overwrite = T)
 
 snouter <- read.table("../DataCreation/RawData/snouterdata.txt", header=T, sep="\t")
 usethis::use_data(snouter, overwrite = T)
+
