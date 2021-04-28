@@ -13,7 +13,7 @@ output: html_document
 birdfeeding = read.table("./RawData/schnaepper.txt")
 colnames(birdfeeding) = c("feeding", "attractiveness")
 str(birdfeeding)
-devtools::use_data(birdfeeding, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(birdfeeding, pkg = "../EcoData/.", overwrite = T)
 
 ```
 
@@ -22,7 +22,7 @@ devtools::use_data(birdfeeding, pkg = "../EcoData/.", overwrite = T)
 ```{r}
 titanic = read.csv("./RawData/titanic3.csv", nrows = 1309)
 titanic$name = as.character(titanic$name)
-devtools::use_data(titanic, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(titanic, pkg = "../EcoData/.", overwrite = T)
 
 ```
 
@@ -30,14 +30,14 @@ devtools::use_data(titanic, pkg = "../EcoData/.", overwrite = T)
 
 ```{r}
 birdabundance = read.delim("./RawData/birds.txt")
-devtools::use_data(birdabundance, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(birdabundance, pkg = "../EcoData/.", overwrite = T)
 ```
 
 ## Regrowth
 
 ```{r}
 regrowth = read.delim("./RawData/regrowth.txt")
-devtools::use_data(regrowth, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(regrowth, pkg = "../EcoData/.", overwrite = T)
 ```
 
 ## Solomon Islands
@@ -45,7 +45,7 @@ devtools::use_data(regrowth, pkg = "../EcoData/.", overwrite = T)
 ```{r}
 solomonislands = read.table("./RawData/solomon.txt", header = T)
 solomonislands$Island = as.character(solomonislands$Island)
-devtools::use_data(solomonislands, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(solomonislands, pkg = "../EcoData/.", overwrite = T)
 ```
 
 ## Student Alcohol
@@ -110,7 +110,7 @@ Released Under CC0: Public Domain License
 d1=read.csv("./RawData/student-mat.csv",header=TRUE)
 d2=read.csv("./RawData/student-por.csv",header=TRUE)
 students = merge(d1,d2,by=c("school","sex","age","address","famsize","Pstatus","Medu","Fedu","Mjob","Fjob","reason","nursery","internet"))
-devtools::use_data(students, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(students, pkg = "../EcoData/.", overwrite = T)
 ```
 
 
@@ -118,7 +118,7 @@ devtools::use_data(students, pkg = "../EcoData/.", overwrite = T)
 
 ```{r}
 nitrofen = read.csv("./RawData/nitrofen.csv")
-devtools::use_data(nitrofen, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(nitrofen, pkg = "../EcoData/.", overwrite = T)
 ```
 
 
@@ -126,7 +126,7 @@ devtools::use_data(nitrofen, pkg = "../EcoData/.", overwrite = T)
 
 ```{r}
 melanoma = read.csv("./RawData/Melanoma.csv")
-devtools::use_data(melanoma, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(melanoma, pkg = "../EcoData/.", overwrite = T)
 
 ```
 
@@ -135,7 +135,7 @@ devtools::use_data(melanoma, pkg = "../EcoData/.", overwrite = T)
 
 ```{r}
 arthritis = read.csv("./RawData/Arthritis.csv")
-devtools::use_data(arthritis, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(arthritis, pkg = "../EcoData/.", overwrite = T)
 ```
 
 
@@ -143,7 +143,7 @@ devtools::use_data(arthritis, pkg = "../EcoData/.", overwrite = T)
 
 ```{r}
 rikz = read.table("./RawData/RIKZGroups.txt")
-devtools::use_data(rikz, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(rikz, pkg = "../EcoData/.", overwrite = T)
 ```
 
 
@@ -151,7 +151,7 @@ devtools::use_data(rikz, pkg = "../EcoData/.", overwrite = T)
 
 ```{r}
 streams = read.table("./RawData/streams.txt")
-devtools::use_data(streams, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(streams, pkg = "../EcoData/.", overwrite = T)
 ```
 
 
@@ -159,14 +159,14 @@ devtools::use_data(streams, pkg = "../EcoData/.", overwrite = T)
 
 ```{r}
 cement = read.csv("./RawData/cement.csv")
-devtools::use_data(cement, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(cement, pkg = "../EcoData/.", overwrite = T)
 ```
 
 ## Plants
 
 ```{r}
 plantcounts <- read.csv("./RawData/Plants.csv")
-devtools::use_data(plantcounts, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(plantcounts, pkg = "../EcoData/.", overwrite = T)
 ```
 
 
@@ -175,8 +175,8 @@ devtools::use_data(plantcounts, pkg = "../EcoData/.", overwrite = T)
 ```{r}
 anolisData <- read.csv("./RawData/anolisDataAppended.csv", row.names = 1)
 anolisTree <- ape::read.tree("./RawData/anolis.phy")
-devtools::use_data(anolisData, pkg = "../EcoData/.", overwrite = T)
-devtools::use_data(anolisTree, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(anolisData, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(anolisTree, pkg = "../EcoData/.", overwrite = T)
 ```
 
 
@@ -184,7 +184,7 @@ devtools::use_data(anolisTree, pkg = "../EcoData/.", overwrite = T)
 
 ```{r}
 snouter <- read.table("./RawData/snouterdata.txt", header=T, sep="\t")
-devtools::use_data(snouter, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(snouter, pkg = "../EcoData/.", overwrite = T)
 ```
 
 
@@ -265,7 +265,7 @@ sim.dat$Y <- binaryPGLMM.sim(Y ~ X1, phy=phy, data=sim.dat, s2=.5,
 
 volcanoisland = volcanoisland[,c(1:6,10:11,13:17, 19:21)]
 
-devtools::use_data(volcanoisland, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(volcanoisland, pkg = "../EcoData/.", overwrite = T)
 
 ```
 
