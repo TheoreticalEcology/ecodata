@@ -255,10 +255,10 @@
 "arthritis"
 
 
-#' RKIZ
+#' RIKZ
 #'
 #' Data from the dutch National Institute for Coastal and Marine Management (RIKZ: Rijksinstituut voor Kust en Zee) to investigate the relationship between environmentalfactors and how they might affect benthic fauna.
-#' 
+#'
 #' Downloaded from https://www.uni-koblenz-landau.de/en/campus-landau/faculty7/environmental-sciences/landscape-ecology/Teaching/RIKZ_data/
 #'
 #' @format A 'data.frame':	45 obs. of  17 variables:
@@ -284,7 +284,7 @@
 #' }
 #' @author Florian Hartig
 #' @source \url{http://evol.bio.lmu.de/_statgen/Multivariate/11SS/RIKZGroups.txt}
-"rkiz"
+"rikz"
 
 
 #' Streams
@@ -320,10 +320,10 @@
 #### Plantcounts ####
 
 #' Plantcounts
-#' 
-#' Number of plant species in a grid of quadrants around Regensburg. 
+#'
+#' Number of plant species in a grid of quadrants around Regensburg.
 #' Variables
-#' 
+#'
 #' \describe{
 #'   \item{richness}{plant "species" richness. No. of plant taxa records (species, including some aggregates) in map quadrants (Topographische Karte, "Viertelmesstischblatt"), ca. 1980. from Mergenthaler, O. 1982: Verbreitungsatlas zur Flora von Regensburg. In: Hoppea, Denkschriften der Regensburgischen Botanischen Gesellschaft. Bd. 40, S. V-XII, 1-297. http://digital.bib-bvb.de/view/bvbmets/viewer.0.6.4.jsp?folder_id=0&dvs=1597093892683~24&pid=1537325&locale=de&usePid1=true&usePid2=true}
 #'   \item{tk}{quadrant id (Topographische Karte)}
@@ -331,7 +331,7 @@
 #'   \item{agrarea}{fraction of agricultural area per quadrant (agricultural landuse classes without forest, from https://doi.pangaea.de/10.1594/PANGAEA.910837)}
 #' }
 #' @author Lukas Heiland, Florian Hartig
-#' 
+#'
 #' @example inst/examples/plantcounts.R
 "plantcounts"
 
@@ -339,22 +339,22 @@
 #### Snouter #####
 
 #' Snouter
-#' 
+#'
 #' Snouter data from Dormann et al., Methods to account for spatial autocorrelation in the analysis of species distributional data: a review Ecography, 2007, 30, 609-628
-#' 
+#'
 #' From Wikipedia:
-#' 
+#'
 #' Rhinogradentia is a fictitious order of mammal invented by German zoologist Gerolf Steiner. Members of the order, known as rhinogrades or snouters, are characterized by a nose-like feature called a nasorium, which evolved to fulfill a wide variety of functions in different species. Steiner also created a fictional persona, naturalist Harald Stümpke, who is credited as author of the 1957 book Bau und Leben der Rhinogradentia (translated into English in 1967 as The Snouters: Form and Life of the Rhinogrades). According to Steiner, it is the only remaining record of the animals, which were wiped out, along with all the world's Rhinogradentia researchers, when the small Pacific archipelago they inhabited sank into the ocean due to nearby atomic bomb testing.
-#' 
+#'
 #' Successfully mimicking a genuine scientific work, Rhinogradentia has appeared in several publications without any note of its fictitious nature, sometimes in connection with April Fools' Day.
-#' 
+#'
 #' From the paper: we have a data frame with several snouter response variables (you can thing of those as different studies), of different types (continous, count, binary data). Explanatory variables are x, y rain, djungle!
-#' 
+#'
 #' @author Florian Hartig
-#' 
+#'
 #' @example inst/examples/snouter.R
 "snouter"
 
 
 
- 
+

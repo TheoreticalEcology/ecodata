@@ -11,7 +11,7 @@ An object of class \code{data.frame} with 285 rows and 6 columns.
 plantcounts
 }
 \description{
-Number of plant species in a grid of quadrants around Regensburg. 
+Number of plant species in a grid of quadrants around Regensburg.
 Variables
 }
 \details{
