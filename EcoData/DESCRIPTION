@@ -8,6 +8,9 @@ Suggests:
     knitr,
     testthat,
     DHARMa,
+    rmarkdown,
+    glmmTMB,
+    mapview,
     spatial,
     sf,
     gstat

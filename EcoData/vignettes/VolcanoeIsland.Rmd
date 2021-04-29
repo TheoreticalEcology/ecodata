@@ -7,8 +7,8 @@ output:
     toc: true
 vignette: >
   %\VignetteIndexEntry{Explanation of the volcanoe island example}
-  %\VignetteEngine{knitr::knitr}
-  %\VignetteEncoding{UTF-8}
+  \usepackage[utf8]{inputenc}
+  %\VignetteEngine{knitr::rmarkdown}  
 abstract: "This vignette explains the volcanoe island example"
 ---
 

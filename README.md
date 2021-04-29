@@ -19,6 +19,8 @@ devtools::install_url("https://github.com/florianhartig/ecodata/releases/downloa
 
 Decide for the version number that you want to install in [https://github.com/florianhartig/EcoData/releases](https://github.com/florianhartig/EcoData/releases) 
 
+Below the status of the automatic Github Action tests on the master branch
+[![R-CMD-check](https://github.com/TheoreticalEcology/ecodata/workflows/R-CMD-check/badge.svg)](https://github.com/TheoreticalEcology/ecodata/actions)
 
 To get an overview about its functionality once the package is installed, run
 

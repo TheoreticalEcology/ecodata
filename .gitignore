@@ -2,10 +2,19 @@
 .Rhistory
 .RData
 .Ruserdata
-
-*.html
-
+.Rcheck
+.DS_Store
+*_cache/
 *.png
+*.html
+*.gz
+*.pdf
+*.log
+*.bbl
+*.aux
+*.blg
+*.sty
+
 
 EcoData/vignettes/EcoData.md
 
@@ -14,6 +23,9 @@ EcoData/vignettes/EcoData.R
 EcoData/vignettes/DatasetsAccordingToUse.md
 
 EcoData/vignettes/DatasetsAccordingToUse.R
+
+EcoData.Rcheck/
+EcoData/EcoData.Rcheck/
 
 *.gz
 *.pdf
