@@ -6,9 +6,9 @@ output:
   rmarkdown::html_vignette:
     toc: true
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+  %\VignetteIndexEntry{Explanation of the volcanoe island example}
+  \usepackage[utf8]{inputenc}
+  %\VignetteEngine{knitr::rmarkdown}  
 abstract: "This vignette explains the volcanoe island example"
 ---
 
