@@ -32,8 +32,7 @@ knitr::opts_chunk$set(fig.width=7, fig.height=4.5, fig.align='center', warning=F
 
 ### ANOVA
 
-* datasets::PlantGrowth -> discrete predictors (3 treatments)
-
+* datasets::PlantGrowth -> discrete predictors (1 predictor, 3 treatments)
 
 ## Regression
 
@@ -52,7 +51,6 @@ knitr::opts_chunk$set(fig.width=7, fig.height=4.5, fig.align='center', warning=F
 * EcoData::volcanoisland -> Poisson, Logistic
 * EcoData::titanic -> Logistic 1/0
 * datasets::esoph -> Logistic, k/n
-
 
 ### GLMM 
 
