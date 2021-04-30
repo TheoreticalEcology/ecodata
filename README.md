@@ -26,8 +26,6 @@ If you want to cite the package, use
 citation("EcoData")
 ```
 
-If you want to know how the (simulated) data was created, check out https://github.com/florianhartig/ecodata/tree/master/DataCreation
-
 
 
 
