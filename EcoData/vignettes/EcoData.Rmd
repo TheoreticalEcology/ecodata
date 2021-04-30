@@ -6,7 +6,7 @@ output:
   rmarkdown::html_vignette:
     toc: true
 vignette: >
-  %\VignetteIndexEntry{Vignette for the EcoData package}
+  %\VignetteIndexEntry{EcoData - A collection of ecological datasets for teaching}
   \usepackage[utf8]{inputenc}
   %\VignetteEngine{knitr::rmarkdown}  
 abstract: "EcoData is a collection of ecological datasets for teaching"
