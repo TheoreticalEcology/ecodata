@@ -28,15 +28,28 @@ A 'data.frame':	20480 obs. of  18 variables:
 }
 }
 \source{
-\url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329}
+\url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329} \url{https://figshare.com/articles/dataset/Global_pollinator_database/9980471/1}
 }
 \usage{
 plantPollinator_df
 }
 \description{
 plant pollination by different insects.
-This dataset is split and used for machine learning with an training and testing dataset, as well as the full dataset
+This dataset is a machinelearning version of the original one. \see {plantPollination}, containing variable NAs in the "interaction" variable {plantPollinations$interactions}. Generated with the example code.
 \docType{data}
+}
+\examples{
+
+
+# plotting the data 
+image(xtabs(rain~X+Y, data=snouter))
+image(xtabs(djungle~X+Y, data=snouter))
+image(xtabs(snouter1.1~X+Y, data=snouter))
+
+# fit and residual plot in space
+ols1 <- lm(snouter1.1 ~ rain + djungle, data=snouter)
+summary(ols1)
+image(xtabs(residuals(ols1)~X+Y, data=snouter))
 }
 \author{
 Florian Hartig

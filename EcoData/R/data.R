@@ -400,7 +400,7 @@
 
 
 ##
-#' plantPollinations
+#' plantPollinators
 #'
 #' plant pollination by different insects.
 #' \docType{data}
@@ -427,7 +427,7 @@
 #'}
 #' @author Florian Hartig
 #' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329} \url{https://figshare.com/articles/dataset/Global_pollinator_database/9980471/1}
-"plantPollinator"
+"plantPollinators"
 
 
 ##
