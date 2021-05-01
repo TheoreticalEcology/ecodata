@@ -255,7 +255,7 @@
 "arthritis"
 
 
-#' RKIZ
+#' RIKZ
 #'
 #' Data from the dutch National Institute for Coastal and Marine Management (RIKZ: Rijksinstituut voor Kust en Zee) to investigate the relationship between environmentalfactors and how they might affect benthic fauna.
 #'
@@ -284,7 +284,7 @@
 #' }
 #' @author Florian Hartig
 #' @source \url{http://evol.bio.lmu.de/_statgen/Multivariate/11SS/RIKZGroups.txt}
-"rkiz"
+"rikz"
 
 
 #' Streams
@@ -393,6 +393,103 @@
 #' }
 #' @author Florian Hartig
 #' @source \url{https://www.picostat.com/dataset/r-dataset-package-vcd-arthritis}
-"arthritis"
+"redCards"
 
 
+
+##
+#' plantPollinations
+#'
+#' plant pollination by different insects.
+#' This dataset is split and used for machine learning with an training and testing dataset, as well as the full dataset
+#' \docType{data}
+#' @format A 'data.frame':	20480 obs. of  18 variables:
+#' \describe{
+#'  \item{crop}{plant name}
+#'  \item{insect}{insect name}
+#'  \item{type}{type of plant (arboreous or herbaceous)}
+#'  \item{season}{flowering season}
+#'  \item{diameter}{flower diameter in mm}
+#'  \item{corolla}{corolla shape (open, campanulate, or tubular)}
+#'  \item{colour}{flower colour}
+#'  \item{nectar}{nectar (yes or no)}
+#'  \item{b.symstem}{ bloom system (type of pollination: insects, insects/wind, or insects/birds)}
+#'  \item{s.pollination}{self‐pollination (yes or no)}
+#'  \item{inflorescence}{inflorescence (yes, solitary, solitary/pairs, solitary/clusters)}
+#'  \item{composite}{composite flowers (yes or no)}
+#'  \item{guild}{five pollinator traits: guild (bumblebees, butterflies etc.)}
+#'  \item{tongue}{ tongue length in mm}
+#'  \item{body}{body size in mm}
+#'  \item{sociality}{soziality "Yes/NO"}
+#'  \item{feeding}{feeding behaviour (oligolectic, polylectic, or parasitic)}
+#'  \item{interaction}{Interaction between insect and plant(Yes/No)}
+#'}
+#' @author Florian Hartig
+#' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329}
+"plantPollinator_df"
+
+
+#' plantPollinations
+#'
+#' plant pollination by different insects.
+#' This dataset is split and used for machine learning with an training and testing dataset, as well as the full dataset.
+#' This is the testing dataset supposed to be tested after the machine learning algorithm was trained.
+#' \docType{data}
+#' @format A 'data.frame':	20480 obs. of  18 variables:
+#' \describe{
+#'  \item{crop}{plant name}
+#'  \item{insect}{insect name}
+#'  \item{type}{type of plant (arboreous or herbaceous)}
+#'  \item{season}{flowering season}
+#'  \item{diameter}{flower diameter in mm}
+#'  \item{corolla}{corolla shape (open, campanulate, or tubular)}
+#'  \item{colour}{flower colour}
+#'  \item{nectar}{nectar (yes or no)}
+#'  \item{b.symstem}{ bloom system (type of pollination: insects, insects/wind, or insects/birds)}
+#'  \item{s.pollination}{self‐pollination (yes or no)}
+#'  \item{inflorescence}{inflorescence (yes, solitary, solitary/pairs, solitary/clusters)}
+#'  \item{composite}{composite flowers (yes or no)}
+#'  \item{guild}{five pollinator traits: guild (bumblebees, butterflies etc.)}
+#'  \item{tongue}{ tongue length in mm}
+#'  \item{body}{body size in mm}
+#'  \item{sociality}{soziality "Yes/NO"}
+#'  \item{feeding}{feeding behaviour (oligolectic, polylectic, or parasitic)}
+#'  \item{interaction}{Interaction between insect and plant(Yes/No)}
+#'}
+#' @author Florian Hartig
+#' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329}
+"plantPollinator_test"
+
+
+
+
+#' plantPollinations
+#'
+#' plant pollination by different insects.
+#' This dataset is split and used for machine learning with an training and testing dataset, as well as the full dataset.
+#' THis is the training dataset, the machine learning algorithm is supposed to be trained on this dataset to predict "plantPollinator_test" dataset.
+#' \docType{data}
+#' @format A 'data.frame':	20480 obs. of  18 variables:
+#' \describe{
+#'  \item{crop}{plant name}
+#'  \item{insect}{insect name}
+#'  \item{type}{type of plant (arboreous or herbaceous)}
+#'  \item{season}{flowering season}
+#'  \item{diameter}{flower diameter in mm}
+#'  \item{corolla}{corolla shape (open, campanulate, or tubular)}
+#'  \item{colour}{flower colour}
+#'  \item{nectar}{nectar (yes or no)}
+#'  \item{b.symstem}{ bloom system (type of pollination: insects, insects/wind, or insects/birds)}
+#'  \item{s.pollination}{self‐pollination (yes or no)}
+#'  \item{inflorescence}{inflorescence (yes, solitary, solitary/pairs, solitary/clusters)}
+#'  \item{composite}{composite flowers (yes or no)}
+#'  \item{guild}{five pollinator traits: guild (bumblebees, butterflies etc.)}
+#'  \item{tongue}{ tongue length in mm}
+#'  \item{body}{body size in mm}
+#'  \item{sociality}{soziality "Yes/NO"}
+#'  \item{feeding}{feeding behaviour (oligolectic, polylectic, or parasitic)}
+#'  \item{interaction}{Interaction between insect and plant(Yes/No)}
+#'}
+#' @author Florian Hartig
+#' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329}
+"plantPollinator_train"

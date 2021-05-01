@@ -5,7 +5,7 @@
 \alias{redCards}
 \title{redCards}
 \format{
-'data.frame':	146,028 obs. of  28 variables:
+A 'data.frame':	146,028 obs. of  28 variables:
 \describe{
   \item{playershort}{short player ID}
   \item{player}{player name}
@@ -38,13 +38,13 @@
 }
 }
 \source{
-\url{https://journals.sagepub.com/doi/suppl/10.1177/2515245917747646}
+\url{https://www.picostat.com/dataset/r-dataset-package-vcd-arthritis}
 }
 \usage{
 redCards
 }
 \description{
-redCards Data
+soccer redCards dataset Data
 }
 \author{
 Florian Hartig

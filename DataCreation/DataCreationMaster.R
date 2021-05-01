@@ -133,7 +133,7 @@ usethis::use_data(redCards, overwrite = T)
 ##  plantPollinator
 
 plant <- readRDS("../DataCreation/RawData/plantsPoll.RDS")
-colnames(plant$data) = c("X","Y", "type", "season", "diameter" ,"corolla","colour", "nectar", "b.system", "s.pollination" ,"inflorescence", "composite" , "guild",  "tongue", "body", "sociality" , "feeding","interaction")
+colnames(plant$data) = c("crop","insect", "type", "season", "diameter" ,"corolla","colour", "nectar", "b.system", "s.pollination" ,"inflorescence", "composite" , "guild",  "tongue", "body", "sociality" , "feeding","interaction")
 
 
 df = plant$data
