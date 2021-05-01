@@ -17,6 +17,7 @@
 "birdfeeding"
 
 
+
 #### Bird abundance ####
 
 #' Birdabundance
@@ -38,6 +39,8 @@
 #' }
 #' @source \url{http://biometry.github.io/APES/}
 "birdabundance"
+
+
 
 #' Titanic data
 #'
@@ -396,12 +399,42 @@
 "redCards"
 
 
+##
+#' plantPollinations
+#'
+#' plant pollination by different insects.
+#' \docType{data}
+#' @format A 'data.frame':	20480 obs. of  18 variables:
+#' \describe{
+#'  \item{crop}{plant name}
+#'  \item{insect}{insect name}
+#'  \item{type}{type of plant (arboreous or herbaceous)}
+#'  \item{season}{flowering season}
+#'  \item{diameter}{flower diameter in mm}
+#'  \item{corolla}{corolla shape (open, campanulate, or tubular)}
+#'  \item{colour}{flower colour}
+#'  \item{nectar}{nectar (yes or no)}
+#'  \item{b.symstem}{ bloom system (type of pollination: insects, insects/wind, or insects/birds)}
+#'  \item{s.pollination}{self‐pollination (yes or no)}
+#'  \item{inflorescence}{inflorescence (yes, solitary, solitary/pairs, solitary/clusters)}
+#'  \item{composite}{composite flowers (yes or no)}
+#'  \item{guild}{five pollinator traits: guild (bumblebees, butterflies etc.)}
+#'  \item{tongue}{ tongue length in mm}
+#'  \item{body}{body size in mm}
+#'  \item{sociality}{soziality "Yes/NO"}
+#'  \item{feeding}{feeding behaviour (oligolectic, polylectic, or parasitic)}
+#'  \item{interaction}{Interaction between insect and plant(Yes/No)}
+#'}
+#' @author Florian Hartig
+#' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329} \url{https://figshare.com/articles/dataset/Global_pollinator_database/9980471/1}
+"plantPollinator"
+
 
 ##
 #' plantPollinations
 #'
 #' plant pollination by different insects.
-#' This dataset is split and used for machine learning with an training and testing dataset, as well as the full dataset
+#' This dataset is a machinelearning version of the original one. \see {plantPollination}, containing variable NAs in the "interaction" variable {plantPollinations$interactions}. Generated with the example code.
 #' \docType{data}
 #' @format A 'data.frame':	20480 obs. of  18 variables:
 #' \describe{
@@ -425,71 +458,7 @@
 #'  \item{interaction}{Interaction between insect and plant(Yes/No)}
 #'}
 #' @author Florian Hartig
-#' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329}
+#' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329} \url{https://figshare.com/articles/dataset/Global_pollinator_database/9980471/1}
+#' @example inst/examples/snouter.R
 "plantPollinator_df"
 
-
-#' plantPollinations
-#'
-#' plant pollination by different insects.
-#' This dataset is split and used for machine learning with an training and testing dataset, as well as the full dataset.
-#' This is the testing dataset supposed to be tested after the machine learning algorithm was trained.
-#' \docType{data}
-#' @format A 'data.frame':	20480 obs. of  18 variables:
-#' \describe{
-#'  \item{crop}{plant name}
-#'  \item{insect}{insect name}
-#'  \item{type}{type of plant (arboreous or herbaceous)}
-#'  \item{season}{flowering season}
-#'  \item{diameter}{flower diameter in mm}
-#'  \item{corolla}{corolla shape (open, campanulate, or tubular)}
-#'  \item{colour}{flower colour}
-#'  \item{nectar}{nectar (yes or no)}
-#'  \item{b.symstem}{ bloom system (type of pollination: insects, insects/wind, or insects/birds)}
-#'  \item{s.pollination}{self‐pollination (yes or no)}
-#'  \item{inflorescence}{inflorescence (yes, solitary, solitary/pairs, solitary/clusters)}
-#'  \item{composite}{composite flowers (yes or no)}
-#'  \item{guild}{five pollinator traits: guild (bumblebees, butterflies etc.)}
-#'  \item{tongue}{ tongue length in mm}
-#'  \item{body}{body size in mm}
-#'  \item{sociality}{soziality "Yes/NO"}
-#'  \item{feeding}{feeding behaviour (oligolectic, polylectic, or parasitic)}
-#'  \item{interaction}{Interaction between insect and plant(Yes/No)}
-#'}
-#' @author Florian Hartig
-#' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329}
-"plantPollinator_test"
-
-
-
-
-#' plantPollinations
-#'
-#' plant pollination by different insects.
-#' This dataset is split and used for machine learning with an training and testing dataset, as well as the full dataset.
-#' THis is the training dataset, the machine learning algorithm is supposed to be trained on this dataset to predict "plantPollinator_test" dataset.
-#' \docType{data}
-#' @format A 'data.frame':	20480 obs. of  18 variables:
-#' \describe{
-#'  \item{crop}{plant name}
-#'  \item{insect}{insect name}
-#'  \item{type}{type of plant (arboreous or herbaceous)}
-#'  \item{season}{flowering season}
-#'  \item{diameter}{flower diameter in mm}
-#'  \item{corolla}{corolla shape (open, campanulate, or tubular)}
-#'  \item{colour}{flower colour}
-#'  \item{nectar}{nectar (yes or no)}
-#'  \item{b.symstem}{ bloom system (type of pollination: insects, insects/wind, or insects/birds)}
-#'  \item{s.pollination}{self‐pollination (yes or no)}
-#'  \item{inflorescence}{inflorescence (yes, solitary, solitary/pairs, solitary/clusters)}
-#'  \item{composite}{composite flowers (yes or no)}
-#'  \item{guild}{five pollinator traits: guild (bumblebees, butterflies etc.)}
-#'  \item{tongue}{ tongue length in mm}
-#'  \item{body}{body size in mm}
-#'  \item{sociality}{soziality "Yes/NO"}
-#'  \item{feeding}{feeding behaviour (oligolectic, polylectic, or parasitic)}
-#'  \item{interaction}{Interaction between insect and plant(Yes/No)}
-#'}
-#' @author Florian Hartig
-#' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329}
-"plantPollinator_train"
