@@ -121,3 +121,38 @@ usethis::use_data(anolisTree, overwrite = T)
 snouter <- read.table("../DataCreation/RawData/snouterdata.txt", header=T, sep="\t")
 usethis::use_data(snouter, overwrite = T)
 
+
+
+# redCards
+redCards = read.csv("../DataCreation/RawData/redCards.csv")
+usethis::use_data(redCards, overwrite = T)
+
+
+
+###### Machine learning data-sets with missing predictors
+##  plantPollinator
+
+plant <- readRDS("../DataCreation/RawData/plantsPoll.RDS")
+colnames(plant$data) = c("X","Y", "type", "season", "diameter" ,"corolla","colour", "nectar", "b.system", "s.pollination" ,"inflorescence", "composite" , "guild",  "tongue", "body", "sociality" , "feeding","interaction")
+
+
+df = plant$data
+levels(df$interaction) = c(0, 1)
+df$interaction
+
+unique(df$X)[1:10]
+unique(df$Y)[1:20]
+
+nrow(  df[( df$X %in% unique(df$X)[1:15] ) | ( df$Y %in% unique(df$Y)[1:30] ), ]  )
+plantPollinator_test = df[( df$X %in% unique(df$X)[1:15] ) | ( df$Y %in% unique(df$Y)[1:30] ), ]
+plantPollinator_train = df[!( ( df$X %in% unique(df$X)[1:15] ) | ( df$Y %in% unique(df$Y)[1:30] ) ), ]
+
+
+plantPollinator_test$interaction = NA
+plantPollinator_df = rbind(train, test)
+
+usethis::use_data(plantPollinator_test, overwrite = T)
+usethis::use_data(plantPollinator_train, overwrite = T)
+usethis::use_data(plantPollinator_df, overwrite = T)
+
+
