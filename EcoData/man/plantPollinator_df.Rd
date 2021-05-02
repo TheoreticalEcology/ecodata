@@ -35,8 +35,7 @@ plantPollinator_df
 }
 \description{
 plant pollination by different insects.
-This dataset is a machinelearning version of the original one. \see {plantPollination}, containing variable NAs in the "interaction" variable {plantPollinations$interactions}. Generated with the example code.
-\docType{data}
+This dataset is a machinelearning version of the original one. \code{\link{plantPollination}}, containing variable NAs in the "interaction" variable {plantPollinations$interactions}. Generated with the example code.
 }
 \examples{
 

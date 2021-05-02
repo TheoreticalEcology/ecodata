@@ -156,3 +156,15 @@ plantPollinator_df = rbind(plantPollinator_train, plantPollinator_test)
 usethis::use_data(plantPollinator_df, overwrite = TRUE)
 usethis::use_data(plantPollinators, overwrite = TRUE)
 
+
+
+## Wine
+
+wine = read.csv("../DataCreation/RawData/wine.csv")
+usethis::use_data(wine, overwrite = TRUE)
+
+## nasa
+
+nasa = read.csv("../DataCreation/RawData/nasa.csv")
+usethis::use_data(nasa, overwrite = TRUE)
+

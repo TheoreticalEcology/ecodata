@@ -35,7 +35,6 @@ plantPollinators
 }
 \description{
 plant pollination by different insects.
-\docType{data}
 }
 \author{
 Florian Hartig

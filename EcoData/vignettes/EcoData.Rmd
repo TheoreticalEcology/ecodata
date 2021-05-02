@@ -41,6 +41,7 @@ knitr::opts_chunk$set(fig.width=7, fig.height=4.5, fig.align='center', warning=F
 * EcoData::solomonislands -> continous predictors (count data, but can be used with linear regression)
 * datasets::airquality -> mostly continous predictors
 * datasets::PlantGrowth -> discrete predictors (3 treatments)
+* EcoData::wine -> continous predictors
 * EcoData::regrowth -> discrete predictors (2 treatments)
 
 ### GLM
@@ -50,6 +51,7 @@ knitr::opts_chunk$set(fig.width=7, fig.height=4.5, fig.align='center', warning=F
 * EcoData::solomonislands -> Poisson
 * EcoData::volcanoisland -> Poisson, Logistic
 * EcoData::titanic -> Logistic 1/0
+* EcoData::nasa -> Logistic 1/0
 * datasets::esoph -> Logistic, k/n
 
 ### GLMM 
@@ -58,6 +60,8 @@ knitr::opts_chunk$set(fig.width=7, fig.height=4.5, fig.align='center', warning=F
 * glmmTMB::owls -> Random Effects, zero-inflation
 
 ## MachineLearning
+
+* EcoData::dataset_flower() -> Image Recognition
 
 ### Classification
 

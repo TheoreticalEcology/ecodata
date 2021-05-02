@@ -399,11 +399,12 @@
 "redCards"
 
 
-##
+#### Plant pollinator database ####
+
+
 #' plantPollinators
 #'
 #' plant pollination by different insects.
-#' \docType{data}
 #' @format A 'data.frame':	20480 obs. of  18 variables:
 #' \describe{
 #'  \item{crop}{plant name}
@@ -429,13 +430,10 @@
 #' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329} \url{https://figshare.com/articles/dataset/Global_pollinator_database/9980471/1}
 "plantPollinators"
 
-
-##
 #' plantPollinations
 #'
 #' plant pollination by different insects.
-#' This dataset is a machinelearning version of the original one. \see {plantPollination}, containing variable NAs in the "interaction" variable {plantPollinations$interactions}. Generated with the example code.
-#' \docType{data}
+#' This dataset is a machinelearning version of the original one. \code{\link{plantPollination}}, containing variable NAs in the "interaction" variable {plantPollinations$interactions}. Generated with the example code.
 #' @format A 'data.frame':	20480 obs. of  18 variables:
 #' \describe{
 #'  \item{crop}{plant name}
@@ -461,4 +459,71 @@
 #' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329} \url{https://figshare.com/articles/dataset/Global_pollinator_database/9980471/1}
 #' @example inst/examples/snouter.R
 "plantPollinator_df"
+
+
+#### Wine #####
+
+#' Wine
+#' 
+#' Wine data from \url{https://archive.ics.uci.edu/ml/datasets/wine+quality}. 
+#' 
+#' The dataset is a collection of wines of different qualities. The wines are described by physochemical variables.
+#' 
+#' \describe{
+#' \item{quality}{response variable, ranges between 1 and 8} 
+#' }
+#' 
+#' @author Maximilian Pichler
+"wine"
+
+#### nasa ####
+
+#' Nasa asteroids
+#' 
+#' A collection about asteroids and their characteristics from \url{https://www.kaggle.com/shrutimehta/nasa-asteroids-classification}. The aim is to predict whether the asteroids are hazardous or not. 
+#' \describe{
+#' \item{Hazardous}{response variable, 0 or 1} 
+#' }
+#' @author Maximilian Pichler
+"nasa"
+
+
+
+#### flower ####
+
+#' Flower image recognition dataset
+#' 
+#' Downsampled (80x80 pixels) images of 5 flower species from \url{https://www.kaggle.com/alxmamaev/flowers-recognition}.
+#' 
+#' The function will return a list with three elements:
+#' @return 
+#' \itemize{
+#'   \item train - images for training
+#'   \item labels - labels for train split, 0-4
+#'   \item test - images for testing
+#' }
+#' @author Maximilian Pichler
+#' @export
+
+dataset_flower = function() {
+  cache_dir = file.path(path.expand("~"),".EcoData")
+  datadir_base = path.expand(cache_dir)
+  
+  dir.create(datadir_base, showWarnings = FALSE)
+  
+  if( file.access(datadir_base, mode = 2) < 0) {
+    datadir_base = file.path("/tmp", ".Ecodata")
+  }
+  
+  dir.create(datadir_base, showWarnings = FALSE)
+  
+  data_path = file.path(datadir_base, "flower.rda")
+  
+  if(!file.exists(data_path)) {
+    options(timeout=1200)
+    utils::download.file("https://www.dropbox.com/s/slgml71w22of4n4/flower.rda?raw=1", destfile = data_path)
+  }
+  load(data_path)
+  return(flower)
+}
 
