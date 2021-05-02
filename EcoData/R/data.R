@@ -60,6 +60,26 @@
 "titanic"
 
 
+#' Titanic data for Machine Learning
+#'
+#' Survival of passengers on the MS titanic
+#'
+#' @format A 'data.frame':	1309 obs. of  14 variables:
+#' \describe{
+#'   \item{pclass}{Passenger class (int)}
+#'   \item{survived}{Did the passenger survive (int, 1 = survived)}
+#'   \item{name}{Pasenger name (character)}
+#'   \item{sex}{Passenger sex (factor)}
+#'   \item{age}{Passenger age (factor)}
+#'   \item{...}{further variables}
+#' }
+#' 
+#' Survival status is unknown for 50% of the passengers and must be predicted.
+#' 
+#' @author Florian Hartig, Maximilian Pichler
+#' @source \url{http://biostat.mc.vanderbilt.edu/wiki/Main/DataSets} \url{https://www.kaggle.com/c/titanic}
+"titanic_ml"
+
 
 
 #' Regrowth

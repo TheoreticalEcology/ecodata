@@ -62,6 +62,7 @@ knitr::opts_chunk$set(fig.width=7, fig.height=4.5, fig.align='center', warning=F
 ## MachineLearning
 
 * EcoData::dataset_flower() -> Image Recognition
+* EcoData::titanic_ml -> Classification 
 
 ### Classification
 
