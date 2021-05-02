@@ -17,6 +17,7 @@
 "birdfeeding"
 
 
+
 #### Bird abundance ####
 
 #' Birdabundance
@@ -38,6 +39,8 @@
 #' }
 #' @source \url{http://biometry.github.io/APES/}
 "birdabundance"
+
+
 
 #' Titanic data
 #'
@@ -355,6 +358,172 @@
 #' @example inst/examples/snouter.R
 "snouter"
 
+#################
+#' redCards
+#'
+#' soccer redCards dataset Data
+#'
+#' @format A 'data.frame':	146,028 obs. of  28 variables:
+#' \describe{
+#'   \item{playershort}{short player ID}
+#'   \item{player}{player name}
+#'   \item{club}{player club}
+#'   \item{leagueCountry}{country of player club (England, Germany, France, and Spain)}
+#'   \item{birthday}{player birthday}
+#'   \item{height}{player height (in cm)}
+#'   \item{weight}{player weight (in kg)}
+#'   \item{position}{detailed player position}
+#'   \item{games}{number of games in the player-referee dyad}
+#'   \item{victories}{victories in the player-referee dyad}
+#'   \item{ties}{ties in the player-referee dyad}
+#'   \item{defeats}{losses in the player-referee dyad}
+#'   \item{goals}{goals scored by a player in the player-referee dyad}
+#'   \item{yellowCards}{number of yellow cards player received from referee}
+#'   \item{yellowReds}{number of yellow-red cards player received from referee}
+#'   \item{redCards}{number of red cards player received from referee}
+#'   \item{photoID}{ID of player photo (if available)}
+#'   \item{rater1}{skin rating of photo by rater 1 (5-point scale ranging from very light skin, to very dark skin)}
+#'   \item{rater2}{skin rating of photo by rater 2 (5-point scale ranging from very light skin, to very dark skin)}
+#'   \item{refNum}{unique referee ID number (referee name removed for anonymizing purposes)}
+#'   \item{refCountry}{unique referee country ID number (country name removed for anonymizing purposes)}
+#'   \item{Alpha_3}{unique referee country ID number (country name removed for anonymizing purposes)}
+#'   \item{meanIAT}{mean implicit bias score (using the race IAT) for referee country, higher values correspond to faster white | good, black | bad associations}
+#'   \item{nIAT}{sample size for race IAT in that particular country}
+#'   \item{seIAT}{standard error for mean estimate of race IAT }
+#'   \item{meanExp}{mean explicit bias score (using a racial thermometer task) for referee country, higher values correspond to greater feelings of warmth toward whites versus blacks}
+#'   \item{nExp}{sample size for explicit bias in that particular country}
+#'   \item{seExp}{standard error for mean estimate of explicit bias measure}
+#' }
+#' @author Florian Hartig
+#' @source \url{https://www.picostat.com/dataset/r-dataset-package-vcd-arthritis}
+"redCards"
 
 
+#### Plant pollinator database ####
+
+
+#' plantPollinators
+#'
+#' plant pollination by different insects.
+#' @format A 'data.frame':	20480 obs. of  18 variables:
+#' \describe{
+#'  \item{crop}{plant name}
+#'  \item{insect}{insect name}
+#'  \item{type}{type of plant (arboreous or herbaceous)}
+#'  \item{season}{flowering season}
+#'  \item{diameter}{flower diameter in mm}
+#'  \item{corolla}{corolla shape (open, campanulate, or tubular)}
+#'  \item{colour}{flower colour}
+#'  \item{nectar}{nectar (yes or no)}
+#'  \item{b.symstem}{ bloom system (type of pollination: insects, insects/wind, or insects/birds)}
+#'  \item{s.pollination}{self‐pollination (yes or no)}
+#'  \item{inflorescence}{inflorescence (yes, solitary, solitary/pairs, solitary/clusters)}
+#'  \item{composite}{composite flowers (yes or no)}
+#'  \item{guild}{five pollinator traits: guild (bumblebees, butterflies etc.)}
+#'  \item{tongue}{ tongue length in mm}
+#'  \item{body}{body size in mm}
+#'  \item{sociality}{soziality "Yes/NO"}
+#'  \item{feeding}{feeding behaviour (oligolectic, polylectic, or parasitic)}
+#'  \item{interaction}{Interaction between insect and plant(Yes/No)}
+#'}
+#' @author Florian Hartig
+#' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329} \url{https://figshare.com/articles/dataset/Global_pollinator_database/9980471/1}
+"plantPollinators"
+
+#' plantPollinations
+#'
+#' plant pollination by different insects.
+#' This dataset is a machinelearning version of the original one. \code{\link{plantPollination}}, containing variable NAs in the "interaction" variable {plantPollinations$interactions}. Generated with the example code.
+#' @format A 'data.frame':	20480 obs. of  18 variables:
+#' \describe{
+#'  \item{crop}{plant name}
+#'  \item{insect}{insect name}
+#'  \item{type}{type of plant (arboreous or herbaceous)}
+#'  \item{season}{flowering season}
+#'  \item{diameter}{flower diameter in mm}
+#'  \item{corolla}{corolla shape (open, campanulate, or tubular)}
+#'  \item{colour}{flower colour}
+#'  \item{nectar}{nectar (yes or no)}
+#'  \item{b.symstem}{ bloom system (type of pollination: insects, insects/wind, or insects/birds)}
+#'  \item{s.pollination}{self‐pollination (yes or no)}
+#'  \item{inflorescence}{inflorescence (yes, solitary, solitary/pairs, solitary/clusters)}
+#'  \item{composite}{composite flowers (yes or no)}
+#'  \item{guild}{five pollinator traits: guild (bumblebees, butterflies etc.)}
+#'  \item{tongue}{ tongue length in mm}
+#'  \item{body}{body size in mm}
+#'  \item{sociality}{soziality "Yes/NO"}
+#'  \item{feeding}{feeding behaviour (oligolectic, polylectic, or parasitic)}
+#'  \item{interaction}{Interaction between insect and plant(Yes/No)}
+#'}
+#' @author Florian Hartig
+#' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329} \url{https://figshare.com/articles/dataset/Global_pollinator_database/9980471/1}
+#' @example inst/examples/snouter.R
+"plantPollinator_df"
+
+
+#### Wine #####
+
+#' Wine
+#' 
+#' Wine data from \url{https://archive.ics.uci.edu/ml/datasets/wine+quality}. 
+#' 
+#' The dataset is a collection of wines of different qualities. The wines are described by physochemical variables.
+#' 
+#' \describe{
+#' \item{quality}{response variable, ranges between 1 and 8} 
+#' }
+#' 
+#' @author Maximilian Pichler
+"wine"
+
+#### nasa ####
+
+#' Nasa asteroids
+#' 
+#' A collection about asteroids and their characteristics from \url{https://www.kaggle.com/shrutimehta/nasa-asteroids-classification}. The aim is to predict whether the asteroids are hazardous or not. 
+#' \describe{
+#' \item{Hazardous}{response variable, 0 or 1} 
+#' }
+#' @author Maximilian Pichler
+"nasa"
+
+
+
+#### flower ####
+
+#' Flower image recognition dataset
+#' 
+#' Downsampled (80x80 pixels) images of 5 flower species from \url{https://www.kaggle.com/alxmamaev/flowers-recognition}.
+#' 
+#' The function will return a list with three elements:
+#' @return 
+#' \itemize{
+#'   \item train - images for training
+#'   \item labels - labels for train split, 0-4
+#'   \item test - images for testing
+#' }
+#' @author Maximilian Pichler
+#' @export
+
+dataset_flower = function() {
+  cache_dir = file.path(path.expand("~"),".EcoData")
+  datadir_base = path.expand(cache_dir)
+  
+  dir.create(datadir_base, showWarnings = FALSE)
+  
+  if( file.access(datadir_base, mode = 2) < 0) {
+    datadir_base = file.path("/tmp", ".Ecodata")
+  }
+  
+  dir.create(datadir_base, showWarnings = FALSE)
+  
+  data_path = file.path(datadir_base, "flower.rda")
+  
+  if(!file.exists(data_path)) {
+    options(timeout=1200)
+    utils::download.file("https://www.dropbox.com/s/slgml71w22of4n4/flower.rda?raw=1", destfile = data_path)
+  }
+  load(data_path)
+  return(flower)
+}
 
