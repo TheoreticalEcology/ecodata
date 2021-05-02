@@ -6,8 +6,29 @@ par(oldpar)
 
 with(volcanoisland, {
   
-  plot(year, altitude, cex = beetles/5, pch =2, main = "Beetle counts across altitudinal gradient, triangle is proportional to counts")
-  #lines(plot, altitude * 1000)
-  #points(unique(plot), unique(altitude * 1000) , pch = 3)
-  #text(unique(plot), unique(altitude * 1000) - 50, unique(plot), cex = 0.7 )
+  plot(altitude, year, cex = beetles/10, pch =2, 
+    main = "Beetle counts across altitudinal gradient, 
+    triangle is proportional to counts")
 })
+
+# Base models that could be extended
+
+# wind is continous, thus starting with lm
+fit <- lm(log(windObs) ~ sAltitude, data = volcanoisland)
+summary(fit)
+
+# lizards are presence / absence, thus binomial
+fit <- glm(lizards ~ 1, family = binomial, data = volcanoisland)
+summary(fit)
+
+# beetles are counts, thus poisson
+fit <- glm(beetles ~ 1, family = poisson, data = volcanoisland)
+summary(fit)
+
+fit <- glmmTMB(beetles2 ~ 1 , family = poisson, data = volcanoisland)
+summary(fit)
+
+# survived are k/n binomial 
+fit <- glm(cbind(survivedOf20, 20-survivedOf20) ~ 1, 
+           family = binomial, data = volcanoisland)
+summary(fit)
