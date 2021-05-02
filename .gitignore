@@ -19,3 +19,4 @@ EcoData/vignettes/DatasetsAccordingToUse.R
 *.pdf
 EcoData/.DS_Store
 */.DS_Store
+EcoData.Rcheck/

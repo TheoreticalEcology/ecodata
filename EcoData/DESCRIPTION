@@ -9,10 +9,13 @@ Suggests:
     testthat,
     rmarkdown,
     DHARMa,
+    glmmTMB,
+    lme4,
     spatial,
     sf,
     gstat,
-    effects
+    effects,
+    mapview
 License: GPL (>= 3)
 URL: https://github.com/TheoreticalEcology/
 BugReports: https://github.com/TheoreticalEcology/ecodata/issues
