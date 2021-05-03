@@ -15,7 +15,7 @@ dependencies = T, build_vignettes = T)
 If this doesn't work for you, try installing a pre-compiled source package via
 
 ```{r}
-devtools::install_url("https://github.com/florianhartig/ecodata/releases/download/v0.2.0/EcoData_0.2.0.tar.gz")
+devtools::install_url("https://github.com/florianhartig/ecodata/releases/download/v0.2.1/EcoData_0.2.1.tar.gz")
 ```
 
 To get an overview about its functionality once the package is installed, run
