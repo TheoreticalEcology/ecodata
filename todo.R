@@ -7,11 +7,11 @@ lm(Fertility ~ Education, data = swiss)
 lm(Fertility ~ Education + Catholic + Infant.Mortality + Agriculture, data = swiss)
 
 
-[,1]	Fertility	Ig, ‘common standardized fertility measure’
+[,1]	Fertility	Ig, common standardized fertility measure
 [,2]	Agriculture	% of males involved in agriculture as occupation
 [,3]	Examination	% draftees receiving highest mark on army examination
 [,4]	Education	% education beyond primary school for draftees.
-[,5]	Catholic	% ‘catholic’ (as opposed to ‘protestant’).
+[,5]	Catholic	% catholic (as opposed to protestant).
 [,6]	Infant.Mortality	live births who live less than 1 year.
 
 install.packages("decon")
@@ -48,7 +48,7 @@ summary(m2)
 
 anova(m1, m2)
 
-# Grundsätzlich
+# Grundsaetzlich
 
 
 AIC(fit1)

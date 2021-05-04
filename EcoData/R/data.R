@@ -17,6 +17,7 @@
 "birdfeeding"
 
 
+
 #### Bird abundance ####
 
 #' Birdabundance
@@ -38,6 +39,8 @@
 #' }
 #' @source \url{http://biometry.github.io/APES/}
 "birdabundance"
+
+
 
 #' Titanic data
 #'
@@ -103,9 +106,9 @@
 #'
 #' Pstatus - parent's cohabitation status (binary: 'T' - living together or 'A' - apart)
 #'
-#' Medu - mother's education (numeric: 0 - none, 1 - primary education (4th grade), 2 – 5th to 9th grade, 3 – secondary education or 4 – higher education)
+#' Medu - mother's education (numeric: 0 - none, 1 - primary education (4th grade), 2  5th to 9th grade, 3  secondary education or 4  higher education)
 #'
-#' Fedu - father's education (numeric: 0 - none, 1 - primary education (4th grade), 2 – 5th to 9th grade, 3 – secondary education or 4 – higher education)
+#' Fedu - father's education (numeric: 0 - none, 1 - primary education (4th grade), 2  5th to 9th grade, 3  secondary education or 4  higher education)
 #'
 #' Mjob - mother's job (nominal: 'teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at_home' or 'other')
 #'
@@ -344,7 +347,7 @@
 #'
 #' From Wikipedia:
 #'
-#' Rhinogradentia is a fictitious order of mammal invented by German zoologist Gerolf Steiner. Members of the order, known as rhinogrades or snouters, are characterized by a nose-like feature called a nasorium, which evolved to fulfill a wide variety of functions in different species. Steiner also created a fictional persona, naturalist Harald Stümpke, who is credited as author of the 1957 book Bau und Leben der Rhinogradentia (translated into English in 1967 as The Snouters: Form and Life of the Rhinogrades). According to Steiner, it is the only remaining record of the animals, which were wiped out, along with all the world's Rhinogradentia researchers, when the small Pacific archipelago they inhabited sank into the ocean due to nearby atomic bomb testing.
+#' Rhinogradentia is a fictitious order of mammal invented by German zoologist Gerolf Steiner. Members of the order, known as rhinogrades or snouters, are characterized by a nose-like feature called a nasorium, which evolved to fulfill a wide variety of functions in different species. Steiner also created a fictional persona, naturalist Harald Stuempke, who is credited as author of the 1957 book Bau und Leben der Rhinogradentia (translated into English in 1967 as The Snouters: Form and Life of the Rhinogrades). According to Steiner, it is the only remaining record of the animals, which were wiped out, along with all the world's Rhinogradentia researchers, when the small Pacific archipelago they inhabited sank into the ocean due to nearby atomic bomb testing.
 #'
 #' Successfully mimicking a genuine scientific work, Rhinogradentia has appeared in several publications without any note of its fictitious nature, sometimes in connection with April Fools' Day.
 #'
@@ -355,40 +358,6 @@
 #' @example inst/examples/snouter.R
 "snouter"
 
-
-#### anolisTree #####
-
-#' anolisTree
-#'
-#' anolisTree data from Dormann et al., Methods to account for spatial autocorrelation in the analysis of species distributional data: a review Ecography, 2007, 30, 609-628
-#'
-#' From Wikipedia:
-#'
-#' Rhinogradentia is a fictitious order of mammal invented by German zoologist Gerolf Steiner. Members of the order, known as rhinogrades or anolisTrees, are characterized by a nose-like feature called a nasorium, which evolved to fulfill a wide variety of functions in different species. Steiner also created a fictional persona, naturalist Harald Stümpke, who is credited as author of the 1957 book Bau und Leben der Rhinogradentia (translated into English in 1967 as The anolisTrees: Form and Life of the Rhinogrades). According to Steiner, it is the only remaining record of the animals, which were wiped out, along with all the world's Rhinogradentia researchers, when the small Pacific archipelago they inhabited sank into the ocean due to nearby atomic bomb testing.
-#'
-#' Successfully mimicking a genuine scientific work, Rhinogradentia has appeared in several publications without any note of its fictitious nature, sometimes in connection with April Fools' Day.
-#'
-#' From the paper: we have a data frame with several anolisTree response variables (you can thing of those as different studies), of different types (continous, count, binary data). Explanatory variables are x, y rain, djungle!
-#'
-#' @author Florian Hartig
-"anolisTree"
-
-#### anolisData #####
-
-#' anolisData
-#'
-#' anolisData data from Dormann et al., Methods to account for spatial autocorrelation in the analysis of species distributional data: a review Ecography, 2007, 30, 609-628
-#'
-#' From Wikipedia:
-#'
-#' Rhinogradentia is a fictitious order of mammal invented by German zoologist Gerolf Steiner. Members of the order, known as rhinogrades or anolisDatas, are characterized by a nose-like feature called a nasorium, which evolved to fulfill a wide variety of functions in different species. Steiner also created a fictional persona, naturalist Harald Stümpke, who is credited as author of the 1957 book Bau und Leben der Rhinogradentia (translated into English in 1967 as The anolisDatas: Form and Life of the Rhinogrades). According to Steiner, it is the only remaining record of the animals, which were wiped out, along with all the world's Rhinogradentia researchers, when the small Pacific archipelago they inhabited sank into the ocean due to nearby atomic bomb testing.
-#'
-#' Successfully mimicking a genuine scientific work, Rhinogradentia has appeared in several publications without any note of its fictitious nature, sometimes in connection with April Fools' Day.
-#'
-#' From the paper: we have a data frame with several anolisData response variables (you can thing of those as different studies), of different types (continous, count, binary data). Explanatory variables are x, y rain, djungle!
-#'
-#' @author Florian Hartig
-"anolisData"
 
 
 
