@@ -7,10 +7,17 @@ output:
     toc: true
 vignette: >
   %\VignetteIndexEntry{Explanation of the volcanoe island example}
-  \usepackage[utf8]{inputenc}
-  %\VignetteEngine{knitr::rmarkdown}  
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8} 
 abstract: "This vignette explains the volcanoe island example"
 ---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -19,7 +26,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 library(EcoData)
-data = volcanoisland
+data <- volcanoisland
 ```
 
 # Description / Visualization of the data 
@@ -81,7 +88,7 @@ summary(fit)
 plot(allEffects(fit, partial.residuals = T))
 
 
-fit <- glm(ducksObs ~ earth, data = data, family = binomial )
+fit <- glm(survivedOf20 ~ earth, data = data, family = poisson() )
 summary(fit)
 plot(allEffects(fit, partial.residuals = T))
 

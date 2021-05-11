@@ -7,10 +7,16 @@ output:
     toc: true
 vignette: >
   %\VignetteIndexEntry{EcoData - A collection of ecological datasets for teaching}
-  \usepackage[utf8]{inputenc}
-  %\VignetteEngine{knitr::rmarkdown}  
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 abstract: "EcoData is a collection of ecological datasets for teaching"
 ---
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
 
 ```{r, echo = F}
 library(EcoData)
