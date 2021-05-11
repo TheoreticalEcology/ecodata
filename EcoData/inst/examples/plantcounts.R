@@ -1,4 +1,3 @@
-
 plants_sf <- plantcounts
 plants_sf$agrarea_scaled <- scale(plants_sf$agrarea)
 
