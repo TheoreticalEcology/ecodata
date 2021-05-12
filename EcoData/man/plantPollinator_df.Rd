@@ -51,6 +51,6 @@ summary(ols1)
 image(xtabs(residuals(ols1)~X+Y, data=snouter))
 }
 \author{
-Florian Hartig
+Andreas Ettner
 }
 \keyword{datasets}

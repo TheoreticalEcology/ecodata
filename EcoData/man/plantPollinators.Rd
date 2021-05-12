@@ -37,6 +37,6 @@ plantPollinators
 plant pollination by different insects.
 }
 \author{
-Florian Hartig
+Andreas Ettner
 }
 \keyword{datasets}

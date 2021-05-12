@@ -17,12 +17,12 @@ A 'data.frame':	45 obs. of  17 variables:
   \item{angle2}{Slope of the beach at the plot}
   \item{exposure}{Index composed of wave action etc.}
   \item{salinity}{Salinity at the plot}
-  \item{temperature}{}
+  \item{temperature}{temperature measured}
   \item{NAP}{Altitude of the plot compared to the mean sea level}
-  \item{penetrability}{}
+  \item{penetrability}{penetrability}
   \item{grainsize}{Average diameter of sand grains}
   \item{humus}{Fraction of organic material}
-  \item{chalk}{}
+  \item{chalk}{amount of chalk measured}
   \item{sorting1}{Variable from observational design}
 
 }
@@ -38,6 +38,37 @@ Data from the dutch National Institute for Coastal and Marine Management (RIKZ: 
 }
 \details{
 Downloaded from https://www.uni-koblenz-landau.de/en/campus-landau/faculty7/environmental-sciences/landscape-ecology/Teaching/RIKZ_data/
+}
+\examples{
+rikz_df <- rikz
+head(rikz_df)
+
+str(rikz_df)
+
+
+# plotting variables -------------------------------------------------
+plot(rikz_df$temperature,rikz_df$Polychaeta)
+plot(rikz_df$NAP,rikz_df$Polychaeta)
+plot(rikz_df$humus,rikz_df$Polychaeta)
+
+
+
+library(glmmTMB)
+# binomial model -------------------------------------------------
+fit <-  glmmTMB(Crustacea ~ Polychaeta + Mollusca + Insecta + exposure + salinity +
+                  temperature + NAP + humus,     data = rikz_df)
+summary(fit)
+
+
+
+library(DHARMa)
+res <- simulateResiduals(fit)
+plot(res)
+
+
+DHARMa::testQuantiles(res)
+DHARMa::testDispersion(res)
+
 }
 \author{
 Florian Hartig

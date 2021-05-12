@@ -59,6 +59,7 @@
 #' }
 #' @author Florian Hartig
 #' @source \url{http://biostat.mc.vanderbilt.edu/wiki/Main/DataSets}
+#' @example inst/examples/titanic.R
 "titanic"
 
 
@@ -80,6 +81,7 @@
 #'
 #' @author Florian Hartig, Maximilian Pichler
 #' @source \url{http://biostat.mc.vanderbilt.edu/wiki/Main/DataSets} \url{https://www.kaggle.com/c/titanic}
+#' #' @example inst/examples/titanic_ml.R
 "titanic_ml"
 
 
@@ -95,6 +97,7 @@
 #'   \item{Grazing}{Grazed or not (factor)}
 #' }
 #' @author Florian Hartig
+#' @example inst/examples/regrowth.R
 "regrowth"
 
 #' Solomon Islands - Island Biogeography
@@ -109,6 +112,7 @@
 #'   \item{Distance}{Distance to mainland (num)}
 #' }
 #' @author Florian Hartig
+#' @example inst/examples/solomonislands.R
 "solomonislands"
 
 #' Students
@@ -195,6 +199,7 @@
 #'
 #' @author Florian Hartig
 #' @source \url{https://www.kaggle.com/uciml/student-alcohol-consumption}
+#' @example inst/examples/students.R
 "students"
 
 
@@ -223,7 +228,6 @@
 #' @format A 'data.frame':	1000 obs. of  21 variables:
 #' @author Florian Hartig
 #' @example inst/examples/volcanoislandHelp.R
-#'
 "volcanoisland"
 
 
@@ -241,6 +245,7 @@
 #' }
 #' @author Florian Hartig
 #' @source \url{http://statwww.epfl.ch/davison/BMA/Data4BMA/}
+#' @example inst/examples/nitrofen.R
 "nitrofen"
 
 
@@ -302,17 +307,18 @@
 #'   \item{angle2}{Slope of the beach at the plot}
 #'   \item{exposure}{Index composed of wave action etc.}
 #'   \item{salinity}{Salinity at the plot}
-#'   \item{temperature}{}
+#'   \item{temperature}{temperature measured}
 #'   \item{NAP}{Altitude of the plot compared to the mean sea level}
-#'   \item{penetrability}{}
+#'   \item{penetrability}{penetrability}
 #'   \item{grainsize}{Average diameter of sand grains}
 #'   \item{humus}{Fraction of organic material}
-#'   \item{chalk}{}
+#'   \item{chalk}{amount of chalk measured}
 #'   \item{sorting1}{Variable from observational design}
 #'
 #' }
 #' @author Florian Hartig
 #' @source \url{http://evol.bio.lmu.de/_statgen/Multivariate/11SS/RIKZGroups.txt}
+#' @example inst/examples/rikz.R
 "rikz"
 
 
@@ -381,7 +387,6 @@
 #' From the paper: we have a data frame with several snouter response variables (you can thing of those as different studies), of different types (continous, count, binary data). Explanatory variables are x, y rain, djungle!
 #'
 #' @author Florian Hartig
-#'
 #' @example inst/examples/snouter.R
 "snouter"
 
@@ -421,8 +426,9 @@
 #'   \item{nExp}{sample size for explicit bias in that particular country}
 #'   \item{seExp}{standard error for mean estimate of explicit bias measure}
 #' }
-#' @author Florian Hartig
+#' @author Andreas Ettner
 #' @source \url{https://www.picostat.com/dataset/r-dataset-package-vcd-arthritis}
+#' @example inst/examples/redCards.R
 "redCards"
 
 
@@ -453,7 +459,7 @@
 #'  \item{feeding}{feeding behaviour (oligolectic, polylectic, or parasitic)}
 #'  \item{interaction}{Interaction between insect and plant(Yes/No)}
 #'}
-#' @author Florian Hartig
+#' @author Andreas Ettner
 #' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329} \url{https://figshare.com/articles/dataset/Global_pollinator_database/9980471/1}
 "plantPollinators"
 
@@ -482,9 +488,9 @@
 #'  \item{feeding}{feeding behaviour (oligolectic, polylectic, or parasitic)}
 #'  \item{interaction}{Interaction between insect and plant(Yes/No)}
 #'}
-#' @author Florian Hartig
+#' @author Andreas Ettner
 #' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329} \url{https://figshare.com/articles/dataset/Global_pollinator_database/9980471/1}
-#' @example inst/examples/snouter.R
+#' @example inst/examples/plantPollinations.R
 "plantPollinator_df"
 
 
@@ -512,6 +518,7 @@
 #' \item{Hazardous}{response variable, 0 or 1}
 #' }
 #' @author Maximilian Pichler
+#' @example inst/examples/nasa.R
 "nasa"
 
 

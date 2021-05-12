@@ -19,6 +19,7 @@ Survival status is unknown for 50% of the passengers and must be predicted.
 }
 \source{
 \url{http://biostat.mc.vanderbilt.edu/wiki/Main/DataSets} \url{https://www.kaggle.com/c/titanic}
+#' @example inst/examples/titanic_ml.R
 }
 \usage{
 titanic_ml

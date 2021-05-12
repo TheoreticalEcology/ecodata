@@ -17,7 +17,7 @@ Wine data from \url{https://archive.ics.uci.edu/ml/datasets/wine+quality}.
 The dataset is a collection of wines of different qualities. The wines are described by physochemical variables.
 
 \describe{
-\item{quality}{response variable, ranges between 1 and 8} 
+\item{quality}{response variable, ranges between 1 and 8}
 }
 }
 \author{
