@@ -14,6 +14,7 @@
 #'   ...
 #' }
 #' @source \url{http://biometry.github.io/APES/}
+#' @example inst/examples/birdfeeding.R
 "birdfeeding"
 
 
@@ -38,6 +39,7 @@
 #'   \item{ALT}{Altitude}
 #' }
 #' @source \url{http://biometry.github.io/APES/}
+#' @example inst/examples/birdabundance.R
 "birdabundance"
 
 
@@ -260,6 +262,7 @@
 #' }
 #' @author Florian Hartig
 #' @source \url{http://publicifsv.sund.ku.dk/~linearpredictors/?page=datasets&dataset=Melanoma}
+#' @example inst/examples/melanoma.R
 "melanoma"
 
 
@@ -277,6 +280,7 @@
 #' }
 #' @author Florian Hartig
 #' @source \url{https://www.picostat.com/dataset/r-dataset-package-vcd-arthritis}
+#' @example inst/examples/Arthritis.R
 "arthritis"
 
 
@@ -339,6 +343,7 @@
 #'   \item{X4}{dicalcium silicate}
 #' }
 #' @author Florian Hartig
+#' @example inst/examples/cement.R
 "cement"
 
 
