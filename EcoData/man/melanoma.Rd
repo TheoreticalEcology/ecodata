@@ -7,13 +7,15 @@
 \format{
 A 'data.frame':	205 obs. of  7 variables:
 \describe{
-  \item{time}{Survival time in days since the operation, possibly censored}
-  \item{status}{The patients status at the end of the study. 1 indicates that they had died from melanoma, 2 indicates that they were still alive and 3 indicates that they had died from causes unrelated to their melanoma}
-  \item{sex}{The patients sex; 1=male, 0=female.}
-  \item{age}{Age in years at the time pf the operation.}
-  \item{year}{Year of operation.}
-  \item{thickness}{Tumour thickness in mm}
-  \item{ulcer}{Indicator of ulceration; 1=present, 0=absent.}
+   \item{DC}death/censoring indicator; {The patients status at the end of the study. 1 indicates that they had died from melanoma, 2 indicates that they were still alive and 3 indicates that they had died from causes unrelated to their melanoma}
+   \item{time}{Survival time in days since the operation, possibly censored}
+   \item{level}level of invasion, 0, 1 or 2
+   \item{ici}inflammatory cell infiltration (ICI), 0, 1, 2 or 3
+   \item{ecel}presence of epithelioid cells, 1=no, 2=yes
+   \item{ulcer}{Indicator of ulceration; 1=present, 0=absent.}
+   \item{thickness}{Tumour thickness in mm}
+   \item{sex}{The patients sex; 1=male, 0=female.}
+   \item{age}{Age in years at the time pf the operation.}
 }
 }
 \source{

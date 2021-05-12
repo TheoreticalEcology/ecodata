@@ -60,10 +60,10 @@ usethis::use_data(nitrofen, overwrite = TRUE)
 ## Melanoma
 
 
-melanoma = read.csv("../DataCreation/RawData/Melanoma.csv")
+melanoma = read.csv("../DataCreation/RawData/Melanoma.csv" , sep=";")
+colnames(melanoma) = c("DC","time", "level","ici", "ecel","ulcer" ,"thickness", "sex", "age")
+head(melanoma)
 usethis::use_data(melanoma, overwrite = TRUE)
-
-
 
 
 ## Arthritis

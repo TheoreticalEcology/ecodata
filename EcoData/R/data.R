@@ -73,9 +73,9 @@
 #'   \item{age}{Passenger age (factor)}
 #'   \item{...}{further variables}
 #' }
-#' 
+#'
 #' Survival status is unknown for 50% of the passengers and must be predicted.
-#' 
+#'
 #' @author Florian Hartig, Maximilian Pichler
 #' @source \url{http://biostat.mc.vanderbilt.edu/wiki/Main/DataSets} \url{https://www.kaggle.com/c/titanic}
 "titanic_ml"
@@ -248,13 +248,15 @@
 #'
 #' @format A 'data.frame':	205 obs. of  7 variables:
 #' \describe{
-#'   \item{time}{Survival time in days since the operation, possibly censored}
-#'   \item{status}{The patients status at the end of the study. 1 indicates that they had died from melanoma, 2 indicates that they were still alive and 3 indicates that they had died from causes unrelated to their melanoma}
-#'   \item{sex}{The patients sex; 1=male, 0=female.}
-#'   \item{age}{Age in years at the time pf the operation.}
-#'   \item{year}{Year of operation.}
-#'   \item{thickness}{Tumour thickness in mm}
-#'   \item{ulcer}{Indicator of ulceration; 1=present, 0=absent.}
+#'    \item{DC}death/censoring indicator; {The patients status at the end of the study. 1 indicates that they had died from melanoma, 2 indicates that they were still alive and 3 indicates that they had died from causes unrelated to their melanoma}
+#'    \item{time}{Survival time in days since the operation, possibly censored}
+#'    \item{level}level of invasion, 0, 1 or 2
+#'    \item{ici}inflammatory cell infiltration (ICI), 0, 1, 2 or 3
+#'    \item{ecel}presence of epithelioid cells, 1=no, 2=yes
+#'    \item{ulcer}{Indicator of ulceration; 1=present, 0=absent.}
+#'    \item{thickness}{Tumour thickness in mm}
+#'    \item{sex}{The patients sex; 1=male, 0=female.}
+#'    \item{age}{Age in years at the time pf the operation.}
 #' }
 #' @author Florian Hartig
 #' @source \url{http://publicifsv.sund.ku.dk/~linearpredictors/?page=datasets&dataset=Melanoma}
@@ -484,25 +486,25 @@
 #### Wine #####
 
 #' Wine
-#' 
-#' Wine data from \url{https://archive.ics.uci.edu/ml/datasets/wine+quality}. 
-#' 
+#'
+#' Wine data from \url{https://archive.ics.uci.edu/ml/datasets/wine+quality}.
+#'
 #' The dataset is a collection of wines of different qualities. The wines are described by physochemical variables.
-#' 
+#'
 #' \describe{
-#' \item{quality}{response variable, ranges between 1 and 8} 
+#' \item{quality}{response variable, ranges between 1 and 8}
 #' }
-#' 
+#'
 #' @author Maximilian Pichler
 "wine"
 
 #### nasa ####
 
 #' Nasa asteroids
-#' 
-#' A collection about asteroids and their characteristics from \url{https://www.kaggle.com/shrutimehta/nasa-asteroids-classification}. The aim is to predict whether the asteroids are hazardous or not. 
+#'
+#' A collection about asteroids and their characteristics from \url{https://www.kaggle.com/shrutimehta/nasa-asteroids-classification}. The aim is to predict whether the asteroids are hazardous or not.
 #' \describe{
-#' \item{Hazardous}{response variable, 0 or 1} 
+#' \item{Hazardous}{response variable, 0 or 1}
 #' }
 #' @author Maximilian Pichler
 "nasa"
@@ -512,11 +514,11 @@
 #### flower ####
 
 #' Flower image recognition dataset
-#' 
+#'
 #' Downsampled (80x80 pixels) images of 5 flower species from \url{https://www.kaggle.com/alxmamaev/flowers-recognition}.
-#' 
+#'
 #' The function will return a list with three elements:
-#' @return 
+#' @return
 #' \itemize{
 #'   \item train - images for training
 #'   \item labels - labels for train split, 0-4
@@ -528,17 +530,17 @@
 dataset_flower = function() {
   cache_dir = file.path(path.expand("~"),".EcoData")
   datadir_base = path.expand(cache_dir)
-  
+
   dir.create(datadir_base, showWarnings = FALSE)
-  
+
   if( file.access(datadir_base, mode = 2) < 0) {
     datadir_base = file.path("/tmp", ".Ecodata")
   }
-  
+
   dir.create(datadir_base, showWarnings = FALSE)
-  
+
   data_path = file.path(datadir_base, "flower.rda")
-  
+
   if(!file.exists(data_path)) {
     options(timeout=1200)
     utils::download.file("https://www.dropbox.com/s/slgml71w22of4n4/flower.rda?raw=1", destfile = data_path)
