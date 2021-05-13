@@ -52,7 +52,8 @@ usethis::use_data(students, overwrite = TRUE)
 ## Nitrofen
 
 
-nitrofen = read.csv("../DataCreation/RawData/nitrofen.csv")
+nitrofen = read.csv("../DataCreation/RawData/nitrofen.csv", sep=";")
+nitrofen
 usethis::use_data(nitrofen, overwrite = TRUE)
 
 
@@ -60,10 +61,10 @@ usethis::use_data(nitrofen, overwrite = TRUE)
 ## Melanoma
 
 
-melanoma = read.csv("../DataCreation/RawData/Melanoma.csv")
+melanoma = read.csv("../DataCreation/RawData/Melanoma.csv" , sep=";")
+colnames(melanoma) = c("DC","time", "level","ici", "ecel","ulcer" ,"thickness", "sex", "age")
+head(melanoma)
 usethis::use_data(melanoma, overwrite = TRUE)
-
-
 
 
 ## Arthritis
@@ -77,7 +78,7 @@ usethis::use_data(arthritis, overwrite = TRUE)
 ## RIKZ
 
 
-rikz = read.table("../DataCreation/RawData/RIKZGroups.txt")
+rikz <- read.delim("C:/Users/andie/Dropbox/Mein PC (DESKTOP-4TB10SM)/Downloads/original/ecodata/DataCreation/RawData/RIKZGroups.txt")
 usethis::use_data(rikz, overwrite = TRUE)
 
 
