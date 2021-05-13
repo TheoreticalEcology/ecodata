@@ -14,9 +14,20 @@ wine
 Wine data from \url{https://archive.ics.uci.edu/ml/datasets/wine+quality}.
 }
 \details{
-The dataset is a collection of wines of different qualities. The wines are described by physochemical variables.
+The dataset is a collection of wines of different qualities. The wines are described by physiochemical variables.
 
 \describe{
+\item{fixed.acidity}{fixed acidity (numeric)}
+\item{volatile.acidity}{volatile acidity (numeric)}
+\item{citric.acid}{citric acid (numeric)}
+\item{residual.sugar}{residual sugar (numeric)}
+\item{chlorides}{amount of chlorides measured (numeric)}
+\item{free.sulfur.dioxide}{amount of free sulfur dioxide measured (numeric)}
+\item{total.sulfur.dioxide}{amount of total sulfur dioxide measured (numeric)}
+\item{density}{density}
+\item{pH}{pH of the wine}
+\item{sulphates}{sulphates in the wine}
+\item{alcohol}{amount of alcohol measured}
 \item{quality}{response variable, ranges between 1 and 8}
 }
 }

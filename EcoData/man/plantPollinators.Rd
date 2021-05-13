@@ -22,13 +22,13 @@ A 'data.frame':	20480 obs. of  18 variables:
  \item{guild}{five pollinator traits: guild (bumblebees, butterflies etc.)}
  \item{tongue}{ tongue length in mm}
  \item{body}{body size in mm}
- \item{sociality}{soziality "Yes/NO"}
+ \item{sociality}{soziality (Yes/NO)}
  \item{feeding}{feeding behaviour (oligolectic, polylectic, or parasitic)}
  \item{interaction}{Interaction between insect and plant(Yes/No)}
 }
 }
 \source{
-\url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329} \url{https://figshare.com/articles/dataset/Global_pollinator_database/9980471/1}
+\url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329}
 }
 \usage{
 plantPollinators

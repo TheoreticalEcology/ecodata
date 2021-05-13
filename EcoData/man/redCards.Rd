@@ -38,7 +38,7 @@ A 'data.frame':	146,028 obs. of  28 variables:
 }
 }
 \source{
-\url{https://www.picostat.com/dataset/r-dataset-package-vcd-arthritis}
+\url{https://journals.sagepub.com/doi/10.1177/2515245917747646}
 }
 \usage{
 redCards

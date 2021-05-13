@@ -53,9 +53,17 @@
 #'   \item{pclass}{Passenger class (int)}
 #'   \item{survived}{Did the passenger survive (int, 1 = survived)}
 #'   \item{name}{Pasenger name (character)}
-#'   \item{sex}{Passenger sex (factor)}
-#'   \item{age}{Passenger age (factor)}
-#'   \item{...}{further variables}
+#'   \item{sex}{Passenger sex (character)}
+#'   \item{age}{Passenger age (numeric)}
+#'   \item{sibsp}{number of siblings / spouses aboard the Titanic (int)}
+#'   \item{parch}{number of parents / children aboard the Titanic (int)}
+#'   \item{ticket}{Ticket number (character)}
+#'   \item{fare}{Passenger fare (numeric)}
+#'   \item{cabin}{cabin number (character)}
+#'   \item{embarked}{Port of Embarkation (character)}
+#'   \item{boat}{Passenger´s rescue boat number (character)}
+#'   \item{body}{Passenger body size (int)}
+#'   \item{home.dest}{Passenger home destination (character)}
 #' }
 #' @author Florian Hartig
 #' @source \url{http://biostat.mc.vanderbilt.edu/wiki/Main/DataSets}
@@ -72,11 +80,18 @@
 #'   \item{pclass}{Passenger class (int)}
 #'   \item{survived}{Did the passenger survive (int, 1 = survived)}
 #'   \item{name}{Pasenger name (character)}
-#'   \item{sex}{Passenger sex (factor)}
-#'   \item{age}{Passenger age (factor)}
-#'   \item{...}{further variables}
+#'   \item{sex}{Passenger sex (character)}
+#'   \item{age}{Passenger age (numeric)}
+#'   \item{sibsp}{number of siblings / spouses aboard the Titanic (int)}
+#'   \item{parch}{number of parents / children aboard the Titanic (int)}
+#'   \item{ticket}{Ticket number (character)}
+#'   \item{fare}{Passenger fare (numeric)}
+#'   \item{cabin}{cabin number (character)}
+#'   \item{embarked}{Port of Embarkation (character)}
+#'   \item{boat}{Passenger´s rescue boat number (character)}
+#'   \item{body}{Passenger body size (int)}
+#'   \item{home.dest}{Passenger home destination (character)}
 #' }
-#'
 #' Survival status is unknown for 50% of the passengers and must be predicted.
 #'
 #' @author Florian Hartig, Maximilian Pichler
@@ -255,15 +270,15 @@
 #'
 #' @format A 'data.frame':	205 obs. of  7 variables:
 #' \describe{
-#'    \item{DC}death/censoring indicator; {The patients status at the end of the study. 1 indicates that they had died from melanoma, 2 indicates that they were still alive and 3 indicates that they had died from causes unrelated to their melanoma}
-#'    \item{time}{Survival time in days since the operation, possibly censored}
-#'    \item{level}level of invasion, 0, 1 or 2
-#'    \item{ici}inflammatory cell infiltration (ICI), 0, 1, 2 or 3
-#'    \item{ecel}presence of epithelioid cells, 1=no, 2=yes
-#'    \item{ulcer}{Indicator of ulceration; 1=present, 0=absent.}
-#'    \item{thickness}{Tumour thickness in mm}
-#'    \item{sex}{The patients sex; 1=male, 0=female.}
-#'    \item{age}{Age in years at the time pf the operation.}
+#'   \item{DC}{death/censoring indicator; 1 = died from melanoma, 2 =still alive and 3 = died from causes unrelated to their melanoma}
+#'   \item{time}{Survival time in days since the operation, possibly censored}
+#'   \item{level}{level of invasion, 0, 1 or 2}
+#'   \item{ici}{inflammatory cell infiltration (ICI), 0, 1, 2 or 3}
+#'   \item{ecel}{presence of epithelioid cells, 1=no, 2=yes}
+#'   \item{ulcer}{Indicator of ulceration; 1=present, 0=absent.}
+#'   \item{thickness}{Tumour thickness in mm}
+#'   \item{sex}{The patients sex; 1=male, 0=female.}
+#'   \item{age}{Age in years at the time pf the operation.}
 #' }
 #' @author Florian Hartig
 #' @source \url{http://publicifsv.sund.ku.dk/~linearpredictors/?page=datasets&dataset=Melanoma}
@@ -365,6 +380,8 @@
 #'   \item{tk}{quadrant id (Topographische Karte)}
 #'   \item{area}{quadrant area}
 #'   \item{agrarea}{fraction of agricultural area per quadrant (agricultural landuse classes without forest, from https://doi.pangaea.de/10.1594/PANGAEA.910837)}
+#'   \item{lat}{latitude}
+#'   \item{lon}{longitude}
 #' }
 #' @author Lukas Heiland, Florian Hartig
 #'
@@ -427,7 +444,7 @@
 #'   \item{seExp}{standard error for mean estimate of explicit bias measure}
 #' }
 #' @author Andreas Ettner
-#' @source \url{https://www.picostat.com/dataset/r-dataset-package-vcd-arthritis}
+#' @source \url{https://journals.sagepub.com/doi/10.1177/2515245917747646}
 #' @example inst/examples/redCards.R
 "redCards"
 
@@ -455,18 +472,18 @@
 #'  \item{guild}{five pollinator traits: guild (bumblebees, butterflies etc.)}
 #'  \item{tongue}{ tongue length in mm}
 #'  \item{body}{body size in mm}
-#'  \item{sociality}{soziality "Yes/NO"}
+#'  \item{sociality}{soziality (Yes/NO)}
 #'  \item{feeding}{feeding behaviour (oligolectic, polylectic, or parasitic)}
 #'  \item{interaction}{Interaction between insect and plant(Yes/No)}
 #'}
 #' @author Andreas Ettner
-#' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329} \url{https://figshare.com/articles/dataset/Global_pollinator_database/9980471/1}
+#' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329}
 "plantPollinators"
 
 #' plantPollinations
 #'
 #' plant pollination by different insects.
-#' This dataset is a machinelearning version of the original one. \code{\link{plantPollination}}, containing variable NAs in the "interaction" variable {plantPollinations$interactions}. Generated with the example code.
+#' This dataset is a machinelearning version of the original one. Containing variable NAs in the "interaction" variable {plantPollinations$interactions}. Generated with the example code.
 #' @format A 'data.frame':	20480 obs. of  18 variables:
 #' \describe{
 #'  \item{crop}{plant name}
@@ -489,7 +506,7 @@
 #'  \item{interaction}{Interaction between insect and plant(Yes/No)}
 #'}
 #' @author Andreas Ettner
-#' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329} \url{https://figshare.com/articles/dataset/Global_pollinator_database/9980471/1}
+#' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329}
 #' @example inst/examples/plantPollinations.R
 "plantPollinator_df"
 
@@ -500,9 +517,20 @@
 #'
 #' Wine data from \url{https://archive.ics.uci.edu/ml/datasets/wine+quality}.
 #'
-#' The dataset is a collection of wines of different qualities. The wines are described by physochemical variables.
+#' The dataset is a collection of wines of different qualities. The wines are described by physiochemical variables.
 #'
 #' \describe{
+#' \item{fixed.acidity}{fixed acidity (numeric)}
+#' \item{volatile.acidity}{volatile acidity (numeric)}
+#' \item{citric.acid}{citric acid (numeric)}
+#' \item{residual.sugar}{residual sugar (numeric)}
+#' \item{chlorides}{amount of chlorides measured (numeric)}
+#' \item{free.sulfur.dioxide}{amount of free sulfur dioxide measured (numeric)}
+#' \item{total.sulfur.dioxide}{amount of total sulfur dioxide measured (numeric)}
+#' \item{density}{density}
+#' \item{pH}{pH of the wine}
+#' \item{sulphates}{sulphates in the wine}
+#' \item{alcohol}{amount of alcohol measured}
 #' \item{quality}{response variable, ranges between 1 and 8}
 #' }
 #'
@@ -515,6 +543,45 @@
 #'
 #' A collection about asteroids and their characteristics from \url{https://www.kaggle.com/shrutimehta/nasa-asteroids-classification}. The aim is to predict whether the asteroids are hazardous or not.
 #' \describe{
+#' \item{Neo.Reference.ID }{ID (int)}
+#' \item{Name}{Asteroid name (int)}
+#' \item{Absolute.Magnitude}{Asteroid absolute magnitude side (numeric)}
+#' \item{Est.Dia.in.KM.min.}{estimated diameter in KM minimum (numeric)}
+#' \item{Est.Dia.in.KM.max.}{estimated diameter in KM maximum (numeric)}
+#' \item{Est.Dia.in.M.min}{estimated diameter in meter minimum (numeric)}
+#' \item{Est.Dia.in.M.max}{estimated diameter in meter maximum (numeric)}
+#' \item{Est.Dia.in.Miles.min.}{estimated diameter in miles minimum (numeric)}
+#' \item{Est.Dia.in.Miles.max.}{estimated diameter in miles maximum (numeric)}
+#' \item{Est.Dia.in.Feet.min.}{estimated diameter in feet minimum (numeric)}
+#' \item{Est.Dia.in.Feet.max.}{estimated diameter in feet maximum(numeric)}
+#' \item{Close.Approach.Date}{Asteroid closes approach date (factor)}
+#' \item{Epoch.Date.Close.Approach}{}
+#' \item{Relative.Velocity.km.per.sec}{Asteroid relative velocity speed in km per seconds (numeric)}
+#' \item{Relative.Velocity.km.per.hr}{Asteroid relative velocity speed in km per hours (numeric)}
+#' \item{Miles.per.hour}{Asteroid relative velocity speed in miles per hours (numeric)}
+#' \item{Miss.Dist..Astronomical.}{Ateroid miss distance in astronomical units (numeric)}
+#' \item{Miss.Dist..lunar.}{Ateroid miss distance in lunar units (numeric)}
+#' \item{Miss.Dist..kilometers.}{Ateroid miss distance in kilometers (numeric)}
+#' \item{Miss.Dist..miles.}{Ateroid miss distance in miles (numeric)}
+#' \item{Orbiting.Body}{number of orbiting bodys (factor)}
+#' \item{Orbit.ID}{orbit ID (int)}
+#' \item{Orbit.Determination.Date}{Orbit determination date (factor)}
+#' \item{Orbit.Uncertainity}{Orbit uncertainty (int)}
+#' \item{Minimum.Orbit.Intersection}{ORbit minimum intersection distance (numeric)}
+#' \item{Jupiter.Tisserand.Invariant}{ Jupiter tisserand invariant}
+#' \item{Epoch.Osculation}{Epoch Osculation}
+#' \item{Eccentricity}{a measure of the non-circularity of an orbit (numeric)}
+#' \item{Semi.Major.Axis}{ the major axis of an ellipse is its longest diameter}
+#' \item{Inclination}{Orbital inclination measures the tilt of an object's orbit around a celestial body (numeric)}
+#' \item{Asc.Node.Longitude}{The longitude of the ascending node (numeric)}
+#' \item{Orbital.Period}{Orbital period as the time the astronomical object takes to complete one orbit around another object (numeric)}
+#' \item{Perihelion.Distance}{distace of perihelion (numeric)}
+#' \item{Perihelion.Arg}{argument of perihelion (numeric)}
+#' \item{Aphelion.Dist}{Aphelion distance (numeric)}
+#' \item{Perihelion.Time}{Perihelion Time (numeric )}
+#' \item{Mean.Anomaly}{Mean.Anomaly (numeric)}
+#' \item{Mean.Motion}{Mean.Motion (numeric)}
+#' \item{Equinox}{}
 #' \item{Hazardous}{response variable, 0 or 1}
 #' }
 #' @author Maximilian Pichler
@@ -561,3 +628,19 @@ dataset_flower = function() {
   return(flower)
 }
 
+#### thickness ####
+
+#' thickness of coal
+#'
+#' measured thickness of coal seams at different coordinates from \url{https://stats.idre.ucla.edu/r/faq/how-do-i-model-a-spatially-autocorrelated-outcome/}.
+#' \describe{
+#' \item{ID}{ID}
+#' \item{east}{east coordinates}
+#' \item{north}{north coordinates}
+#' \item{thick}{thickness of coal seams}
+#' \item{soil}{measuring the soil quality}
+#' \item{dummy}{dummy grouping variable}
+#' }
+#' @author Andreas Ettner
+#' @example inst/examples/thickness.R
+"thickness"

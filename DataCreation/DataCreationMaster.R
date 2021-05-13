@@ -169,3 +169,11 @@ usethis::use_data(wine, overwrite = TRUE)
 nasa = read.csv("../DataCreation/RawData/nasa.csv")
 usethis::use_data(nasa, overwrite = TRUE)
 
+## thick
+
+thickness <- read.csv("C:/Users/andie/Dropbox/Mein PC (DESKTOP-4TB10SM)/Downloads/original/ecodata/DataCreation/RawData/thick.csv")
+colnames(thickness)[1] =  "ID"
+usethis::use_data(thickness, overwrite = TRUE)
+
+
+#

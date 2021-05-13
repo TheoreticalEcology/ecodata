@@ -20,6 +20,8 @@ Variables
   \item{tk}{quadrant id (Topographische Karte)}
   \item{area}{quadrant area}
   \item{agrarea}{fraction of agricultural area per quadrant (agricultural landuse classes without forest, from https://doi.pangaea.de/10.1594/PANGAEA.910837)}
+  \item{lat}{latitude}
+  \item{lon}{longitude}
 }
 }
 \examples{

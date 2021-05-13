@@ -28,27 +28,46 @@ A 'data.frame':	20480 obs. of  18 variables:
 }
 }
 \source{
-\url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329} \url{https://figshare.com/articles/dataset/Global_pollinator_database/9980471/1}
+\url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329}
 }
 \usage{
 plantPollinator_df
 }
 \description{
 plant pollination by different insects.
-This dataset is a machinelearning version of the original one. \code{\link{plantPollination}}, containing variable NAs in the "interaction" variable {plantPollinations$interactions}. Generated with the example code.
+This dataset is a machinelearning version of the original one. Containing variable NAs in the "interaction" variable {plantPollinations$interactions}. Generated with the example code.
 }
 \examples{
+library(EcoData)
+plant_poll = plantPollinators
+
+plant_poll = plant_poll
+levels(plant_poll$interaction) = c(0, 1)
+plant_poll$interaction
+
+str(plant_poll)
+summary(plant_poll)
+
+unique(plant_poll$crop)[1:10]
+unique(plant_poll$insect)[1:20]
+
+nrow(  plant_poll[( plant_poll$crop \%in\% unique(plant_poll$crop)[1:15] ) | ( plant_poll$insect \%in\% unique(plant_poll$insect)[1:30] ), ]  )
 
 
-# plotting the data 
-image(xtabs(rain~X+Y, data=snouter))
-image(xtabs(djungle~X+Y, data=snouter))
-image(xtabs(snouter1.1~X+Y, data=snouter))
+library(glmmTMB)
+# binomial model -------------------------------------------------
+fit <-  glmmTMB(interaction ~ season  + crop + nectar + guild + tongue + body + sociality, family = binomial ,data = plant_poll)
+summary(fit)
 
-# fit and residual plot in space
-ols1 <- lm(snouter1.1 ~ rain + djungle, data=snouter)
-summary(ols1)
-image(xtabs(residuals(ols1)~X+Y, data=snouter))
+library(DHARMa)
+res <- simulateResiduals(fit)
+plot(res)
+
+
+DHARMa::testQuantiles(res)
+DHARMa::testDispersion(res)
+
+DHARMa::testZeroInflation(res)
 }
 \author{
 Andreas Ettner
