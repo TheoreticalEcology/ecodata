@@ -18,6 +18,46 @@
 
 
 
+#### anolis data ####
+
+#' Feeding of bird nestlings
+#'
+#' A dataset containing observationso items fed to bird nestlings,
+#' depending on their attractiveness.
+#'
+#' @author Florian Hartig
+#'
+#' @format A 'data.frame': 25 obs. of  2 variables
+#' \describe{
+#'   \item{feeding}{items fed to a wird}
+#'   \item{attractiveness}{estimated attractiveness of a bird}
+#'   ...
+#' }
+#' @source \url{http://biometry.github.io/APES/}
+"anolisData"
+
+
+
+#### anolisTree ####
+
+#' Feeding of bird nestlings
+#'
+#' A dataset containing observationso items fed to bird nestlings,
+#' depending on their attractiveness.
+#'
+#' @author Florian Hartig
+#'
+#' @format A 'data.frame': 25 obs. of  2 variables
+#' \describe{
+#'   \item{feeding}{items fed to a wird}
+#'   \item{attractiveness}{estimated attractiveness of a bird}
+#'   ...
+#' }
+#' @source \url{http://biometry.github.io/APES/}
+"anolisTree"
+
+
+
 #### Bird abundance ####
 
 #' Birdabundance
