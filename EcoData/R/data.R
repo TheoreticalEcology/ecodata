@@ -375,7 +375,6 @@
 #' }
 #' @author Lukas Heiland, Florian Hartig
 #'
-#' @example inst/examples/plantcounts.R
 "plantcounts"
 
 
