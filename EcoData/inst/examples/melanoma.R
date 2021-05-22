@@ -24,7 +24,8 @@ melanoma_df$thickness = scale(melanoma_df$thickness)
 
 library(glmmTMB)
 # binomial model -------------------------------------------------
-fit <-  glmmTMB(DC ~  level + ici + ecel + ulcer + thickness + (1|sex), family = binomial , data = melanoma_df)
+fit <-  glmmTMB(ecel ~  level + ici + DC + ulcer + thickness
+                + (1|sex), family = binomial , data = melanoma_df)
 summary(fit)
 
 
@@ -38,3 +39,4 @@ DHARMa::testQuantiles(res)
 DHARMa::testDispersion(res)
 
 DHARMa::testZeroInflation(res)
+

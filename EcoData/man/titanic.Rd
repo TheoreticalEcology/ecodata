@@ -18,7 +18,7 @@ A 'data.frame':	1310 obs. of  14 variables:
   \item{fare}{Passenger fare (numeric)}
   \item{cabin}{cabin number (character)}
   \item{embarked}{Port of Embarkation (character)}
-  \item{boat}{Passenger´s rescue boat number (character)}
+  \item{boat}{Passenger rescue boat number (character)}
   \item{body}{Passenger body size (int)}
   \item{home.dest}{Passenger home destination (character)}
 }
@@ -45,15 +45,19 @@ titanic_df$sex = as.factor(titanic_df$sex)
 
 
 # plotting variables -------------------------------------------------
-plot( titanic_df$sex , titanic_df$survived, ylab = "survived 1=yes/ 0=no", xlab= "sex")
-plot( titanic_df$pclass, titanic_df$survived, ylab = "passenger class", xlab= "sex")
+plot( titanic_df$sex , titanic_df$survived,
+      ylab = "survived 1=yes/ 0=no", xlab= "sex")
+
+plot( titanic_df$pclass, titanic_df$survived,
+      ylab = "passenger class", xlab= "sex")
 
 
 
 
 library(glmmTMB)
 # binomial model -------------------------------------------------
-fit <-  glmmTMB(survived ~ pclass + sex + age + sibsp , family = binomial , data = titanic_df)
+fit <-  glmmTMB(survived ~ pclass + sex + age + sibsp ,
+                family = binomial , data = titanic_df)
 summary(fit)
 
 
@@ -69,7 +73,8 @@ DHARMa::testDispersion(res)
 DHARMa::testZeroInflation(res)
 
 # adding random effect -------------------------------------------------
-fit2 <-  glmmTMB(survived ~ pclass + sex + age + sibsp + (1|name), family = binomial , data = titanic_df)
+fit2 <-  glmmTMB(survived ~ pclass + sex + age + sibsp + (1|name),
+                 family = binomial , data = titanic_df)
 summary(fit)
 
 

@@ -16,7 +16,7 @@ A 'data.frame':	20480 obs. of  18 variables:
  \item{colour}{flower colour}
  \item{nectar}{nectar (yes or no)}
  \item{b.symstem}{ bloom system (type of pollination: insects, insects/wind, or insects/birds)}
- \item{s.pollination}{self‐pollination (yes or no)}
+ \item{s.pollination}{self pollination (yes or no)}
  \item{inflorescence}{inflorescence (yes, solitary, solitary/pairs, solitary/clusters)}
  \item{composite}{composite flowers (yes or no)}
  \item{guild}{five pollinator traits: guild (bumblebees, butterflies etc.)}
@@ -51,12 +51,14 @@ summary(plant_poll)
 unique(plant_poll$crop)[1:10]
 unique(plant_poll$insect)[1:20]
 
-nrow(  plant_poll[( plant_poll$crop \%in\% unique(plant_poll$crop)[1:15] ) | ( plant_poll$insect \%in\% unique(plant_poll$insect)[1:30] ), ]  )
+nrow(  plant_poll[( plant_poll$crop \%in\% unique(plant_poll$crop)[1:15] )
+      | ( plant_poll$insect \%in\% unique(plant_poll$insect)[1:30] ), ]  )
 
 
 library(glmmTMB)
 # binomial model -------------------------------------------------
-fit <-  glmmTMB(interaction ~ season  + crop + nectar + guild + tongue + body + sociality, family = binomial ,data = plant_poll)
+fit <-  glmmTMB(interaction ~ season  + crop + nectar + guild + tongue
+                + body + sociality, family = binomial ,data = plant_poll)
 summary(fit)
 
 library(DHARMa)

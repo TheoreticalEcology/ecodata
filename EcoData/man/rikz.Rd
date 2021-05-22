@@ -55,8 +55,10 @@ plot(rikz_df$humus,rikz_df$Polychaeta)
 
 library(glmmTMB)
 # binomial model -------------------------------------------------
-fit <-  glmmTMB(Crustacea ~ Polychaeta + Mollusca + Insecta + exposure + salinity +
-                  temperature + NAP + humus,     data = rikz_df)
+fit <-  glmmTMB(Crustacea ~  salinity +
+                temperature + NAP + humus ,
+                family = nbinom1,
+                dispformula = ~ salinity,   data = rikz_df)
 summary(fit)
 
 

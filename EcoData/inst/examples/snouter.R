@@ -1,6 +1,4 @@
-
-
-# plotting the data 
+# plotting the data
 image(xtabs(rain~X+Y, data=snouter))
 image(xtabs(djungle~X+Y, data=snouter))
 image(xtabs(snouter1.1~X+Y, data=snouter))

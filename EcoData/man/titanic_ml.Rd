@@ -18,7 +18,7 @@ A 'data.frame':	1309 obs. of  14 variables:
   \item{fare}{Passenger fare (numeric)}
   \item{cabin}{cabin number (character)}
   \item{embarked}{Port of Embarkation (character)}
-  \item{boat}{Passenger´s rescue boat number (character)}
+  \item{boat}{Passenger rescue boat number (character)}
   \item{body}{Passenger body size (int)}
   \item{home.dest}{Passenger home destination (character)}
 }

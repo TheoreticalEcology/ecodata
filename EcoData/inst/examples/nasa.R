@@ -8,7 +8,8 @@ str(nasa_df)
 library(missRanger)
 library(dplyr)
 #wine_imputed = titanic %>% select(-name, -ticket, -cabin, -boat, -home.dest)
-nasa_imputed = missRanger::missRanger(data = nasa_df %>% select(-Hazardous), maxiter = 1, num.trees=5L)
+nasa_imputed = missRanger::missRanger(data = nasa_df
+                              %>% select(-Hazardous), maxiter = 1, num.trees=5L)
 
 ## ..................................
 
@@ -22,7 +23,7 @@ test = nasa_imputed[is.na(nasa_df$Hazardous), ]
 ## 4. Train model
 
 library(ranger)
-rf = ranger(Hazardous~., data = train, classification = TRUE, probability = TRUE)
+rf =ranger(Hazardous~., data = train, classification = TRUE, probability = TRUE)
 
 ## 5. Predictions
 

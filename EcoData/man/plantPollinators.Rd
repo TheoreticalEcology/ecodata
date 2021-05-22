@@ -16,7 +16,7 @@ A 'data.frame':	20480 obs. of  18 variables:
  \item{colour}{flower colour}
  \item{nectar}{nectar (yes or no)}
  \item{b.symstem}{ bloom system (type of pollination: insects, insects/wind, or insects/birds)}
- \item{s.pollination}{self‐pollination (yes or no)}
+ \item{s.pollination}{self pollination (yes or no)}
  \item{inflorescence}{inflorescence (yes, solitary, solitary/pairs, solitary/clusters)}
  \item{composite}{composite flowers (yes or no)}
  \item{guild}{five pollinator traits: guild (bumblebees, butterflies etc.)}
