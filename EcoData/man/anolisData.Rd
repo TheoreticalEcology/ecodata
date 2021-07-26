@@ -5,7 +5,7 @@
 \alias{anolisData}
 \title{anolisData}
 \format{
-An object of class \code{data.frame} with 100 rows and 10 columns.
+An object of class \code{data.frame} with 100 rows and 11 columns.
 }
 \usage{
 anolisData

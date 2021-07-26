@@ -109,7 +109,7 @@ usethis::use_data(plantcounts, overwrite = TRUE)
 ## Anolis
 
 
-anolisData <- read.csv("../DataCreation/RawData/anolisDataAppended.csv", row.names = 1)
+anolisData <- read.csv("~/Version-controll/ecodata/DataCreation/RawData/anolisDataAppended.csv", encoding="ASCII", stringsAsFactors=TRUE)
 anolisTree <- ape::read.tree("../DataCreation/RawData/anolis.phy")
 usethis::use_data(anolisData, overwrite = TRUE)
 usethis::use_data(anolisTree, overwrite = TRUE)
@@ -171,9 +171,8 @@ usethis::use_data(nasa, overwrite = TRUE)
 
 ## thick
 
-thickness <- read.csv("C:/Users/andie/Dropbox/Mein PC (DESKTOP-4TB10SM)/Downloads/original/ecodata/DataCreation/RawData/thick.csv")
+thickness <- read.csv("../DataCreation/RawData/thick.csv")
 colnames(thickness)[1] =  "ID"
 usethis::use_data(thickness, overwrite = TRUE)
-
 
 #

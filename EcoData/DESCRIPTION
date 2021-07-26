@@ -22,7 +22,8 @@ Suggests:
     stringr,
     forcats,
     keras,
-    tensorflow
+    tensorflow,
+    qpdf
 License: GPL (>= 3)
 URL: https://github.com/TheoreticalEcology/
 BugReports: https://github.com/TheoreticalEcology/ecodata/issues
