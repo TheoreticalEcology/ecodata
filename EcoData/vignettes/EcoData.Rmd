@@ -7,7 +7,7 @@ output:
     toc: true
 vignette: >
   %\VignetteIndexEntry{Vignette for the EcoData package}
-  %\VignetteEngine{knitr::knitr}
+  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 abstract: "EcoData is a collection of ecological datasets for teaching"
 ---
