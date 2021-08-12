@@ -2,22 +2,22 @@
 .Rhistory
 .RData
 .Ruserdata
-*_cache/
+
 *.html
-*.gz
-*.pdf
-*.log
-*.bbl
-*.aux
-*.blg
-*.sty
-*.html
+
 *.png
 
 EcoData/vignettes/EcoData.md
+
 EcoData/vignettes/EcoData.R
+
 EcoData/vignettes/DatasetsAccordingToUse.md
+
 EcoData/vignettes/DatasetsAccordingToUse.R
 
+*.gz
+*.pdf
 EcoData/.DS_Store
 */.DS_Store
+EcoData.Rcheck/
+.DS_Store
