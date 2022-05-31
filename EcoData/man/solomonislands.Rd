@@ -32,7 +32,7 @@ solomonIsland_df$Island = as.factor(solomonIsland_df$Island)
 plot(solomonIsland_df$Species, 1:nrow(solomonIsland_df))
 plot(solomonIsland_df$Island, solomonIsland_df$Species)
 
-fit <- lm(Species ~ Area + Distance, data=solomonIsland_df)
+fit <- glm(Species ~ Area + Distance, data=solomonIsland_df, family = poisson)
 summary(fit)
 image(xtabs(residuals(fit)~Area + Distance, data=solomonIsland_df))
 }

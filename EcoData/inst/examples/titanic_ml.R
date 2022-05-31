@@ -1,6 +1,6 @@
 data = titanic_ml
 
-# ml model with test and training dataset -------------------------------------------------
+# ml model with test and training dataset ------------------------------------
 summary(data)
 length(unique(data$name))
 
@@ -19,7 +19,7 @@ titles = stringr::str_trim((titles))
 titles %>%
   fct_count()
 
-# minimizing name parameter "optional" -------------------------------------------------
+# minimizing name parameter "optional" ---------------------------------------
 ""
 titles2 =
   forcats::fct_collapse(titles,
@@ -58,7 +58,8 @@ data_sub =
   data %>%
   select(survived, sex, age2, fare2, title, pclass, boat2) %>%
   mutate(age2 = scales::rescale(age2, c(0,1)), fare2 = scales::rescale(fare2, c(0,1))) %>%
-  mutate(sex = as.integer(as.factor(sex)) - 1L, title = as.integer(title) - 1L, boat2 = as.integer(as.factor(boat2))-1L,
+  mutate(sex = as.integer(as.factor(sex)) - 1L, title = as.integer(title)
+         - 1L, boat2 = as.integer(as.factor(boat2))-1L,
          pclass = as.integer(pclass - 1L))
 
 
@@ -76,7 +77,8 @@ colnames(one_sex) = levels(data$sex)
 one_pclass = k_one_hot(data_sub$pclass,  length(unique(data$pclass)))$numpy()
 colnames(one_pclass) = paste0(1:length(unique(data$pclass)), "pclass")
 
-data_sub = cbind(data.frame(survived= data_sub$survived), one_title, one_sex, age = data_sub$age2, fare = data_sub$fare2, one_pclass, one_boat2)
+data_sub = cbind(data.frame(survived= data_sub$survived), one_title, one_sex,
+                 age = data_sub$age2, fare = data_sub$fare2, one_pclass, one_boat2)
 
 
 
@@ -96,7 +98,8 @@ sub_test = train[-indices,]
 #' L1 & L2 regularization
 model = keras_model_sequential()
 model %>%
-  layer_dense(units = 20L, input_shape = ncol(sub_train) - 1L, activation = "relu", kernel_regularizer = regularizer_l1_l2(0.05)) %>%
+  layer_dense(units = 20L, input_shape = ncol(sub_train) - 1L, activation = "relu",
+              kernel_regularizer = regularizer_l1_l2(0.05)) %>%
   layer_dense(units = 20L, activation = "gelu") %>%
   layer_dense(units = 20L, activation = "sigmoid") %>%
   layer_dense(units = 20L, activation = "relu") %>%
@@ -115,7 +118,8 @@ model_history =
 # fitting the model ------------------------------------------------------------
 model_history =
   model %>%
-  fit(x = as.matrix(sub_train[,-1]), y = to_categorical(as.integer(unlist(sub_train[,1])),num_classes = 2L), epochs = 100L, batch_size = 32L, validation_split = 0.2, shuffle = TRUE)
+  fit(x = as.matrix(sub_train[,-1]), y = to_categorical(as.integer(unlist(sub_train[,1])),
+     num_classes = 2L), epochs = 100L, batch_size = 32L, validation_split = 0.2, shuffle = TRUE)
 
 
 # evaluating the model on sub-test-data -------------------------------------------

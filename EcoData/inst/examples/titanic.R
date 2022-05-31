@@ -10,15 +10,19 @@ titanic_df$sex = as.factor(titanic_df$sex)
 
 
 # plotting variables -------------------------------------------------
-plot( titanic_df$sex , titanic_df$survived, ylab = "survived 1=yes/ 0=no", xlab= "sex")
-plot( titanic_df$pclass, titanic_df$survived, ylab = "passenger class", xlab= "sex")
+plot( titanic_df$sex , titanic_df$survived,
+      ylab = "survived 1=yes/ 0=no", xlab= "sex")
+
+plot( titanic_df$pclass, titanic_df$survived,
+      ylab = "passenger class", xlab= "sex")
 
 
 
 
 library(glmmTMB)
 # binomial model -------------------------------------------------
-fit <-  glmmTMB(survived ~ pclass + sex + age + sibsp , family = binomial , data = titanic_df)
+fit <-  glmmTMB(survived ~ pclass + sex + age + sibsp ,
+                family = binomial , data = titanic_df)
 summary(fit)
 
 
@@ -34,7 +38,8 @@ DHARMa::testDispersion(res)
 DHARMa::testZeroInflation(res)
 
 # adding random effect -------------------------------------------------
-fit2 <-  glmmTMB(survived ~ pclass + sex + age + sibsp + (1|name), family = binomial , data = titanic_df)
+fit2 <-  glmmTMB(survived ~ pclass + sex + age + sibsp + (1|name),
+                 family = binomial , data = titanic_df)
 summary(fit)
 
 

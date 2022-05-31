@@ -7,15 +7,15 @@
 \format{
 A 'data.frame':	205 obs. of  7 variables:
 \describe{
-   \item{DC}death/censoring indicator; {The patients status at the end of the study. 1 indicates that they had died from melanoma, 2 indicates that they were still alive and 3 indicates that they had died from causes unrelated to their melanoma}
-   \item{time}{Survival time in days since the operation, possibly censored}
-   \item{level}level of invasion, 0, 1 or 2
-   \item{ici}inflammatory cell infiltration (ICI), 0, 1, 2 or 3
-   \item{ecel}presence of epithelioid cells, 1=no, 2=yes
-   \item{ulcer}{Indicator of ulceration; 1=present, 0=absent.}
-   \item{thickness}{Tumour thickness in mm}
-   \item{sex}{The patients sex; 1=male, 0=female.}
-   \item{age}{Age in years at the time pf the operation.}
+  \item{DC}{death/censoring indicator; 1 = died from melanoma, 2 =still alive and 3 = died from causes unrelated to their melanoma}
+  \item{time}{Survival time in days since the operation, possibly censored}
+  \item{level}{level of invasion, 0, 1 or 2}
+  \item{ici}{inflammatory cell infiltration (ICI), 0, 1, 2 or 3}
+  \item{ecel}{presence of epithelioid cells, 1=no, 2=yes}
+  \item{ulcer}{Indicator of ulceration; 1=present, 0=absent.}
+  \item{thickness}{Tumour thickness in mm}
+  \item{sex}{The patients sex; 1=male, 0=female.}
+  \item{age}{Age in years at the time pf the operation.}
 }
 }
 \source{
@@ -54,7 +54,8 @@ melanoma_df$thickness = scale(melanoma_df$thickness)
 
 library(glmmTMB)
 # binomial model -------------------------------------------------
-fit <-  glmmTMB(DC ~  level + ici + ecel + ulcer + thickness + (1|sex), family = binomial , data = melanoma_df)
+fit <-  glmmTMB(ecel ~  level + ici + DC + ulcer + thickness
+                + (1|sex), family = binomial , data = melanoma_df)
 summary(fit)
 
 
@@ -68,6 +69,7 @@ DHARMa::testQuantiles(res)
 DHARMa::testDispersion(res)
 
 DHARMa::testZeroInflation(res)
+
 }
 \author{
 Florian Hartig

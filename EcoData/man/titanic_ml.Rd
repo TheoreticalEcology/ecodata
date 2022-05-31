@@ -10,11 +10,18 @@ A 'data.frame':	1309 obs. of  14 variables:
   \item{pclass}{Passenger class (int)}
   \item{survived}{Did the passenger survive (int, 1 = survived)}
   \item{name}{Pasenger name (character)}
-  \item{sex}{Passenger sex (factor)}
-  \item{age}{Passenger age (factor)}
-  \item{...}{further variables}
+  \item{sex}{Passenger sex (character)}
+  \item{age}{Passenger age (numeric)}
+  \item{sibsp}{number of siblings / spouses aboard the Titanic (int)}
+  \item{parch}{number of parents / children aboard the Titanic (int)}
+  \item{ticket}{Ticket number (character)}
+  \item{fare}{Passenger fare (numeric)}
+  \item{cabin}{cabin number (character)}
+  \item{embarked}{Port of Embarkation (character)}
+  \item{boat}{Passenger rescue boat number (character)}
+  \item{body}{Passenger body size (int)}
+  \item{home.dest}{Passenger home destination (character)}
 }
-
 Survival status is unknown for 50% of the passengers and must be predicted.
 }
 \source{
