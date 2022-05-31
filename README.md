@@ -12,10 +12,14 @@ devtools::install_github(repo = "florianhartig/EcoData", subdir = "EcoData",
 dependencies = T, build_vignettes = T)
 ```
 
+Below the status of the automatic tests via GitHub Actions
+
+[![R-CMD-check](https://github.com/TheoreticalEcology/EcoData/workflows/R-CMD-check/badge.svg)](https://github.com/TheoreticalEcology/EcoData/actions)
+
 If this doesn't work for you, try installing a pre-compiled source package via
 
 ```{r}
-devtools::install_url("https://github.com/florianhartig/ecodata/releases/download/v0.2.1/EcoData_0.2.1.tar.gz")
+devtools::install_url("https://github.com/TheoreticalEcology/ecodata/releases/download/v0.2.1/EcoData_0.2.1.tar.gz")
 ```
 
 To get an overview about its functionality once the package is installed, run
