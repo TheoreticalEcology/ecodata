@@ -6,7 +6,7 @@ Description: The EcoData package is a collection of ecological datasets for teac
 Depends: R (>= 3.0.2)
 Suggests:
     knitr,
-    testthat,
+    testthat (>= 3.0.0),
     rmarkdown,
     DHARMa,
     glmmTMB,
@@ -31,3 +31,4 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
 VignetteBuilder: knitr
+Config/testthat/edition: 3
