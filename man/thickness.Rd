@@ -7,11 +7,14 @@
 \format{
 An object of class \code{data.frame} with 75 rows and 6 columns.
 }
+\source{
+\url{https://stats.idre.ucla.edu/r/faq/how-do-i-model-a-spatially-autocorrelated-outcome/}
+}
 \usage{
 thickness
 }
 \description{
-measured thickness of coal seams at different coordinates from \url{https://stats.idre.ucla.edu/r/faq/how-do-i-model-a-spatially-autocorrelated-outcome/}.
+Measured thickness of coal seams at different coordinates from 
 \describe{
 \item{ID}{ID}
 \item{east}{east coordinates}
@@ -52,6 +55,6 @@ DHARMa::testDispersion(res)
 DHARMa::testZeroInflation(res)
 }
 \author{
-Andreas Ettner
+Andreas Ettner, Florian Hartig
 }
 \keyword{datasets}

@@ -10,42 +10,41 @@ output: html_document
 ## Birdfeeding
 
 ```{r}
-birdfeeding = read.table("./schnaepper.txt")
+birdfeeding = read.table("schnaepper.txt")
 colnames(birdfeeding) = c("feeding", "attractiveness")
 str(birdfeeding)
 usethis::use_data(birdfeeding, overwrite = T)
-
 ```
 
 ## Titanic
 
 ```{r}
-titanic = read.csv("./RawData/titanic3.csv", nrows = 1309)
+titanic = read.csv("titanic3.csv", nrows = 1309)
 titanic$name = as.character(titanic$name)
-usethis::use_data(titanic, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(titanic, overwrite = T)
 
 ```
 
 ## Birds fragmentation
 
 ```{r}
-birdabundance = read.delim("./RawData/birds.txt")
-usethis::use_data(birdabundance, pkg = "../EcoData/.", overwrite = T)
+birdabundance = read.delim("birds.txt")
+usethis::use_data(birdabundance, overwrite = T)
 ```
 
 ## Regrowth
 
 ```{r}
-regrowth = read.delim("./RawData/regrowth.txt")
-usethis::use_data(regrowth, pkg = "../EcoData/.", overwrite = T)
+regrowth = read.delim("regrowth.txt")
+usethis::use_data(regrowth, overwrite = T)
 ```
 
 ## Solomon Islands
 
 ```{r}
-solomonislands = read.table("./RawData/solomon.txt", header = T)
+solomonislands = read.table("solomon.txt", header = T)
 solomonislands$Island = as.character(solomonislands$Island)
-usethis::use_data(solomonislands, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(solomonislands, overwrite = T)
 ```
 
 ## Student Alcohol
@@ -107,34 +106,19 @@ https://archive.ics.uci.edu/ml/datasets/STUDENT+ALCOHOL+CONSUMPTION
 Released Under CC0: Public Domain License
 
 ```{r}
-d1=read.csv("./RawData/student-mat.csv",header=TRUE)
-d2=read.csv("./RawData/student-por.csv",header=TRUE)
+d1=read.csv("student-mat.csv",header=TRUE)
+d2=read.csv("student-por.csv",header=TRUE)
 students = merge(d1,d2,by=c("school","sex","age","address","famsize","Pstatus","Medu","Fedu","Mjob","Fjob","reason","nursery","internet"))
-usethis::use_data(students, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(students, overwrite = T)
 ```
 
 
-## Nitrofen
+
+## Bees
 
 ```{r}
-nitrofen = read.csv("./RawData/nitrofen.csv")
-save(nitrofen, file = "../EcoData/Data/nitrofen.Rdata")
-```
-
-
-## Melanoma
-
-```{r}
-melanoma = read.csv("./RawData/Melanoma.csv")
-save(melanoma, file = "../EcoData/Data/melanoma.Rdata")
-```
-
-
-## Melanoma
-
-```{r}
-bees = read.csv("./RawData/Bees.txt")
-save(bees, file = "../EcoData/Data/bees.Rdata")
+bees = read.table("Bees.txt", header = T)
+usethis::use_data(bees, overwrite = T)
 ```
 
 
@@ -142,57 +126,59 @@ save(bees, file = "../EcoData/Data/bees.Rdata")
 ## Arthritis
 
 ```{r}
-arthritis = read.csv("./RawData/Arthritis.csv")
-save(arthritis, file = "../EcoData/Data/arthritis.Rdata")
+arthritis = read.csv("Arthritis.csv")
+usethis::use_data(arthritis, overwrite = T)
 ```
 
 
 ## RKIZ
 
 ```{r}
-rikz = read.table("./RawData/RIKZGroups.txt")
-save(rkiz, file = "../EcoData/Data/rikz.Rdata")
+rikz = read.table("RIKZGroups.txt")
+usethis::use_data(rikz, overwrite = T)
 ```
 
 
 ## Streams
 
 ```{r}
-streams = read.table("./RawData/streams.txt")
-save(streams, file = "../EcoData/Data/streams.Rdata")
+streams = read.table("streams.txt")
+usethis::use_data(streams, overwrite = T)
 ```
 
 
 ## Cement
 
 ```{r}
-cement = read.csv("./RawData/cement.csv")
-save(cement, file = "../EcoData/Data/cement.Rdata")
+cement = read.csv("cement.csv")
+usethis::use_data(cement, overwrite = T)
 ```
 
 ## Plants
 
 ```{r}
-plantcounts <- read.csv("./RawData/Plants.csv")
-save(plantcounts, file = "../EcoData/Data/plantcounts.Rdata")
+plantcounts <- read.csv("Plants.csv")
+usethis::use_data(plantcounts, overwrite = T)
 ```
 
 
 ## Anolis
 
 ```{r}
-anolisData <- read.csv("./RawData/anolisDataAppended.csv", row.names = 1)
-anolisTree <- ape::read.tree("./RawData/anolis.phy")
-save(anolisData, file = "../EcoData/Data/anolisData.Rdata")
-save(anolisTree, file = "../EcoData/Data/anolisTree.Rdata")
+anolisData <- read.csv("anolisDataAppended.csv")
+colnames(anolisData)[1] = "species"
+anolisData$species = factor(anolisData$species, ordered = T)
+anolisTree <- ape::read.tree("anolis.phy")
+usethis::use_data(anolisData, overwrite = T)
+usethis::use_data(anolisTree, overwrite = T)
 ```
 
 
 ## Snouter
 
 ```{r}
-snouter <- read.table("./RawData/snouterdata.txt", header=T, sep="\t")
-save(snouter, file = "../EcoData/Data/snouter.Rdata")
+snouter <- read.table("snouterdata.txt", header=T, sep="\t")
+usethis::use_data(snouter, overwrite = T)
 ```
 
 
@@ -203,7 +189,7 @@ save(snouter, file = "../EcoData/Data/snouter.Rdata")
 
 # Data creation
 
-```{r}
+```{r, eval = F}
 library(ape)
 
 set.seed(123)
@@ -273,7 +259,7 @@ sim.dat$Y <- binaryPGLMM.sim(Y ~ X1, phy=phy, data=sim.dat, s2=.5,
 
 volcanoisland = volcanoisland[,c(1:6,10:11,13:17, 19:21)]
 
-usethis::use_data(volcanoisland, pkg = "../EcoData/.", overwrite = T)
+usethis::use_data(volcanoisland, overwrite = T)
 
 ```
 

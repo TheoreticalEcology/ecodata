@@ -46,18 +46,25 @@ knitr::opts_chunk$set(fig.width=7, fig.height=4.5, fig.align='center', warning=F
 
 ### GLM
 
+#### Poisson
 
-* EcoData::birdfeeding -> Poisson 
-* EcoData::solomonislands -> Poisson
-* EcoData::volcanoisland -> Poisson, Logistic
-* EcoData::titanic -> Logistic 1/0
-* EcoData::nasa -> Logistic 1/0
-* datasets::esoph -> Logistic, k/n
+* EcoData::birdfeeding 
+* EcoData::solomonislands 
+* EcoData::volcanoisland 
+
+#### Logistic regression
+
+* EcoData::titanic 
+* EcoData::nasa 
+* EcoData::volcanoisland 
+* datasets::esoph 
+* boot::melanoma
 
 ### GLMM 
 
-* EcoData::volcanoisland -> Random Effects, zero-inflation, spatial effects
-* glmmTMB::owls -> Random Effects, zero-inflation
+EcoData::volcanoisland -> Random Effects, zero-inflation, spatial effects
+glmmTMB::owls -> Random Effects, zero-inflation
+boot::nitrofen -> Poisson -> logistic with RE (1|individual)
 
 ## MachineLearning
 

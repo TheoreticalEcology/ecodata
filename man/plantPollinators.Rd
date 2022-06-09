@@ -34,9 +34,15 @@ A 'data.frame':	20480 obs. of  18 variables:
 plantPollinators
 }
 \description{
-plant pollination by different insects.
+A dataset of plant - pollinator interactions and their traits for important crop plants
+}
+\details{
+The dataset was compiled by M., Boreux and analyzed in Pichler et al., 2020.
+}
+\references{
+Pichler, M., Boreux, V., Klein, A. M., Schleuning, M., & Hartig, F. (2020). Machine learning algorithms to infer trait‐matching and predict species interactions in ecological networks. Methods in Ecology and Evolution, 11(2), 281-293.
 }
 \author{
-Andreas Ettner
+Andreas Ettner, Florian Hartig
 }
 \keyword{datasets}

@@ -281,46 +281,6 @@
 "volcanoisland"
 
 
-#' Nitrofen
-#'
-#' Toxicity of Nitrofen in Aquatic Systems
-#'
-#' @format A 'data.frame':	50 obs. of  5 variables:
-#' \describe{
-#'   \item{conc}{The nitrofen concentration in the solution (mug/litre)}
-#'   \item{brood1}{The number of live offspring in the first brood}
-#'   \item{brood2}{The number of live offspring in the second brood}
-#'   \item{brood3}{The number of live offspring in the thrid brood}
-#'   \item{total}{The total number of live offspring in the first three broods}
-#' }
-#' @author Florian Hartig
-#' @source \url{http://statwww.epfl.ch/davison/BMA/Data4BMA/}
-#' @example inst/examples/nitrofen.R
-"nitrofen"
-
-
-#' Melanoma
-#'
-#' Survival from Malignant Melanoma
-#'
-#' @format A 'data.frame':	205 obs. of  7 variables:
-#' \describe{
-#'   \item{DC}{death/censoring indicator; 1 = died from melanoma, 2 =still alive and 3 = died from causes unrelated to their melanoma}
-#'   \item{time}{Survival time in days since the operation, possibly censored}
-#'   \item{level}{level of invasion, 0, 1 or 2}
-#'   \item{ici}{inflammatory cell infiltration (ICI), 0, 1, 2 or 3}
-#'   \item{ecel}{presence of epithelioid cells, 1=no, 2=yes}
-#'   \item{ulcer}{Indicator of ulceration; 1=present, 0=absent.}
-#'   \item{thickness}{Tumour thickness in mm}
-#'   \item{sex}{The patients sex; 1=male, 0=female.}
-#'   \item{age}{Age in years at the time pf the operation.}
-#' }
-#' @author Florian Hartig
-#' @source \url{http://publicifsv.sund.ku.dk/~linearpredictors/?page=datasets&dataset=Melanoma}
-#' @example inst/examples/melanoma.R
-"melanoma"
-
-
 #' Arthritis
 #'
 #' Arthritis Treatment Data
@@ -442,10 +402,14 @@
 #' @example inst/examples/snouter.R
 "snouter"
 
-#################
-#' redCards
-#'
-#' soccer redCards dataset Data
+
+#### Red Cards ####
+
+#' Soccer red cards dataset 
+#' 
+#' @description This is a dataset from the English premier league. The data was compiled to test if soccer referees are more likely to give red cards to dark-skin-toned players than to light-skin-toned players. 
+#' 
+#' @details The data was analyzed in a many-analyset project. The estimated effect sizes ranged from 0.89 to 2.93 (Mdn = 1.31) in odds-ratio units. Twenty teams (69%) found a statistically significant positive effect, and 9 teams (31%) did not observe a significant relationship. The variation is explained by the statistical approach and the choice of predictor variables 
 #'
 #' @format A 'data.frame':	146,028 obs. of  28 variables:
 #' \describe{
@@ -478,7 +442,7 @@
 #'   \item{nExp}{sample size for explicit bias in that particular country}
 #'   \item{seExp}{standard error for mean estimate of explicit bias measure}
 #' }
-#' @author Andreas Ettner
+#' @author Andreas Ettner, Florian Hartig
 #' @source \url{https://journals.sagepub.com/doi/10.1177/2515245917747646}
 #' @example inst/examples/redCards.R
 "redCards"
@@ -489,7 +453,8 @@
 
 #' plantPollinators
 #'
-#' plant pollination by different insects.
+#' A dataset of plant - pollinator interactions and their traits for important crop plants
+#' 
 #' @format A 'data.frame':	20480 obs. of  18 variables:
 #' \describe{
 #'  \item{crop}{plant name}
@@ -511,7 +476,12 @@
 #'  \item{feeding}{feeding behaviour (oligolectic, polylectic, or parasitic)}
 #'  \item{interaction}{Interaction between insect and plant(Yes/No)}
 #'}
-#' @author Andreas Ettner
+#' @author Andreas Ettner, Florian Hartig
+#' 
+#' @details The dataset was compiled by M., Boreux and analyzed in Pichler et al., 2020. 
+#' 
+#' @references Pichler, M., Boreux, V., Klein, A. M., Schleuning, M., & Hartig, F. (2020). Machine learning algorithms to infer trait‐matching and predict species interactions in ecological networks. Methods in Ecology and Evolution, 11(2), 281-293.
+#' 
 #' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329}
 "plantPollinators"
 
@@ -667,7 +637,7 @@ dataset_flower = function() {
 
 #' thickness of coal
 #'
-#' measured thickness of coal seams at different coordinates from \url{https://stats.idre.ucla.edu/r/faq/how-do-i-model-a-spatially-autocorrelated-outcome/}.
+#' Measured thickness of coal seams at different coordinates from 
 #' \describe{
 #' \item{ID}{ID}
 #' \item{east}{east coordinates}
@@ -676,6 +646,7 @@ dataset_flower = function() {
 #' \item{soil}{measuring the soil quality}
 #' \item{dummy}{dummy grouping variable}
 #' }
-#' @author Andreas Ettner
+#' @author Andreas Ettner, Florian Hartig
+#' @source \url{https://stats.idre.ucla.edu/r/faq/how-do-i-model-a-spatially-autocorrelated-outcome/}
 #' @example inst/examples/thickness.R
 "thickness"

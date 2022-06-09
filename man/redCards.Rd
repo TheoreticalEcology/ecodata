@@ -3,7 +3,7 @@
 \docType{data}
 \name{redCards}
 \alias{redCards}
-\title{redCards}
+\title{Soccer red cards dataset}
 \format{
 A 'data.frame':	146,028 obs. of  28 variables:
 \describe{
@@ -44,7 +44,10 @@ A 'data.frame':	146,028 obs. of  28 variables:
 redCards
 }
 \description{
-soccer redCards dataset Data
+This is a dataset from the English premier league. The data was compiled to test if soccer referees are more likely to give red cards to dark-skin-toned players than to light-skin-toned players.
+}
+\details{
+The data was analyzed in a many-analyset project. The estimated effect sizes ranged from 0.89 to 2.93 (Mdn = 1.31) in odds-ratio units. Twenty teams (69%) found a statistically significant positive effect, and 9 teams (31%) did not observe a significant relationship. The variation is explained by the statistical approach and the choice of predictor variables
 }
 \examples{
 redCards_df <- redCards
@@ -81,6 +84,6 @@ testOutliers(res)
 testZeroInflation(res)
 }
 \author{
-Andreas Ettner
+Andreas Ettner, Florian Hartig
 }
 \keyword{datasets}
