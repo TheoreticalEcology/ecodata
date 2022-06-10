@@ -650,3 +650,32 @@ dataset_flower = function() {
 #' @source \url{https://stats.idre.ucla.edu/r/faq/how-do-i-model-a-spatially-autocorrelated-outcome/}
 #' @example inst/examples/thickness.R
 "thickness"
+
+
+
+#### Hurricanes ####
+
+#' Hurricane dataset
+#'
+#' 
+#' @author Florian Hartig
+#' @source \url{https://www.pnas.org/doi/10.1073/pnas.1402786111}
+#' @references Jung, K., Shavitt, S., Viswanathan, M., & Hilbe, J. M. (2014). Female hurricanes are deadlier than male hurricanes. Proceedings of the National Academy of Sciences, 111(24), 8782-8787.
+"hurricanes"
+
+
+#### Marmots ####
+
+#' Marmot data
+#'
+#' @author Florian Hartig
+"marmots"
+
+
+#### Bees ####
+
+#' Bee data
+#'
+#' @author Florian Hartig
+"bees"
+

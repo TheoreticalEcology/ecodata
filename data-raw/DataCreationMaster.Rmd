@@ -183,6 +183,26 @@ usethis::use_data(snouter, overwrite = T)
 
 
 
+##  Hurricanes
+
+
+
+```{r}
+hurricanes = gdata::read.xls("pnas.1402786111.sd01.xlsx", 
+                nrows = 92, as.is = TRUE)
+
+usethis::use_data(hurricanes, overwrite = T)
+```
+
+##  Marmots
+
+
+```{r}
+marmots = read.delim("Marmots.txt")
+usethis::use_data(marmots, overwrite = T)
+```
+
+
 # Simulated Datasets 
 
 ## Island Example
