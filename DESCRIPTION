@@ -1,9 +1,9 @@
 Package: EcoData
 Title: A collection of ecological datasets for teaching
-Version: 0.2.2
+Version: 0.2.3
 Authors@R: c(person("Florian", "Hartig", email = "florian.hartig@biologie.uni-regensburg.de", role = c("aut", "cre"), comment = "Theoretical Ecology, University of Regensburg, Regensburg, Germany"))
 Description: The EcoData package is a collection of ecological datasets for teaching.
-Depends: R (>= 3.0.2)
+Depends: R (>= 3.5.0)
 Suggests:
     knitr,
     testthat (>= 3.0.0),
