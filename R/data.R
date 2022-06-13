@@ -652,18 +652,6 @@ dataset_flower = function() {
 "thickness"
 
 
-
-#### Hurricanes ####
-
-#' Hurricane dataset
-#'
-#' 
-#' @author Florian Hartig
-#' @source \url{https://www.pnas.org/doi/10.1073/pnas.1402786111}
-#' @references Jung, K., Shavitt, S., Viswanathan, M., & Hilbe, J. M. (2014). Female hurricanes are deadlier than male hurricanes. Proceedings of the National Academy of Sciences, 111(24), 8782-8787.
-"hurricanes"
-
-
 #### Marmots ####
 
 #' Marmot data
@@ -678,4 +666,19 @@ dataset_flower = function() {
 #'
 #' @author Florian Hartig
 "bees"
+
+
+#### GPA ####
+
+#' GPA data
+#' 
+#' @details From https://m-clark.github.io/mixed-models-with-R/: "The GPA data are a longitudinal data set, where 200 college students have been followed 6 consecutive semesters. In this data set, there are GPA measures on 6 consecutive occasions, with a JOB status variable (how many hours worked) for the same 6 occasions. There are two student-level explanatory variables: the sex (1= male, 2= female) and the high school GPA. There is also a dichotomous student-level outcome variable, which indicates whether a student has been admitted to the university of their choice. Since not every student applies to a university, this variable has many missing values."
+#' 
+#' @source https://m-clark.github.io/mixed-models-with-R/
+#' @author Florian Hartig
+"gpa"
+
+
+
+
 
