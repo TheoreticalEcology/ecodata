@@ -198,9 +198,24 @@ load("gpa.RData")
 usethis::use_data(gpa, overwrite = T)
 ```
 
+## Plant Height
+
+
+```{r}
+plantHeight = read.csv("Plant_height.csv")
+usethis::use_data(plantHeight, overwrite = T)
+```
 
 
 
+## Plant Height
+
+
+```{r}
+library(haven)
+soep <- read_dta("practice_en/practice_dataset_eng.dta")
+usethis::use_data(soep, overwrite = T)
+```
 
 # Simulated Datasets 
 
