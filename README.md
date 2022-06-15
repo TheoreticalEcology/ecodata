@@ -8,13 +8,13 @@ If you want to install the current (development) version from this repository, r
 
 ```{r}
 #install.packages("devtools") # run this only if you don't have devtools installed
-devtools::install_github(repo = "florianhartig/EcoData", dependencies = T, build_vignettes = T)
+devtools::install_github(repo = "TheoreticalEcology/EcoData", dependencies = T, build_vignettes = T)
 ```
 
 If this fails for some reason, install the package without dependencies and vignette
 
 ```{r}
-devtools::install_github(repo = "florianhartig/EcoData", dependencies = F, build_vignettes = F)
+devtools::install_github(repo = "TheoreticalEcology/EcoData", dependencies = F, build_vignettes = F)
 ```
 
 To get an overview about its functionality once the package is installed, run
