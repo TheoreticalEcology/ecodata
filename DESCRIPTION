@@ -21,8 +21,6 @@ Suggests:
     MuMIn,
     mlmRev,
     modEvA,
-    pbkrtest,
-    RLRsim,
     spatial,
     sf,
     gstat,
