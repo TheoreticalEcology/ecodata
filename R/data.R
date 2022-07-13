@@ -58,20 +58,19 @@
 
 #' barbetData
 #'
-#'
+#' This data set comes from \url{http://www.phytools.org/Cordoba2017} and is about fictional birds and their attributes.
 #'
 #' @details This is the data set belonging to the phylogenetic tree "barbetTree". 
 #'
 #' @format A 'data.frame': 33 obs. of 8 variables:
 #' \describe{
-#'  \item{}{}
-#'  \item{}{}
-#'  \item{}{}
-#'  \item{}{}
-#'  \item{}{}
-#'  \item{}{}
-#'  \item{}{}
-#'  \item{}{}
+#'  \item{wing}{ (numeric).}
+#'  \item{Lnalt}{Altitude at which a species is found (numeric).}
+#'  \item{patch}{ (numeric).}
+#'  \item{colour}{ (numeric).}
+#'  \item{Frequency}{ (numeric).}
+#'  \item{Length}{ (numeric).}
+#'  \item{Lnote}{Length of the note in the bird's respective song (numeric).}
 #' }
 #' @author Florian Hartig
 #' @source \url{http://www.phytools.org/Cordoba2017/data/Barbetdata.csv}
@@ -83,9 +82,10 @@
 
 #' barbetTree
 #'
-#'
+#' This data set comes from \url{http://www.phytools.org/Cordoba2017} and is about fictional birds and their attributes.
 #'
 #' @details This is a phylogenetic tree, resp. dendrogram belonging to the "barbetData" data set.
+#' Hint: There are some species in the tree for which we have no observations.
 #'
 #' @format A 'list': List of 5.
 #' \describe{

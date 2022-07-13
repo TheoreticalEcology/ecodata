@@ -1,0 +1,64 @@
+#NEXUS
+[written Wed Mar 02 09:36:05 CET 2011 by Mesquite  version 2.72 (build 528) at RJdT.local/192.168.1.128]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=42;
+	TAXLABELS
+		M_asiatica_asiatica M_lineata_hodgsoni M_australis_australis M_haemacephala_intermedia M_eximia M_viridis M_franklinii_franklinii M_virens M_rubricapillus_malabarica Calorhamphus_fuliginosus_fuliginosus M_incognita M_faiostricta M_lagrandieri M_henricii M_rubricapillus_rubricapillus M_mystacophanos M_flavifrons M_zeylanica M_oorti_oorti M_haemacephala_delica M_chrysopogon M_lineata_lineata M_australis_duvaucelli Calorhamphus_fuliginosus_hayi M_rafflesi M_corvina M_pulcherrima M_haemacephala_indica Psilopogon_pyrolophus M_monticola M_franklinii_ramsayi M_javensis M_asiatica_davisoni M_armillaris M_haemacephala_rosea M_oorti_nuchalis M_asiatica_chersonesus M_haemacephala_celestinoi M_franklinii_auricularis M_oorti_annamensis M_oorti_faber M_oorti_sini 
+	;
+
+END;
+
+
+BEGIN TREES;
+	Title 'Trees from "test5 copy.nex"';
+	LINK Taxa = Taxa;
+	TRANSLATE
+		1 M_asiatica_asiatica,
+		2 M_lineata_hodgsoni,
+		3 M_australis_australis,
+		4 M_haemacephala_intermedia,
+		5 M_eximia,
+		6 M_viridis,
+		7 M_franklinii_franklinii,
+		8 M_virens,
+		9 M_rubricapillus_malabarica,
+		10 Calorhamphus_fuliginosus_fuliginosus,
+		11 M_incognita,
+		12 M_faiostricta,
+		13 M_lagrandieri,
+		14 M_henricii,
+		15 M_rubricapillus_rubricapillus,
+		16 M_mystacophanos,
+		17 M_flavifrons,
+		18 M_zeylanica,
+		19 M_oorti_oorti,
+		20 M_haemacephala_delica,
+		21 M_chrysopogon,
+		22 M_lineata_lineata,
+		23 M_australis_duvaucelli,
+		24 Calorhamphus_fuliginosus_hayi,
+		25 M_rafflesi,
+		26 M_corvina,
+		27 M_pulcherrima,
+		28 M_haemacephala_indica,
+		29 Psilopogon_pyrolophus,
+		30 M_monticola,
+		31 M_franklinii_ramsayi,
+		32 M_javensis,
+		33 M_asiatica_davisoni,
+		34 M_armillaris,
+		35 M_haemacephala_rosea,
+		36 M_oorti_nuchalis,
+		37 M_asiatica_chersonesus,
+		38 M_haemacephala_celestinoi,
+		39 M_franklinii_auricularis,
+		40 M_oorti_annamensis,
+		41 M_oorti_faber,
+		42 M_oorti_sini;
+	TREE 'TREE1+' = ((10:2.2445446335606185,24:2.2445446335606185):23.296333729321326,(((28:1.3881244389037128,((35:0.17299125240876023,20:0.17299125240876023):0.9323068240066537,(38:0.14217806184349158,4:0.14217806184349158):0.9631200145719223):0.28282636248829895):5.9308630763141075,(15:2.5171073785675553,9:2.5171073785675553):4.801880136650265):11.105527328967028,(((29:7.769721223247888,(8:5.726398672745454,13:5.726398672745454):2.0433225505024346):4.975299583258058,((25:7.504336129726941,(32:2.328861382188151,16:2.328861382188151):5.175474747538789):3.989199740977508,(((((22:0.5565809135808379,2:0.5565809135808379):5.330417339080132,(18:5.315583011580827,(17:4.3650145277625185,6:4.3650145277625185):0.9505684838183086):0.5714152410801425):1.2667392352335192,((((11:2.6976231485258797,(36:1.3682189654185812,(42:0.28694415346395274,41:0.28694415346395274):1.0812748119546285):1.3294041831072985):0.7132057791312238,((40:1.9175792180164635,(33:0.608124699145673,1:0.608124699145673):1.3094545188707905):1.0637508341857398,(37:1.3540000222926096,19:1.3540000222926096):1.6273300299095936):0.4294988754549003):2.937016622775202,((21:1.9397565820947875,26:1.9397565820947875):2.480488774172258,30:4.420245356267046):1.9276001941652599):0.4274609118654791,(39:2.528530685405105,(31:0.5273736729886203,7:0.5273736729886203):2.001157012416485):4.2467757768926795):0.3784310255967043):2.4977809872679977,12:9.651518475162487):0.5260415919606078,((14:6.105849340275352,34:6.105849340275352):1.6732632845545936,27:7.779112624829946):2.3984474422931488):1.3159758035813542):1.251484935801498):3.825861702948762,((23:3.4118131179248223,3:3.4118131179248223):3.1917037608758854,5:6.603516878800708):9.967365630654001):1.8536323347301398):7.116363518697096):1.305092252379005;
+
+END;
+
+
