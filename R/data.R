@@ -346,23 +346,6 @@
 "streams"
 
 
-#' Cement
-#'
-#' Cement hardening data from Woods et al (1932).
-#'
-#' @format A 'data.frame':	13 obs. of  5 variables:
-#' \describe{
-#'   \item{y}{calories of heat evolved per gram of cement after 180 days of hardening}
-#'   \item{X1}{tricalcium aluminate}
-#'   \item{X2}{tricalcium silicate}
-#'   \item{X3}{tetracalcium alumino ferrite}
-#'   \item{X4}{dicalcium silicate}
-#' }
-#' @author Florian Hartig
-#' @example inst/examples/cement.R
-"cement"
-
-
 #### Plantcounts ####
 
 #' Plantcounts
@@ -666,6 +649,26 @@ dataset_flower = function() {
 #'
 #' @author Florian Hartig
 "bees"
+
+
+#### Rats ####
+
+#' Hormone Therapy with Rats
+#' 
+#' @details This is data from a study on the effect of testosterone on rat growth. 50 rats (subject) were randomly assigned to either control, or low / high doses of Decapeptyl, which inhibits testosterone production. The assignment to groups is provided both as a single variable (group) and as dummy coding (control, low, high). 
+#' 
+#' The experiment started when rats where 45 days old, and size measurements of the head were taken with an x-ray at days 50 60 70 80 90 100 110, so that each rat was observed 7 times. 
+#' 
+#' The dataset is originally from Molenberghs and Verbeke (2000), downloaded from Fahrmeier et al., 2013. 
+#' 
+#' @references Fahrmeir, L., Kneib, T., Lang, S., and Marx, B. (2013). Regression: Models, methods and applications. Springer Berlin Heidelberg doi:10.1007/978-3-642-34333-9.
+#' 
+#' Molenberghs, G., and Verbeke, G. (2000). Linear mixed models for longitudinal data. Springer, New York, NY doi:10.1007/978-1-4419-0300-6.
+#' @source https://www.uni-goettingen.de/de/551625.html
+#' @author Florian Hartig
+"rats"
+
+
 
 
 #### GPA ####

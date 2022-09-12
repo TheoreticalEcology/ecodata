@@ -50,9 +50,6 @@ URL: https://github.com/TheoreticalEcology/
 BugReports: https://github.com/TheoreticalEcology/ecodata/issues
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.1
 VignetteBuilder: knitr
 Config/testthat/edition: 3
-
-
-

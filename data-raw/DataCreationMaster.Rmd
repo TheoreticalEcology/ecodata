@@ -146,14 +146,6 @@ streams = read.table("streams.txt")
 usethis::use_data(streams, overwrite = T)
 ```
 
-
-## Cement
-
-```{r}
-cement = read.csv("cement.csv")
-usethis::use_data(cement, overwrite = T)
-```
-
 ## Plants
 
 ```{r}
@@ -179,6 +171,14 @@ usethis::use_data(anolisTree, overwrite = T)
 ```{r}
 snouter <- read.table("snouterdata.txt", header=T, sep="\t")
 usethis::use_data(snouter, overwrite = T)
+```
+
+
+## Rats
+
+```{r}
+rats <- read.csv("rats.txt", sep="")
+usethis::use_data(rats, overwrite = T)
 ```
 
 
@@ -214,6 +214,10 @@ usethis::use_data(plantHeight, overwrite = T)
 ```{r}
 library(haven)
 soep <- read_dta("practice_en/practice_dataset_eng.dta")
+soep = sjlabelled::remove_all_labels(soep)
+soep = data.frame(soep)
+#soep <- utilities::rm.attr(soep)
+str(soep)
 usethis::use_data(soep, overwrite = T)
 ```
 

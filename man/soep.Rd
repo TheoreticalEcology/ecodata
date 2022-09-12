@@ -5,7 +5,7 @@
 \alias{soep}
 \title{Data from the german socio-economic panel}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 23522 rows and 15 columns.
+An object of class \code{data.frame} with 23522 rows and 15 columns.
 }
 \source{
 https://environmentalcomputing.net/statistics/linear-models/linear-regression/
