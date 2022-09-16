@@ -716,3 +716,249 @@ dataset_flower = function() {
 #'
 #' @author Maximilian Pichler
 "wine"
+
+
+
+#### SOEP ####
+#' Data from the german socio-economic panel
+#' 
+#' @details The following information is copied from the origina data provider at https://www.diw.de/en/diw_01.c.836543.en/soep_practice_dataset.html:
+#' 
+#' This dataset  is based on the original SOEP data, but provides the data in significantly altered and fully anonymous form. This means that the practice dataset can be used without the need for any contracts or user agreements. The practice dataset consists of original variables, covers five time points, and is available in the “long” format. The dataset is provided in German and English.
+#' 
+#' Dataset Information
+#' 
+#' Title: SOEP practice dataset
+#' 
+#' DOI info : 10.5684/soep.practice.v36
+#' Collection period: 2015-2019
+#' Publication Date: 31.01.2022
+#' 
+#' Population: Persons living in private households in Germany.
+#' 
+#' Number of individuals: 6.355
+#' 
+#' 
+#' \itemize{
+#'   \item id		Person ID 
+#'   \item syear		Survey Year
+#'   \item sex		Sex
+#'   \item alter		Age of Individual
+#'   \item anz_pers		Number of Persons in Household
+#'   \item anz_kind		Number of Children in Household
+#'   \item bildung		Number of Years of Education 
+#'   \item erwerb		Employment Status
+#'   \item branche		Industry Current Occupation
+#'   \item einkommenj1		Gross Income from Main Job/Year
+#'   \item einkommenj2		Gross Income from Secondary Employment/Year
+#'   \item einkommenm1		Gross Income from Main Job/Month
+#'   \item einkommenm2		Gross Income from Secondary Employment/Month
+#'   \item gesund_org		subj. Health
+#'   \item lebensz_org		Life Satisfaction
+#' }
+#' 
+#' Selection: To anonymize the variables, an algorithm was used that largely maintains the longitudinal consistency in the original data.
+#' 
+#' Usability: The practice dataset is suited to calculating panel-specific univariate statistics (intra- and inter-individual correlation patterns, transition rates) in classes on descriptive methods. In the context of multivariate analysis, the dataset is useful for teaching (panel) regression techniques
+#' 
+#' Citation of data: SOEP Practice Dataset, Data from  2015-2019. 2022. DOI: 10.5684/soep.practice.v36
+#' 
+#' This data is licenced under CC BY-SA 4.0
+#' 
+#' @source https://environmentalcomputing.net/statistics/linear-models/linear-regression/
+#' 
+#' @author Florian Hartig
+"soep"
+
+
+
+
+#### seedBank ####
+
+#' Seed bank data
+#' 
+#' Data for species with seed traits, environmental factors, and information about their ability to form natural seed banks.
+#' 
+#' 
+#' 
+#' Species information:
+#' 
+#' \itemize{
+#'   \item Species species
+#'   \item SBPA presence or absence of seed bank
+#'   \item SBDensity seed bank density
+#' }
+#' 
+#' 
+#' Environmental factors:
+#' 
+#' \itemize{
+#'   \item Site Site id (17 sites)
+#'   \item Altitude Altitude
+#'   \item Temp Landolt's temperature
+#'   \item F Landolt's F
+#'   \item N Landolt's N
+#'   \item Grazing Grazing 
+#' }
+#' 
+#' 
+#' Vegetative traits:
+#' 
+#' \itemize{
+#'   \item SLA specific leaf aera
+#'   \item CanopyHeight canopy height
+#'   \item LeafN leaf nitrogen content
+#'   \item LeafC foliar frost sensitivity
+#' }
+#' 
+#' Seed traits:
+#' 
+#' \itemize{
+#'   \item SeedMass	Seed morphology
+#'   \item SeedShape	Seed morphology
+#'   \item SeedN	Seed morphology
+#'   \item SeedPr	Seed morphology
+#'   \item SRH	Seed releasing height
+#'   \item TV	Terminal velocity
+#'   \item WingLoad	Wing loading
+#'   \item EpiStein	Attachement potential (Steinschaf)
+#'   \item EpiCow	Attachement potential (Cow)
+#'   \item EpiMerino	Attachement potential (Merino)
+#'   \item Endozoo	Potential for endozoochorous dispersal
+#'   \item DormRank	Dormancy 'depth'
+#'   \item T5	Base germination temperature
+#'   \item T50	Temperature for 50% germination
+#'   \item T95	Temperature for 95% germination
+#'   \item Jwidth	Germination niche width (temperature)
+#'   \item MGT	Mean germination time
+#'   \item MGR	Mean germiation rate
+#'   \item GSP	Germination speed
+#'   \item UNC	Synchrony of germination
+#'   \item SYN	Synchrony of germination
+#'   \item Endosperm Endosperm
+#' }
+#' 
+#' 
+#' The dataset is originally from Rosbakh, 2022a but environmental factors were obtained from Rosbakh, 2022b
+#' 
+#' 
+#' 
+#' @references 
+#' Rosbakh, S., Chalmandrier, L., Phartyal, S., & Poschlod, P. (2022). Inferring community assembly processes from functional seed trait variation along elevation gradient. Journal of Ecology.
+#' 
+#' Rosbakh, S., Pichler, M., & Poschlod, P. (2022). Machine‐learning algorithms predict soil seed bank persistence from easily available traits. Applied Vegetation Science, 25(2), e12660.
+#' 
+#' @author Maximilian Pichler
+"seedBank"
+
+
+
+#### nitrogen Plant ####
+#' nitrogen Plant data
+#' 
+#' Reconstruction of historical nitrogen depositions in alpine plants
+#' 
+#' Questions: Nitrogen ~ CO2+...?
+#' 
+#' Variables:
+#' 
+#' \itemize{
+#'   \item Species species
+#'   \item Year Year
+#'   \item Altitude Altitude
+#'   \item Discr carbon isotope discrimination
+#'   \item WUEi intrinsic water use efficiency 
+#'   \item WUEt instantaneous water use efficiency
+#'   \item FoliarN foliar N contents
+#'   \item FoliarCN foliar CN contents
+#'   \item Foliad15N foliar N stable isotope composition
+#'   \item Foliard13C foliar 13 C stable isotope composition
+#'   \item Foliard13C_corrALT2000 foliar 13 C stable isotope composition corrected at Altitude = 20000
+#'   \item 13Cair delta 13 C for atmospheric CO
+#'   \item cica ratio of intercellular to ambient CO2 concentrations
+#'   \item CO2conc CO2 concentration 
+#'   \item VDP_Hpbg vapor pressure deficit at Hohenpeissenberg at 977 m a.s.l. 
+#'   \item VDP_Alt vapor pressure deficit at altitude
+#'   \item SiteID Site ID
+#'   \item Collectiondate Collection date
+#'   \item Latitude Latitude
+#'   \item Longitude Longitude
+#'   \item SampleID Sample ID
+#'   \item Collectionsite Collection site
+#' }
+#' 
+#' 
+#' Dataset is from Rosbakh, 2021. 
+#' 
+#' 
+#' @references 
+#' 
+#' Rosbakh, S., Auerswald, K., & Poschlod, P. (2021). Rising CO2 concentrations reduce nitrogen availability in alpine grasslands. Ecological Indicators, 129, 107990.
+#' 
+#' @author Maximilian Pichler
+"nitrogenPlant"
+
+
+#### Snails ####
+#' Snails data
+#' 
+#' Temporal and spatial distribution of (infected) freshwater snailsfrom 92 sites
+#' 
+#' 
+#' Variables:
+#' 
+#' \itemize{
+#'  \item locality    nearby village. 20 in total
+#'  \item site_irn    site code unique in dataset
+#'  \item visit_no    number allocated to each monthly survey- e.g. 1 for first field mission in late july 2011- to 48 for last one in jan 2016
+#'  \item coll_date    collection date
+#'  \item month    month
+#'  \item Bulinus_tot    total of all Bulinus spp. collected
+#'  \item Bulinus_pos_tot    total of all Bulinus spp. positive for infection collected
+#'  \item BP_tot    Biomphalaria pfeifferi total count/collected
+#'  \item BP_pos_tot    Biomphalaria pfeifferi positive for infection total no collected
+#'  \item BF_tot    total of Bulinus forskalii collected
+#'  \item BF_pos_tot    total of Bulinus forskalii positive for infection collected
+#'  \item BF_prev    B. forskalii total positive/total collected *100 to give prevalence
+#'  \item BT_tot    total of Bulinus truncatus collected
+#'  \item BT_pos_tot    total of Bulinus truncatus positive for infection collected
+#'  \item BT_prev    B. truncatus total positive/total collected *100 to give prevalence
+#'  \item bp_pres    Biomphalaria pfeifferi present- n/y
+#'  \item bt_pres    Bulinus truncatus present- y/n
+#'  \item site_type    can.2= secondary irrigation canal, canal.3= tertiary irrigation canal, rice.p = rice paddy
+#'  \item L_tot    total of Lymnaea natalensis collected
+#'  \item Temp_Air    air temperature
+#'  \item Temp_Water    water temperature
+#'  \item water_speed_ms    water speed in m per sec
+#'  \item water_depth    water depth in cm
+#'  \item pH    pH reading from flow metre
+#'  \item Cond    conductivity in ppm
+#'  \item PPM    ppm water param data value
+#'  \item Latitude.verb    latitude verbatim
+#'  \item Longitude.verb    longitude verbatim
+#'  \item Stagnante    no flow y/n
+#'  \item wmo_min_temp    weather station day minimum air temp
+#'  \item wmo_max_temp    weather station day max air temp
+#'  \item wmo_av_temp    weather station day average air temp
+#'  \item wmo_prec    weather station precipication in cm
+#'  \item seas_wmo    season value adjusted to make may as part of wet season as often rain in this month (i.e. season acc to month of year AND WMO data).  wet season MAY- oct, dry nov- april)
+#'  \item duration    cleaned duration data- combining durat_verb and duration.amina
+#'  \item Heure    time of survey
+#'  \item water_level.v    water level as recorded in original dataset (low, med, high, in flood)
+#'  \item water_level3    water level edited to 3 levels only (some of in flood records the water depth is recorded as low)
+#'  \item tz tz
+#'  \item year year
+#'  \item Latitude latitude
+#'  \item Longitude longitude
+#' }
+#' 
+#' 
+#' Dataset is from Rabone, 2019 
+#' 
+#' 
+#' @references 
+#'  Rabone, M., Wiethase, J. H., Allan, F., Gouvras, A. N., Pennance, T., Hamidou, A. A., ... & Rollinson, D. (2019). Freshwater snails of biomedical importance in the Niger River Valley: evidence of temporal and spatial patterns in abundance, distribution and infection with Schistosoma spp. Parasites & vectors, 12(1), 1-20.
+#' 
+#' @author Maximilian Pichler
+"snails"
+
