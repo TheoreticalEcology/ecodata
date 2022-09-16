@@ -5,25 +5,25 @@
 \alias{rikz}
 \title{RIKZ}
 \format{
-A 'data.frame':	45 obs. of  17 variables:
+A 'data.frame': 45 obs. of 17 variables:
 \describe{
-  \item{Sample}{Index of samping station}
-  \item{Polychaeta}{Number of species that were found of this faunal group}
-  \item{Crustacea}{Number of species that were found of this faunal group}
-  \item{Mollusca}{Number of species that were found of this faunal group}
-  \item{Insecta}{Number of species that were found of this faunal group}
-  \item{week}{In which of 4 weeks was this plot probed}
-  \item{angle1}{Angle of the station}
-  \item{angle2}{Slope of the beach at the plot}
-  \item{exposure}{Index composed of wave action etc.}
-  \item{salinity}{Salinity at the plot}
-  \item{temperature}{temperature measured}
-  \item{NAP}{Altitude of the plot compared to the mean sea level}
-  \item{penetrability}{penetrability}
-  \item{grainsize}{Average diameter of sand grains}
-  \item{humus}{Fraction of organic material}
-  \item{chalk}{amount of chalk measured}
-  \item{sorting1}{Variable from observational design}
+ \item{Sample}{Index of samping station.}
+ \item{Polychaeta}{Number of species that were found of this faunal group.}
+ \item{Crustacea}{Number of species that were found of this faunal group.}
+ \item{Mollusca}{Number of species that were found of this faunal group.}
+ \item{Insecta}{Number of species that were found of this faunal group.}
+ \item{week}{In which of 4 weeks was this plot probed.}
+ \item{angle1}{Angle of the station.}
+ \item{angle2}{Slope of the beach at the plot.}
+ \item{exposure}{Index composed of wave action etc.}
+ \item{salinity}{Salinity at the plot.}
+ \item{temperature}{Temperature measured.}
+ \item{NAP}{Altitude of the plot compared to the mean sea level.}
+ \item{penetrability}{Penetrability.}
+ \item{grainsize}{Average diameter of sand grains.}
+ \item{humus}{Fraction of organic material.}
+ \item{chalk}{Amount of chalk measured.}
+ \item{sorting1}{Variable from observational design.}
 
 }
 }

@@ -3,15 +3,15 @@
 \docType{data}
 \name{marmots}
 \alias{marmots}
-\title{Marmot data}
+\title{Marmots}
 \format{
-An object of class \code{data.frame} with 896 rows and 55 columns.
+A 'data.frame': 896 obs. of 55 variables.
 }
 \usage{
 marmots
 }
 \description{
-Marmot data
+Unfortunately no description available.
 }
 \author{
 Florian Hartig

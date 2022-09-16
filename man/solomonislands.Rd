@@ -5,19 +5,19 @@
 \alias{solomonislands}
 \title{Solomon Islands - Island Biogeography}
 \format{
-A 'data.frame':	40 obs. of  3 variables:
+A 'data.frame': 40 obs. of 3 variables:
 \describe{
-  \item{Island}{Island name (chr)}
-  \item{Species}{Species richness on the respective island (num)}
-  \item{Area}{Island area (num)}
-  \item{Distance}{Distance to mainland (num)}
+ \item{Island}{Island name (character).}
+ \item{Species}{Species richness on the respective island (numeric).}
+ \item{Area}{Island area (numeric).}
+ \item{Distance}{Distance to mainland (numeric).}
 }
 }
 \usage{
 solomonislands
 }
 \description{
-A classical dataset of island biogeography - number of species found on the Solomon islands, as a function of distance to mainland and island area
+A classical data set of island biogeography - Number of species found on the Solomon islands, as a function of distance to mainland and island area
 }
 \examples{
 solomonIsland_df <- solomonislands

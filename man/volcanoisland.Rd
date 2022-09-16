@@ -3,20 +3,20 @@
 \docType{data}
 \name{volcanoisland}
 \alias{volcanoisland}
-\title{Volcano island}
+\title{Volcano Island}
 \format{
-A 'data.frame':	1000 obs. of  21 variables:
+A 'data.frame': 1000 obs. of 21 variables.
 }
 \usage{
 volcanoisland
 }
 \description{
-Ecological observatins on a lonely volcano island.
+Ecological observations on a Lonely Volcano island
 }
 \details{
 We are looking at the Maunga Whau (Mt Eden), one of about 50 volcanos in the Auckland volcanic field.
 
-A crazy ecologist has created 100 permanent beetle observation plots arcross the volcano (random), and monitored them for 10 years, so you have one observation each year. Below a visualization of the terrain
+A crazy ecologist has created 100 permanent beetle observation plots across the volcano (random), and monitored them for 10 years, so you have one observation each year. Below a visualization of the terrain
 
 We have also a bunch of other things going on. For example,
 

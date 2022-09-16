@@ -3,12 +3,12 @@
 \docType{data}
 \name{birdfeeding}
 \alias{birdfeeding}
-\title{Feeding of bird nestlings}
+\title{Feeding of Bird Nestlings}
 \format{
-A 'data.frame': 25 obs. of  2 variables
+A 'data.frame': 25 obs. of 2 variables
 \describe{
-  \item{feeding}{items fed to a wird}
-  \item{attractiveness}{estimated attractiveness of a bird}
+ \item{feeding}{Items fed to a bird.}
+ \item{attractiveness}{Estimated attractiveness of a bird.}
   ...
 }
 }
@@ -19,7 +19,7 @@ A 'data.frame': 25 obs. of  2 variables
 birdfeeding
 }
 \description{
-A dataset containing observationso items fed to bird nestlings,
+A data set containing observations of items fed to bird nestlings,
 depending on their attractiveness.
 }
 \examples{

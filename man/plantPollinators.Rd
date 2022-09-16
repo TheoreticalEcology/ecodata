@@ -3,28 +3,28 @@
 \docType{data}
 \name{plantPollinators}
 \alias{plantPollinators}
-\title{plantPollinators}
+\title{Plant Pollinators}
 \format{
-A 'data.frame':	20480 obs. of  18 variables:
+A 'data.frame': 20,480 obs. of 18 variables:
 \describe{
- \item{crop}{plant name}
- \item{insect}{insect name}
- \item{type}{type of plant (arboreous or herbaceous)}
- \item{season}{flowering season}
- \item{diameter}{flower diameter in mm}
- \item{corolla}{corolla shape (open, campanulate, or tubular)}
- \item{colour}{flower colour}
- \item{nectar}{nectar (yes or no)}
- \item{b.symstem}{ bloom system (type of pollination: insects, insects/wind, or insects/birds)}
- \item{s.pollination}{self pollination (yes or no)}
- \item{inflorescence}{inflorescence (yes, solitary, solitary/pairs, solitary/clusters)}
- \item{composite}{composite flowers (yes or no)}
- \item{guild}{five pollinator traits: guild (bumblebees, butterflies etc.)}
- \item{tongue}{ tongue length in mm}
- \item{body}{body size in mm}
- \item{sociality}{soziality (Yes/NO)}
- \item{feeding}{feeding behaviour (oligolectic, polylectic, or parasitic)}
- \item{interaction}{Interaction between insect and plant(Yes/No)}
+ \item{crop}{Plant name.}
+ \item{insect}{Insect name.}
+ \item{type}{Type of plant (arboreous or herbaceous).}
+ \item{season}{Flowering season.}
+ \item{diameter}{Flower diameter in mm.}
+ \item{corolla}{Corolla shape (open, campanulate, or tubular).}
+ \item{colour}{Flower colour.}
+ \item{nectar}{Nectar (yes or no).}
+ \item{b.symstem}{Bloom system (type of pollination: insects, insects / wind, or insects / birds).}
+ \item{s.pollination}{Self pollination (yes or no).}
+ \item{inflorescence}{Inflorescence (yes, solitary, solitary/pairs, solitary / clusters).}
+ \item{composite}{Composite flowers (yes or no).}
+ \item{guild}{Five pollinator traits: Guild (bumblebees, butterflies etc.).}
+ \item{tongue}{Tongue length in mm.}
+ \item{body}{Body size in mm.}
+ \item{sociality}{Soziality (yes or no).}
+ \item{feeding}{Feeding behaviour (oligolectic, polylectic, or parasitic).}
+ \item{interaction}{Interaction between insect and plant (yes or no).}
 }
 }
 \source{
@@ -34,10 +34,10 @@ A 'data.frame':	20480 obs. of  18 variables:
 plantPollinators
 }
 \description{
-A dataset of plant - pollinator interactions and their traits for important crop plants
+A data set of plant - pollinator interactions and their traits for important crop plants
 }
 \details{
-The dataset was compiled by M., Boreux and analyzed in Pichler et al., 2020.
+The data set was compiled by M., Boreux and analyzed in Pichler et al., 2020.
 }
 \references{
 Pichler, M., Boreux, V., Klein, A. M., Schleuning, M., & Hartig, F. (2020). Machine learning algorithms to infer trait‐matching and predict species interactions in ecological networks. Methods in Ecology and Evolution, 11(2), 281-293.

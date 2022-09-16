@@ -3,9 +3,9 @@
 \docType{package}
 \name{EcoData}
 \alias{EcoData}
-\title{EcoData - A collection of ecological datasets for teaching}
+\title{EcoData - A collection of ecological data sets for teaching}
 \description{
-A collection of ecological datasets for teaching
+A collection of ecological data sets for teaching
 }
 \details{
 See index / vignette for details

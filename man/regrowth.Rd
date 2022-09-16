@@ -5,11 +5,11 @@
 \alias{regrowth}
 \title{Regrowth}
 \format{
-A 'data.frame':	40 obs. of  3 variables:
+A 'data.frame': 40 obs. of 3 variables:
 \describe{
-  \item{Root}{Root biomass (num)}
-  \item{Fruit}{Fruit biomass (num)}
-  \item{Grazing}{Grazed or not (factor)}
+ \item{Root}{Root biomass (numeric).}
+ \item{Fruit}{Fruit biomass (numeric).}
+ \item{Grazing}{Grazed or not (factor).}
 }
 }
 \usage{

@@ -2,15 +2,15 @@
 % Please edit documentation in R/data.R
 \name{dataset_flower}
 \alias{dataset_flower}
-\title{Flower image recognition dataset}
+\title{Flower Image Recognition Data}
 \usage{
 dataset_flower()
 }
 \value{
 \itemize{
-  \item train - images for training
-  \item labels - labels for train split, 0-4
-  \item test - images for testing
+ \item train - Images for training
+ \item labels - Labels for train split, 0 - 4
+ \item test - Images for testing
 }
 }
 \description{

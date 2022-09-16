@@ -5,13 +5,13 @@
 \alias{arthritis}
 \title{Arthritis}
 \format{
-A 'data.frame':	84 obs. of  5 variables:
+A 'data.frame': 84 obs. of 5 variables:
 \describe{
-  \item{ID}{patient ID.}
-  \item{Treatment}{factor indicating treatment (Placebo, Treated).}
-  \item{Sex}{factor indicating sex (Female, Male).}
-  \item{Age}{age of patient.}
-  \item{Improved}{ordered factor indicatinf treatment outcome (None, Some, Marked).}
+ \item{ID}{Patient ID.}
+ \item{Treatment}{Factor indicating treatment (Placebo, Treated).}
+ \item{Sex}{Factor indicating sex (Female, Male).}
+ \item{Age}{Age of patient.}
+ \item{Improved}{Ordered factor indicating treatment outcome (None, Some, Marked).}
 }
 }
 \source{
@@ -21,7 +21,7 @@ A 'data.frame':	84 obs. of  5 variables:
 arthritis
 }
 \description{
-Arthritis Treatment Data
+Arthritis treatment data
 }
 \examples{
 arthritis_df <- arthritis
