@@ -61,7 +61,6 @@ jobs:
       - name: Install system dependencies
         if: runner.os == 'Linux'
         run: |
-          cd EcoData
           while read -r cmd
           do
             eval sudo $cmd
@@ -69,7 +68,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          setwd("EcoData")
           remotes::install_deps(dependencies = TRUE)
           remotes::install_cran("rcmdcheck")
         shell: Rscript {0}
