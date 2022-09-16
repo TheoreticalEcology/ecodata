@@ -135,11 +135,11 @@
 #'
 #' @format A 'data.frame': 56 obs. of 8 variables:
 #' \describe{
-#'  \item{SITE}{Site ID.
+#'  \item{SITE}{Site ID.}
 #'  \item{ABUND}{Bird abundance.}
 #'  \item{AREA}{Area.}
 #'  \item{DIST}{Distance to the next forest fragment.}
-#'  \item{LDIST}{Distance to the next large forest fragmen.t}
+#'  \item{LDIST}{Distance to the next large forest fragment}
 #'  \item{YR.ISOL}{Years since the site was isolated / fragmented.}
 #'  \item{GRAZE}{Grazing intensity in the surrounding.}
 #'  \item{ALT}{Altitude.}
@@ -167,25 +167,6 @@
 #' @source \url{http://biometry.github.io/APES/}
 #' @example inst/examples/birdfeeding.R
 "birdfeeding"
-
-
-#### Cement ####
-
-#' Cement
-#'
-#' Cement hardening data from Woods et al. (1932).
-#'
-#' @format A 'data.frame': 13 obs. of 5 variables:
-#' \describe{
-#'  \item{y}{Calories of heat evolved per gram of cement after 180 days of hardening.}
-#'  \item{X1}{Tricalcium aluminate.}
-#'  \item{X2}{Tricalcium silicate.}
-#'  \item{X3}{Tetracalcium alumino ferrite.}
-#'  \item{X4}{Dicalcium silicate.}
-#' }
-#' @author Florian Hartig
-#' @example inst/examples/cement.R
-"cement"
 
 
 #### Flower ####
@@ -577,18 +558,18 @@ dataset_flower = function() {
 #'
 #'   These grades are related with the course subject, Math or Portuguese:
 #'
-#'  \item{G1 - First period grade (numeric: from 0 to 20).}
-#'  \item{G2 - Second period grade (numeric: from 0 to 20).}
-#'  \item{G3 - Final grade (numeric: from 0 to 20, output target).}
+#'  \item{G1}{First period grade (numeric: from 0 to 20)}
+#'  \item{G2}{Second period grade (numeric: from 0 to 20)}
+#'  \item{G3}{Final grade (numeric: from 0 to 20, output target)}
 #'}
 #'
-#' Additional note: There are several (382) students that belong to both data sets. These students can be identified by searching for identical attributes that characterize each student, as shown in the annexed R file.
+#' @note There are several (382) students that belong to both data sets. These students can be identified by searching for identical attributes that characterize each student, as shown in the annexed R file.
 #'
 #' Source Information
 #'
 #' P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
 #'
-#' Fabio Pagnotta, Hossain Mohammad Amran. Email:fabio.pagnotta@studenti.unicam.it, mohammadamra.hossain '@' studenti.unicam.it University Of Camerino
+#' Fabio Pagnotta, Hossain Mohammad Amran. 
 #'
 #' https://archive.ics.uci.edu/ml/datasets/STUDENT+ALCOHOL+CONSUMPTION
 #' Released Under CC0: Public Domain License

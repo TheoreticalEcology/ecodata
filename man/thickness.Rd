@@ -3,7 +3,7 @@
 \docType{data}
 \name{thickness}
 \alias{thickness}
-\title{thickness of coal}
+\title{Thickness}
 \format{
 An object of class \code{data.frame} with 75 rows and 6 columns.
 }
@@ -14,14 +14,17 @@ An object of class \code{data.frame} with 75 rows and 6 columns.
 thickness
 }
 \description{
-Measured thickness of coal seams at different coordinates from 
+thickness of coal
+}
+\details{
+Measured thickness of coal seams at different coordinates from
 \describe{
-\item{ID}{ID}
-\item{east}{east coordinates}
-\item{north}{north coordinates}
-\item{thick}{thickness of coal seams}
-\item{soil}{measuring the soil quality}
-\item{dummy}{dummy grouping variable}
+ \item{ID}{ID.}
+ \item{east}{East coordinates.}
+ \item{north}{North coordinates.}
+ \item{thick}{Thickness of coal seams.}
+ \item{soil}{Measuring the soil quality.}
+ \item{dummy}{Dummy grouping variable.}
 }
 }
 \examples{

@@ -3,15 +3,67 @@
 \docType{data}
 \name{bees}
 \alias{bees}
-\title{Bee data}
+\title{Bees}
 \format{
-An object of class \code{data.frame} with 72 rows and 1 columns.
+A 'data.frame': 72 obs. of 7 variables:
+\describe{
+ \item{Rawdata}{??? (numeric).}
+ \item{Spobee}{Response variable. Density of spores (numeric).}
+ \item{Hive}{ID of the respective hive. (integer, 1 - 24).}
+ \item{X}{Assuming coordinates (integer).}
+ \item{Y}{Assuming coordinates (numeric).}
+ \item{Infection}{Degree of infection. (integer: 0 (none), 1 (minor), 2 (moderate), 3 (major)).}
+ \item{BeesN}{Bees per hive (integer).}
+}
 }
 \usage{
 bees
 }
 \description{
-Bee data
+Honeybee data
+}
+\details{
+American Foulbrood (AFB) is an infectious disease for honeybees (Apis mellifera). The spores of the bacterium "Paenibacillus larvae" infect honeybee larvae. These spores are highly infective and one dead infested honeybee larva might spread billions of new spores.
+Note: This is nested data, because there are several observations from each hive!
+}
+\examples{
+library(DHARMa)
+library(EcoData)
+library(effects)
+library(lme4)
+
+
+data(bees)
+str(bees)
+summary(bees)
+plot(bees)
+cor(bees)
+
+
+table(bees$Infection) # Hardly any infections at all.
+# Use 1 factor infected (yes / no).
+bees$infected = as.factor(1 * (bees$Infection != 0))
+
+bees$Hive = as.factor(bees$Hive)
+
+# Data is on (very) different scales.
+bees$Rawdata = as.numeric(scale(bees$Rawdata))
+bees$Spobee = as.numeric(scale(log(bees$Spobee + 1))) # Zeros are occurring.
+bees$BeesN = as.numeric(scale(bees$BeesN))
+
+
+model = lmer(Spobee ~ infected * (BeesN + I(BeesN^3)) + (1 | Hive), data = bees)
+plot(allEffects(model, partial.residuals = T), selection = 1)
+# Random intercept for hive needs to be related to the combination of X and Y.
+# Rawdata and Spobee correspond to each other.
+# Besides BeesN and infected / Infection, there are no more variables available.
+
+
+res = simulateResiduals(model)
+plot(res)
+testDispersion(res)
+
+
 }
 \author{
 Florian Hartig

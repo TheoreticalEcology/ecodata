@@ -11,7 +11,7 @@ An object of class \code{data.frame} with 100 rows and 11 columns.
 anolisData
 }
 \description{
-anolisData data from Dormann et al., Methods to account for spatial autocorrelation in the analysis of species distributional data: a review Ecography, 2007, 30, 609-628
+anolisData data from Dormann et al., Methods to account for spatial autocorrelation in the analysis of species distributional data: A review Ecography, 2007, 30, 609-628
 }
 \details{
 From Wikipedia:
@@ -20,7 +20,7 @@ Rhinogradentia is a fictitious order of mammal invented by German zoologist Gero
 
 Successfully mimicking a genuine scientific work, Rhinogradentia has appeared in several publications without any note of its fictitious nature, sometimes in connection with April Fools' Day.
 
-From the paper: we have a data frame with several anolisData response variables (you can thing of those as different studies), of different types (continous, count, binary data). Explanatory variables are x, y rain, djungle!
+From the paper: We have a data frame with several anolisData response variables (you can think of those as different studies), of different types (continous, count, binary data). Explanatory variables are x, y, rain, djungle!
 }
 \author{
 Florian Hartig
