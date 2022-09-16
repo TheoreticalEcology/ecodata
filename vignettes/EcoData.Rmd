@@ -6,7 +6,7 @@ output:
   rmarkdown::html_vignette:
     toc: true
 vignette: >
-  %\VignetteIndexEntry{Vignette for the EcoData package}
+  %\VignetteIndexEntry{EcoData - A collection of ecological datasets for teaching}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 abstract: "EcoData is a collection of ecological datasets for teaching"
@@ -65,6 +65,7 @@ knitr::opts_chunk$set(fig.width=7, fig.height=4.5, fig.align='center', warning=F
 EcoData::volcanoisland -> Random Effects, zero-inflation, spatial effects
 glmmTMB::owls -> Random Effects, zero-inflation
 boot::nitrofen -> Poisson -> logistic with RE (1|individual)
+DHARMa::hurricanes -> Poisson / NB, model selection, ... 
 
 ## MachineLearning
 

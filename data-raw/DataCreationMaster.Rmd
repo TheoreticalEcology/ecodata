@@ -146,14 +146,6 @@ streams = read.table("streams.txt")
 usethis::use_data(streams, overwrite = T)
 ```
 
-
-## Cement
-
-```{r}
-cement = read.csv("cement.csv")
-usethis::use_data(cement, overwrite = T)
-```
-
 ## Plants
 
 ```{r}
@@ -182,6 +174,52 @@ usethis::use_data(snouter, overwrite = T)
 ```
 
 
+## Rats
+
+```{r}
+rats <- read.csv("rats.txt", sep="")
+usethis::use_data(rats, overwrite = T)
+```
+
+
+##  Marmots
+
+
+```{r}
+marmots = read.delim("Marmots.txt")
+usethis::use_data(marmots, overwrite = T)
+```
+
+## GPA
+
+
+```{r}
+load("gpa.RData")
+usethis::use_data(gpa, overwrite = T)
+```
+
+## Plant Height
+
+
+```{r}
+plantHeight = read.csv("Plant_height.csv")
+usethis::use_data(plantHeight, overwrite = T)
+```
+
+
+
+## Plant Height
+
+
+```{r}
+library(haven)
+soep <- read_dta("practice_en/practice_dataset_eng.dta")
+soep = sjlabelled::remove_all_labels(soep)
+soep = data.frame(soep)
+#soep <- utilities::rm.attr(soep)
+str(soep)
+usethis::use_data(soep, overwrite = T)
+```
 
 # Simulated Datasets 
 

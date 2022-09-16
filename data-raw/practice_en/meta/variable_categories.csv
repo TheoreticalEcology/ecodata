@@ -1,0 +1,143 @@
+study,dataset,version,variable,value,label,label_de
+soep-core,Übungsdatensatz_f,v36,bildung,-7,[-7] Only available in less restricted edition ,[-7] Nur in weniger eingeschränkter Edition verfügbar
+soep-core,Übungsdatensatz_f,v36,bildung,-2,[-2] does not apply,[-2] trifft nicht zu
+soep-core,Übungsdatensatz_f,v36,bildung,-1,[-1] no answer ,[-1] keine Angabe
+soep-core,Übungsdatensatz_f,v36,branche,-8,[-8] Question not part of the survey program this year,[-8] Frage in diesem Jahr nicht Teil des Frageprograms
+soep-core,Übungsdatensatz_f,v36,branche,-7,[-7] Only available in less restricted edition ,[-7] Nur in weniger eingeschränkter Edition verfügbar
+soep-core,Übungsdatensatz_f,v36,branche,-6,[-6] Version of questionnaire with modified filtering,[-6] Fragebogenversion mit geaenderter Filterfuehrung
+soep-core,Übungsdatensatz_f,v36,branche,-5,[-5] Not included in this version of the questionnaire,[-5] in Fragebogenversion nicht enthalten
+soep-core,Übungsdatensatz_f,v36,branche,-4,[-4] Inadmissable multiple response ,[-4] unzulaessige Mehrfachantwort
+soep-core,Übungsdatensatz_f,v36,branche,-3,[-3] not valid,[-3] nicht valide
+soep-core,Übungsdatensatz_f,v36,branche,-2,[-2] does not apply,[-2] trifft nicht zu
+soep-core,Übungsdatensatz_f,v36,branche,-1,[-1] no answer ,[-1] keine Angabe
+soep-core,Übungsdatensatz_f,v36,branche,1,"[1] Agriculture, hunting and related activities","[1] Landwirtschaft, Jagd und damit verbundene Taetigkeiten"
+soep-core,Übungsdatensatz_f,v36,branche,2,[2] Forestry and logging,[2] Forstwirtschaft und Holzeinschlag
+soep-core,Übungsdatensatz_f,v36,branche,3,[3] Fisheries and aquaculture,[3] Fischerei und Aquakultur
+soep-core,Übungsdatensatz_f,v36,branche,5,[5] Coal mining,[5] Kohlenbergbau
+soep-core,Übungsdatensatz_f,v36,branche,6,[6] Extraction of crude oil and natural gas,[6] Gewinnung von Erdoel und Erdgas
+soep-core,Übungsdatensatz_f,v36,branche,7,[7] Ore mining,[7] Erzbergbau
+soep-core,Übungsdatensatz_f,v36,branche,8,"[8] Quarrying, other mining and quarrying","[8] Gewinnung von Steinen und Erden, sonstiger Bergbau"
+soep-core,Übungsdatensatz_f,v36,branche,9,[9] Mining and quarrying service activities,[9] Erbringung von Dienstleistungen fuer den Bergbau und fuer die Gewinnung von Steinen und Erden
+soep-core,Übungsdatensatz_f,v36,branche,10,[10] Manufacture of food and animal feed products,[10] Herstellung von Nahrungs- und Futtermitteln
+soep-core,Übungsdatensatz_f,v36,branche,11,[11] Beverage production,[11] Getraenkeherstellung
+soep-core,Übungsdatensatz_f,v36,branche,12,[12] Tobacco processing,[12] Tabakverarbeitung
+soep-core,Übungsdatensatz_f,v36,branche,13,[13] Textile manufacturing,[13] Herstellung von Textilien
+soep-core,Übungsdatensatz_f,v36,branche,14,[14] Manufacture of apparel,[14] Herstellung von Bekleidung
+soep-core,Übungsdatensatz_f,v36,branche,15,"[15] Manufacture of leather, leather products and footwear","[15] Herstellung von Leder, Lederwaren und Schuhen"
+soep-core,Übungsdatensatz_f,v36,branche,16,"[16] Manufacture of wood and of products of wood and cork, basketware and wickerwork  (without furniture)  ","[16] Herstellung von Holz-, Flecht-, Korb- und Korkwaren (ohne Moebel)"
+soep-core,Übungsdatensatz_f,v36,branche,17,"[17] Manufacture of paper, paperboard and articles thereof ","[17] Herstellung von Papier, Pappe und Waren daraus"
+soep-core,Übungsdatensatz_f,v36,branche,18,"[18] Manufacture of printed matter; reproduction of recorded sound, image and data carriers","[18] Herstellung von Druckerzeugnissen; Vervielfaeltigung von bespielten Ton-, Bild- und Datentraegern"
+soep-core,Übungsdatensatz_f,v36,branche,19,[19] Coke and mineral oil refinery,[19] Kokerei und Mineraloelverarbeitung
+soep-core,Übungsdatensatz_f,v36,branche,20,[20] Manufacture of chemical products,[20] Herstellung von chemischen Erzeugnissen
+soep-core,Übungsdatensatz_f,v36,branche,21,[21] Production of pharmaceutical products,[21] Herstellung von pharmazeutischen Erzeugnissen
+soep-core,Übungsdatensatz_f,v36,branche,22,[22] Manufacture of rubber and plastic products,[22] Herstellung von Gummi- und Kunststoffwaren
+soep-core,Übungsdatensatz_f,v36,branche,23,"[23] Manufacture of glass and glass products, ceramics, processing of stone and earth","[23] Herstellung von Glas und Glaswaren, Keramik, Verarbeitung von Steinen und Erden"
+soep-core,Übungsdatensatz_f,v36,branche,24,[24] Metal production and processing,[24] Metallerzeugung und -bearbeitung
+soep-core,Übungsdatensatz_f,v36,branche,25,[25] Manufacture of fabricated metal products,[25] Herstellung von Metallerzeugnissen
+soep-core,Übungsdatensatz_f,v36,branche,26,"[26] Manufacture of computers, electronic and optical products","[26] Herstellung von Datenverarbeitungsgeraeten, elektronischen und optischen Erzeugnissen"
+soep-core,Übungsdatensatz_f,v36,branche,27,[27] Manufacture of electrical equipment,[27] Herstellung von elektrischen Ausruestungen
+soep-core,Übungsdatensatz_f,v36,branche,28,[28] Mechanical engineering,[28] Maschinenbau
+soep-core,Übungsdatensatz_f,v36,branche,29,[29] Manufacture of motor vehicles and parts of motor vehicles,[29] Herstellung von Kraftwagen und Kraftwagenteilen
+soep-core,Übungsdatensatz_f,v36,branche,30,[30] Other vehicle construction,[30] Sonstiger Fahrzeugbau
+soep-core,Übungsdatensatz_f,v36,branche,31,[31] Manufacture of furniture,[31] Herstellung von Moebeln
+soep-core,Übungsdatensatz_f,v36,branche,32,[32] Manufacture of other goods,[32] Herstellung von sonstigen Waren
+soep-core,Übungsdatensatz_f,v36,branche,33,[33] Repair and installation of machinery and equipment,[33] Reparatur und Installation von Maschinen und Ausruestungen
+soep-core,Übungsdatensatz_f,v36,branche,35,[35] Energy supply,[35] Energieversorgung
+soep-core,Übungsdatensatz_f,v36,branche,36,[36] Water supply,[36] Wasserversorgung
+soep-core,Übungsdatensatz_f,v36,branche,37,[37] Waste water disposal,[37] Abwasserentsorgung
+soep-core,Übungsdatensatz_f,v36,branche,38,"[38] Collection, treatment and disposal of waste; recovery","[38] Sammlung, Behandlung und Beseitigung von Abfaellen; Rueckgewinnung"
+soep-core,Übungsdatensatz_f,v36,branche,39,[39] Removal of environmental pollution and other waste disposal,[39] Beseitigung von Umweltverschmutzungen und sonstige Entsorgung
+soep-core,Übungsdatensatz_f,v36,branche,41,[41] Building construction,[41] Hochbau
+soep-core,Übungsdatensatz_f,v36,branche,42,[42] Civil engineering,[42] Tiefbau
+soep-core,Übungsdatensatz_f,v36,branche,43,"[43] Site preparation, construction installation and other finishing trades","[43] Vorbereitende Baustellenarbeiten, Bauinstallation und sonstiges Ausbaugewerbe"
+soep-core,Übungsdatensatz_f,v36,branche,45,[45] Trade in motor vehicles,[45] Handel mit Kraftfahrzeugen
+soep-core,Übungsdatensatz_f,v36,branche,46,[46] Wholesale trade (excl. trade in motor vehicles and motorcycles),[46] Grosshandel (ohne Handel mit Kraftfahrzeugen und Kraftraedern)
+soep-core,Übungsdatensatz_f,v36,branche,47,[47] Retail trade (excluding motor vehicles and motorcycles),[47] Einzelhandel (ohne Handel mit Kraftfahrzeugen)
+soep-core,Übungsdatensatz_f,v36,branche,49,[49] Land transport and transport in pipelines,[49] Landverkehr und Transport in Rohrfernleitungen
+soep-core,Übungsdatensatz_f,v36,branche,50,[50] Shipping,[50] Schifffahrt
+soep-core,Übungsdatensatz_f,v36,branche,51,[51] Aviation,[51] Luftfahrt
+soep-core,Übungsdatensatz_f,v36,branche,52,[52] Warehousing and other transportation service activities,[52] Lagerei sowie Erbringung von sonstigen Dienstleistungen fuer den Verkehr
+soep-core,Übungsdatensatz_f,v36,branche,53,"[53] Postal, courier and express services","[53] Post-, Kurier- und Expressdienste"
+soep-core,Übungsdatensatz_f,v36,branche,55,[55] Accommodation,[55] Beherbergung
+soep-core,Übungsdatensatz_f,v36,branche,56,[56] Gastronomy,[56] Gastronomie
+soep-core,Übungsdatensatz_f,v36,branche,58,[58] Publishing,[58] Verlagswesen
+soep-core,Übungsdatensatz_f,v36,branche,59,"[59] Production, distribution and sale of motion pictures and television programs; cinemas; sound studios and music publishing","[59] Herstellung, Verleih und Vertrieb von Filmen und Fernsehprogrammen; Kinos; Tonstudios und Verlegen von Musik"
+soep-core,Übungsdatensatz_f,v36,branche,60,[60] Broadcaster,[60] Rundfunkveranstalter
+soep-core,Übungsdatensatz_f,v36,branche,61,[61] Telecommunications,[61] Telekommunikation
+soep-core,Übungsdatensatz_f,v36,branche,62,[62] Provision of information technology services,[62] Erbringung von Dienstleistungen der Informationstechnologie
+soep-core,Übungsdatensatz_f,v36,branche,63,[63] Information services,[63] Informationsdienstleistungen
+soep-core,Übungsdatensatz_f,v36,branche,64,[64] Provision of financial services,[64] Erbringung von Finanzdienstleistungen
+soep-core,Übungsdatensatz_f,v36,branche,65,"[65] Insurance, reinsurance and pension funds (excluding social security)","[65] Versicherungen, Rueckversicherungen und Pensionskassen (ohne Sozialversicherung)"
+soep-core,Übungsdatensatz_f,v36,branche,66,[66] Activities auxiliary to financial and insurance services,[66] Mit Finanz- und Versicherungsdienstleistungen verbundene Taetigkeiten
+soep-core,Übungsdatensatz_f,v36,branche,68,[68] Real estate and housing,[68] Grundstuecks- und Wohnungswesen
+soep-core,Übungsdatensatz_f,v36,branche,69,"[69] Legal and tax consulting, auditing","[69] Rechts- und Steuerberatung, Wirtschaftspruefung"
+soep-core,Übungsdatensatz_f,v36,branche,70,[70] Administration and management of companies and enterprises,[70] Verwaltung und Fuehrung von Unternehmen und Betrieben
+soep-core,Übungsdatensatz_f,v36,branche,71,"[71] Architectural and engineering firms; technical, physical and chemical investigation","[71] Architektur- und Ingenieurbueros; technische, physikalische und chemische Untersuchung"
+soep-core,Übungsdatensatz_f,v36,branche,72,[72] Research and development,[72] Forschung und Entwicklung
+soep-core,Übungsdatensatz_f,v36,branche,73,[73] Advertising and market research,[73] Werbung und Marktforschung
+soep-core,Übungsdatensatz_f,v36,branche,74,"[74] Other freelance, scientific and technical activities","[74] Sonstige freiberufliche, wissenschaftliche und technische Taetigkeiten"
+soep-core,Übungsdatensatz_f,v36,branche,75,[75] Veterinary,[75] Veterinaerwesen
+soep-core,Übungsdatensatz_f,v36,branche,77,[77] Rental of movable property,[77] Vermietung von beweglichen Sachen
+soep-core,Übungsdatensatz_f,v36,branche,78,[78] Placement and hiring out of workers,[78] Vermittlung und Ueberlassung von Arbeitskraeften
+soep-core,Übungsdatensatz_f,v36,branche,79,"[79] Travel agencies, tour operators and other reservation service provision","[79] Reisebueros, Reiseveranstalter und Erbringung sonstiger Reservierungsdienstleistungen"
+soep-core,Übungsdatensatz_f,v36,branche,80,[80] Guard and security services and detective agencies,[80] Wach- und Sicherheitsdienste sowie Detekteien
+soep-core,Übungsdatensatz_f,v36,branche,81,[81] Building support,[81] Gebaeudebetreuung
+soep-core,Übungsdatensatz_f,v36,branche,82,[82] Provision of economic services to businesses and individuals n.e.c.,[82] Erbringung von wirtschaftlichen Dienstleistungen fuer Unternehmen und Privatpersonen a. n. g.
+soep-core,Übungsdatensatz_f,v36,branche,84,[84] Public administration and defense; compulsory social security,"[84] Oeffentliche Verwaltung, Verteidigung; Sozialversicherung"
+soep-core,Übungsdatensatz_f,v36,branche,85,[85] Education and teaching,[85] Erziehung und Unterricht
+soep-core,Übungsdatensatz_f,v36,branche,86,[86] Healthcare,[86] Gesundheitswesen
+soep-core,Übungsdatensatz_f,v36,branche,87,[87] Homes (excluding rest homes and vacation homes),[87] Heime (ohne Erholungs- und Ferienheime)
+soep-core,Übungsdatensatz_f,v36,branche,88,[88] Social services (excluding homes),[88] Sozialwesen (ohne Heime)
+soep-core,Übungsdatensatz_f,v36,branche,90,"[90] Creative, artistic and entertainment activities","[90] Kreative, kuenstlerische und unterhaltende Taetigkeiten"
+soep-core,Übungsdatensatz_f,v36,branche,91,"[91] Libraries, archives, museums, botanical and zoological gardens","[91] Bibliotheken, Archive, Museen, botanische und zoologische Gaerten"
+soep-core,Übungsdatensatz_f,v36,branche,92,"[92] Gambling, betting and lottery activities","[92] Spiel-, Wett- und Lotteriewesen"
+soep-core,Übungsdatensatz_f,v36,branche,93,"[93] Provision of sports, entertainment and recreation services","[93] Erbringung von Dienstleistungen des Sports, der Unterhaltung und der Erholung"
+soep-core,Übungsdatensatz_f,v36,branche,94,[94] Interest groups and church and other religious associations (excluding social services and sports),[94] Interessenvertretungen sowie kirchliche und sonstige religioese Vereinigungen (ohne Sozialwesen und Sport)
+soep-core,Übungsdatensatz_f,v36,branche,95,[95] Repair of data processing equipment and consumer goods,[95] Reparatur von Datenverarbeitungsgeraeten und Gebrauchsguetern
+soep-core,Übungsdatensatz_f,v36,branche,96,[96] Provision of other predominantly personal services,[96] Erbringung von sonstigen ueberwiegend persoenlichen Dienstleistungen
+soep-core,Übungsdatensatz_f,v36,branche,97,[97] Private households with domestic staff,[97] Private Haushalte mit Hauspersonal
+soep-core,Übungsdatensatz_f,v36,branche,98,[98] Undifferentiated goods- and services-producing activities of households for own use,[98] Herstellung von Waren und Erbringung von Dienstleistungen durch private Haushalte fuer den Eigenbedarf ohne ausgepraegten Schwerpunkt
+soep-core,Übungsdatensatz_f,v36,branche,99,[99] Extraterritorial organizations and entities,[99] Exterritoriale Organisationen und Koerperschaften
+soep-core,Übungsdatensatz_f,v36,einkommenj1,-7,[-7] Only available in less restricted edition ,[-7] Nur in weniger eingeschränkter Edition verfügbar
+soep-core,Übungsdatensatz_f,v36,einkommenj1,-5,[-5] Not included in this version of the questionnaire,[-5] in Fragebogenversion nicht enthalten
+soep-core,Übungsdatensatz_f,v36,einkommenj1,-2,[-2] does not apply,[-2] trifft nicht zu
+soep-core,Übungsdatensatz_f,v36,einkommenj2,-7,[-7] Only available in less restricted edition ,[-7] Nur in weniger eingeschränkter Edition verfügbar
+soep-core,Übungsdatensatz_f,v36,einkommenj2,-5,[-5] Not included in this version of the questionnaire,[-5] in Fragebogenversion nicht enthalten
+soep-core,Übungsdatensatz_f,v36,einkommenj2,-2,[-2] does not apply,[-2] trifft nicht zu
+soep-core,Übungsdatensatz_f,v36,einkommenm1,-7,[-7] Only available in less restricted edition ,[-7] Nur in weniger eingeschränkter Edition verfügbar
+soep-core,Übungsdatensatz_f,v36,einkommenm1,-5,[-5] Not included in this version of the questionnaire,[-5] in Fragebogenversion nicht enthalten
+soep-core,Übungsdatensatz_f,v36,einkommenm1,-2,[-2] does not apply,[-2] trifft nicht zu
+soep-core,Übungsdatensatz_f,v36,einkommenm2,-7,[-7] Only available in less restricted edition ,[-7] Nur in weniger eingeschränkter Edition verfügbar
+soep-core,Übungsdatensatz_f,v36,einkommenm2,-5,[-5] Not included in this version of the questionnaire,[-5] in Fragebogenversion nicht enthalten
+soep-core,Übungsdatensatz_f,v36,einkommenm2,-2,[-2] does not apply,[-2] trifft nicht zu
+soep-core,Übungsdatensatz_f,v36,erwerb,-7,[-7] Only available in less restricted edition ,[-7] Nur in weniger eingeschränkter Edition verfügbar
+soep-core,Übungsdatensatz_f,v36,erwerb,-6,[-6] Version of questionnaire with modified filtering,[-6] Fragebogenversion mit geänderter Filterführung
+soep-core,Übungsdatensatz_f,v36,erwerb,-5,[-5] Not included in this version of the questionnaire,[-5] in Fragebogenversion nicht enthalten
+soep-core,Übungsdatensatz_f,v36,erwerb,-4,[-4] Inadmissable multiple response ,[-4] unzulässige Mehrfachantwort
+soep-core,Übungsdatensatz_f,v36,erwerb,-3,[-3] not valid,[-3] nicht valide
+soep-core,Übungsdatensatz_f,v36,erwerb,-2,[-2] does not apply,[-2] trifft nicht zu
+soep-core,Übungsdatensatz_f,v36,erwerb,-1,[-1] no answer ,[-1] keine Angabe
+soep-core,Übungsdatensatz_f,v36,erwerb,1,[-1] Employed full-time ,[1] Voll erwerbstätig
+soep-core,Übungsdatensatz_f,v36,erwerb,2,[-2] Employed part-time,[2] Teilzeitbeschäftigung
+soep-core,Übungsdatensatz_f,v36,erwerb,3,"[3] Training, apprenticeship","[3] Ausbildung, Lehre"
+soep-core,Übungsdatensatz_f,v36,erwerb,4,[4] Irregular employment or in marginal,"[4] Unregelmässig, geringfügig erwerbstät."
+soep-core,Übungsdatensatz_f,v36,erwerb,5,[5] Not employed,[5] Nicht erwerbstätig
+soep-core,Übungsdatensatz_f,v36,erwerb,6,[6] Garage for disabled people,[6] Werkstatt für behinderte Menschen
+soep-core,Übungsdatensatz_f,v36,gesund_org,1,[1] Very well ,[1] Sehr gut
+soep-core,Übungsdatensatz_f,v36,gesund_org,2,[2] Well ,[2] Gut
+soep-core,Übungsdatensatz_f,v36,gesund_org,3,[3] Satisfactory,[3] Zufriedenstellend
+soep-core,Übungsdatensatz_f,v36,gesund_org,4,[4] Not so well ,[4] Weniger gut
+soep-core,Übungsdatensatz_f,v36,gesund_org,5,[5] Badly ,[5] Schlecht
+soep-core,Übungsdatensatz_f,v36,lebensz_org,0,[0] completely dissatisfied 0,[0] ganz und gar unzufrieden 0
+soep-core,Übungsdatensatz_f,v36,lebensz_org,10,[10] completely satisfied 10,[10] ganz und gar zufrieden 10
+soep-core,Übungsdatensatz_f,v36,sex,-8,[-8] Question not part of the survey program this year,[-8] Frage in diesem Jahr nicht Teil des Frageprograms
+soep-core,Übungsdatensatz_f,v36,sex,-7,[-7] Only available in less restricted edition ,[-7] Nur in weniger eingeschränkter Edition verfügbar
+soep-core,Übungsdatensatz_f,v36,sex,-6,[-6] Version of questionnaire with modified filtering,[-6] Fragebogenversion mit geaenderter Filterfuehrung
+soep-core,Übungsdatensatz_f,v36,sex,-5,[-5] Not included in this version of the questionnaire,[-5] In Fragebogenversion nicht enthalten
+soep-core,Übungsdatensatz_f,v36,sex,-4,[-4] Inadmissable multiple response ,[-4] Unzulaessige Mehrfachantwort
+soep-core,Übungsdatensatz_f,v36,sex,-3,[-3] not valid,[-3] nicht valide
+soep-core,Übungsdatensatz_f,v36,sex,-2,[-2] does not apply,[-2] trifft nicht zu
+soep-core,Übungsdatensatz_f,v36,sex,-1,[-1] no answer ,[-1] keine Angabe
+soep-core,Übungsdatensatz_f,v36,sex,0,[0] male,[0] männlich
+soep-core,Übungsdatensatz_f,v36,sex,1,[1] female,[1] weiblich
+soep-core,Übungsdatensatz_f,v36,sex,2,[2] female,[2] weiblich

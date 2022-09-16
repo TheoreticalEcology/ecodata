@@ -60,7 +60,7 @@
 #'
 #' This data set comes from \url{http://www.phytools.org/Cordoba2017} and is about fictional birds and their attributes.
 #'
-#' @details This is the data set belonging to the phylogenetic tree "barbetTree". 
+#' @details This is the data set belonging to the phylogenetic tree "barbetTree".
 #'
 #' @format A 'data.frame': 33 obs. of 8 variables:
 #' \describe{
@@ -106,7 +106,7 @@
 #' Bees
 #'
 #' Honeybee data
-#' 
+#'
 #' @details American Foulbrood (AFB) is an infectious disease for honeybees (Apis mellifera). The spores of the bacterium "Paenibacillus larvae" infect honeybee larvae. These spores are highly infective and one dead infested honeybee larva might spread billions of new spores.
 #' Note: This is nested data, because there are several observations from each hive!
 #'
@@ -207,7 +207,7 @@
 dataset_flower = function() {
   cache_dir = file.path(path.expand("~"), ".EcoData")
   datadir_base = path.expand(cache_dir)
-  
+
   dir.create(datadir_base, showWarnings = FALSE)
   if(file.access(datadir_base, mode = 2) < 0) {
     datadir_base = file.path("/tmp", ".Ecodata")
@@ -220,7 +220,7 @@ dataset_flower = function() {
                          destfile = data_path)
   }
   load(data_path)
-  
+
   return(flower)
 }
 "flower"
@@ -229,9 +229,9 @@ dataset_flower = function() {
 #### Marmots ####
 
 #' Marmots
-#' 
+#'
 #' Unfortunately no description available.
-#' 
+#'
 #' @format A 'data.frame': 896 obs. of 55 variables.
 #'
 #' @author Florian Hartig
@@ -318,7 +318,7 @@ dataset_flower = function() {
 #' Plant Pollinators
 #'
 #' A data set of plant - pollinator interactions and their traits for important crop plants
-#' 
+#'
 #' @format A 'data.frame': 20,480 obs. of 18 variables:
 #' \describe{
 #'  \item{crop}{Plant name.}
@@ -341,11 +341,11 @@ dataset_flower = function() {
 #'  \item{interaction}{Interaction between insect and plant (yes or no).}
 #'}
 #' @author Andreas Ettner, Florian Hartig
-#' 
+#'
 #' @details The data set was compiled by M., Boreux and analyzed in Pichler et al., 2020.
-#' 
+#'
 #' @references Pichler, M., Boreux, V., Klein, A. M., Schleuning, M., & Hartig, F. (2020). Machine learning algorithms to infer trait‐matching and predict species interactions in ecological networks. Methods in Ecology and Evolution, 11(2), 281-293.
-#' 
+#'
 #' @source \url{https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13329}
 "plantPollinators"
 
@@ -388,10 +388,10 @@ dataset_flower = function() {
 
 #' Red Cards
 #'
-#' Soccer red cards data set 
-#' 
-#' @description This is a data set from the English premier league. The data was compiled to test if soccer referees are more likely to give red cards to dark-skin-toned players than to light-skin-toned players. 
-#' 
+#' Soccer red cards data set
+#'
+#' @description This is a data set from the English premier league. The data was compiled to test if soccer referees are more likely to give red cards to dark-skin-toned players than to light-skin-toned players.
+#'
 #' @details The data was analyzed in a many-analysed project. The estimated effect sizes ranged from 0.89 to 2.93 (Mdn = 1.31) in odds-ratio units. Twenty teams (69%) found a statistically significant positive effect, and 9 teams (31%) did not observe a significant relationship. The variation is explained by the statistical approach and the choice of predictor variables.
 #'
 #' @format A 'data.frame': 146,028 obs. of 28 variables:
@@ -662,10 +662,10 @@ dataset_flower = function() {
 #### Thickness ####
 
 #' Thickness
-#' 
+#'
 #' thickness of coal
 #'
-#' Measured thickness of coal seams at different coordinates from 
+#' Measured thickness of coal seams at different coordinates from
 #' \describe{
 #'  \item{ID}{ID.}
 #'  \item{east}{East coordinates.}
@@ -735,4 +735,3 @@ dataset_flower = function() {
 #'
 #' @author Maximilian Pichler
 "wine"
-
