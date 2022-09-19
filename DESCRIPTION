@@ -37,7 +37,7 @@ Suggests:
     ape,
     phytools,
     geiger,
-    bipartide,
+    bipartite,
     caper,
     vegan,
     lavaan,
