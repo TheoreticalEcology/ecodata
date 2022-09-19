@@ -221,6 +221,50 @@ str(soep)
 usethis::use_data(soep, overwrite = T)
 ```
 
+
+
+## Snails 
+
+```{r}
+snails = readRDS("data-raw/snails.RDS")
+usethis::use_data(snails, overwrite = T)
+```
+
+
+
+
+## Seed bank data
+
+```{r}
+library(dplyr)
+variables = readxl::read_xlsx("data-raw/Rosbakh et al. 2022_JEcol_traits.xlsx", sheet = 2)
+SB = readxl::read_xlsx("data-raw/Rosbakh et al. 2022_JEcol_traits.xlsx", sheet = 4)
+additional_variables = readRDS("data-raw/Seed_env_variables.RDS")
+
+seedBank = SB %>% 
+  left_join(variables, by = "Species") %>% 
+  filter(Source == "Measured") %>% 
+  select(-Source) %>% 
+  left_join(y = additional_variables, by = c("Site"="Plot", "Species")) 
+
+usethis::use_data(seedBank, overwrite = T)
+```
+
+
+
+## Nitrogen concentration 
+
+```{r}
+library(dplyr)
+data = readxl::read_xlsx("data-raw/Rosbakh_2021_C_N.xlsx", sheet = 1)
+colnames(data) = colnames(data) %>%  stringr::str_remove(" ") %>% stringr::str_remove("/")  
+colnames(data)[15] = "CO2conc" 
+nitrogenPlant = data
+usethis::use_data(nitrogenPlant, overwrite = T)
+```
+
+
+
 # Simulated Datasets 
 
 ## Island Example
