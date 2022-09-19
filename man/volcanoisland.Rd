@@ -31,6 +31,8 @@ We have also a bunch of other things going on. For example,
 The main question of the study was to understand how beetle abudance depends on altitude. Here is an overview of counts per site and year.
 }
 \examples{
+library(EcoData)
+
 oldpar <- par(mfrow = c(1,2))
 contour(x = 1:ncol(volcano), y = 1:nrow(volcano), t(volcano), asp = 1)
 points(volcanoisland$x, volcanoisland$y, cex = volcanoisland$wind)
@@ -46,7 +48,7 @@ with(volcanoisland, {
 
 # Base models that could be extended
 
-# wind is continous, thus starting with lm
+# wind is continuous, thus starting with lm
 fit <- lm(log(windObs) ~ sAltitude, data = volcanoisland)
 summary(fit)
 
@@ -65,6 +67,34 @@ summary(fit)
 fit <- glm(cbind(survivedOf20, 20-survivedOf20) ~ 1, 
            family = binomial, data = volcanoisland)
 summary(fit)
+
+# Residual checks for lm
+
+fit = lm(windObs ~ sAltitude, data =  volcanoisland)
+par(mfrow = c(2,2))
+plot(fit)
+
+library(effects)
+plot(allEffects(fit, partial.residuals = T))
+
+# residual checks for glm
+fit = glm(beetles ~ altitude, data =  volcanoisland, family = "poisson")
+
+library(DHARMa)
+res = simulateResiduals(fit, plot = T)
+testDispersion(res)
+testZeroInflation(res)
+
+res2 = recalculateResiduals(res, group = volcanoisland$plot)
+plot(res2)
+
+xag = aggregate(volcanoisland$x, by=list(Plot=volcanoisland$plot), FUN=mean)
+yag = aggregate(volcanoisland$y, by=list(Plot=volcanoisland$plot), FUN=mean)
+testSpatialAutocorrelation(res2, x = xag$x, y = yag$x)
+
+
+
+
 }
 \author{
 Florian Hartig
