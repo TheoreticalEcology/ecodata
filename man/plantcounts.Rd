@@ -7,12 +7,12 @@
 \format{
 A 'data.frame': 285 obs. of 6 variables:
 \describe{
- \item{richness}{Plant "species" richness. No. of plant taxa records (species, including some aggregates) in map quadrants (Topographische Karte, "Viertelmesstischblatt"), ca. 1980. from Mergenthaler, O. 1982: Verbreitungsatlas zur Flora von Regensburg. In: Hoppea, Denkschriften der Regensburgischen Botanischen Gesellschaft. Bd. 40, S. V-XII, 1-297. http://digital.bib-bvb.de/view/bvbmets/viewer.0.6.4.jsp?folder_id=0&dvs=1597093892683~24&pid=1537325&locale=de&usePid1=true&usePid2=true}
- \item{tk}{Quadrant id (Topographische Karte).}
- \item{area}{Quadrant area.}
- \item{agrarea}{Fraction of agricultural area per quadrant (agricultural landuse classes without forest, from https://doi.pangaea.de/10.1594/PANGAEA.910837).}
- \item{lat}{Latitude.}
- \item{lon}{Longitude.}
+\item{richness}{Plant "species" richness. No. of plant taxa records (species, including some aggregates) in map quadrants (Topographische Karte, "Viertelmesstischblatt"), ca. 1980. from Mergenthaler, O. 1982: Verbreitungsatlas zur Flora von Regensburg. In: Hoppea, Denkschriften der Regensburgischen Botanischen Gesellschaft. Bd. 40, S. V-XII, 1-297. http://digital.bib-bvb.de/view/bvbmets/viewer.0.6.4.jsp?folder_id=0&dvs=1597093892683~24&pid=1537325&locale=de&usePid1=true&usePid2=true}
+\item{tk}{Quadrant id (Topographische Karte).}
+\item{area}{Quadrant area.}
+\item{agrarea}{Fraction of agricultural area per quadrant (agricultural landuse classes without forest, from https://doi.pangaea.de/10.1594/PANGAEA.910837).}
+\item{lat}{Latitude.}
+\item{lon}{Longitude.}
 }
 }
 \usage{

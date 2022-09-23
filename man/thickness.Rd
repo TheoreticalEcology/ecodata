@@ -19,12 +19,12 @@ thickness of coal
 \details{
 Measured thickness of coal seams at different coordinates from
 \describe{
- \item{ID}{ID.}
- \item{east}{East coordinates.}
- \item{north}{North coordinates.}
- \item{thick}{Thickness of coal seams.}
- \item{soil}{Measuring the soil quality.}
- \item{dummy}{Dummy grouping variable.}
+\item{ID}{ID.}
+\item{east}{East coordinates.}
+\item{north}{North coordinates.}
+\item{thick}{Thickness of coal seams.}
+\item{soil}{Measuring the soil quality.}
+\item{dummy}{Dummy grouping variable.}
 }
 }
 \examples{

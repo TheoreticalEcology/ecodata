@@ -7,8 +7,8 @@
 \format{
 A 'data.frame': 16 obs. of 2 variables:
 \describe{
- \item{down}{After the water treatment filter.}
- \item{up}{Before the water treatment filter.}
+\item{down}{After the water treatment filter.}
+\item{up}{Before the water treatment filter.}
 }
 }
 \source{

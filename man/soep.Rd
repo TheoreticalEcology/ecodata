@@ -33,23 +33,22 @@ Population: Persons living in private households in Germany.
 
 Number of individuals: 6.355
 
-
 \itemize{
-  \item id		Person ID 
-  \item syear		Survey Year
-  \item sex		Sex
-  \item alter		Age of Individual
-  \item anz_pers		Number of Persons in Household
-  \item anz_kind		Number of Children in Household
-  \item bildung		Number of Years of Education 
-  \item erwerb		Employment Status
-  \item branche		Industry Current Occupation
-  \item einkommenj1		Gross Income from Main Job/Year
-  \item einkommenj2		Gross Income from Secondary Employment/Year
-  \item einkommenm1		Gross Income from Main Job/Month
-  \item einkommenm2		Gross Income from Secondary Employment/Month
-  \item gesund_org		subj. Health
-  \item lebensz_org		Life Satisfaction
+\item id		Person ID
+\item syear		Survey Year
+\item sex		Sex
+\item alter		Age of Individual
+\item anz_pers		Number of Persons in Household
+\item anz_kind		Number of Children in Household
+\item bildung		Number of Years of Education
+\item erwerb		Employment Status
+\item branche		Industry Current Occupation
+\item einkommenj1		Gross Income from Main Job/Year
+\item einkommenj2		Gross Income from Secondary Employment/Year
+\item einkommenm1		Gross Income from Main Job/Month
+\item einkommenm2		Gross Income from Secondary Employment/Month
+\item gesund_org		subj. Health
+\item lebensz_org		Life Satisfaction
 }
 
 Selection: To anonymize the variables, an algorithm was used that largely maintains the longitudinal consistency in the original data.

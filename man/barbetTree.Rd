@@ -7,11 +7,11 @@
 \format{
 A 'list': List of 5.
 \describe{
- \item{edge}{Edges of the tree. First, all leaves are counted like internal nodes, then the tree is traversed from the root edge, going right before left. Each row corresponds to an edge, the first column is the starting node, the second is the target. (2 column matrix, integer).}
- \item{edge.length}{Length of the corresponding edge (same number of elements as rows in tree$edge) (numeric).}
- \item{Nnode}{Number of internal nodes (edges between species); Number of tips / leaves - 1 (integer).}
- \item{root.edge}{Length of the leftmost edge, resp the stem (not displayed every time in plots) (numeric).}
- \item{tip.label}{Names of the species (character).}
+\item{edge}{Edges of the tree. First, all leaves are counted like internal nodes, then the tree is traversed from the root edge, going right before left. Each row corresponds to an edge, the first column is the starting node, the second is the target. (2 column matrix, integer).}
+\item{edge.length}{Length of the corresponding edge (same number of elements as rows in tree$edge) (numeric).}
+\item{Nnode}{Number of internal nodes (edges between species); Number of tips / leaves - 1 (integer).}
+\item{root.edge}{Length of the leftmost edge, resp the stem (not displayed every time in plots) (numeric).}
+\item{tip.label}{Names of the species (character).}
 }
 }
 \source{

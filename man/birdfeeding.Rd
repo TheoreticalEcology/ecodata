@@ -7,9 +7,9 @@
 \format{
 A 'data.frame': 25 obs. of 2 variables
 \describe{
- \item{feeding}{Items fed to a bird.}
- \item{attractiveness}{Estimated attractiveness of a bird.}
-  ...
+\item{feeding}{Items fed to a bird.}
+\item{attractiveness}{Estimated attractiveness of a bird.}
+...
 }
 }
 \source{

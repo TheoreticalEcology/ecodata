@@ -17,50 +17,49 @@ Temporal and spatial distribution of (infected) freshwater snailsfrom 92 sites
 Variables:
 
 \itemize{
- \item locality    nearby village. 20 in total
- \item site_irn    site code unique in dataset
- \item visit_no    number allocated to each monthly survey- e.g. 1 for first field mission in late july 2011- to 48 for last one in jan 2016
- \item coll_date    collection date
- \item month    month
- \item Bulinus_tot    total of all Bulinus spp. collected
- \item Bulinus_pos_tot    total of all Bulinus spp. positive for infection collected
- \item BP_tot    Biomphalaria pfeifferi total count/collected
- \item BP_pos_tot    Biomphalaria pfeifferi positive for infection total no collected
- \item BF_tot    total of Bulinus forskalii collected
- \item BF_pos_tot    total of Bulinus forskalii positive for infection collected
- \item BF_prev    B. forskalii total positive/total collected *100 to give prevalence
- \item BT_tot    total of Bulinus truncatus collected
- \item BT_pos_tot    total of Bulinus truncatus positive for infection collected
- \item BT_prev    B. truncatus total positive/total collected *100 to give prevalence
- \item bp_pres    Biomphalaria pfeifferi present- n/y
- \item bt_pres    Bulinus truncatus present- y/n
- \item site_type    can.2= secondary irrigation canal, canal.3= tertiary irrigation canal, rice.p = rice paddy
- \item L_tot    total of Lymnaea natalensis collected
- \item Temp_Air    air temperature
- \item Temp_Water    water temperature
- \item water_speed_ms    water speed in m per sec
- \item water_depth    water depth in cm
- \item pH    pH reading from flow metre
- \item Cond    conductivity in ppm
- \item PPM    ppm water param data value
- \item Latitude.verb    latitude verbatim
- \item Longitude.verb    longitude verbatim
- \item Stagnante    no flow y/n
- \item wmo_min_temp    weather station day minimum air temp
- \item wmo_max_temp    weather station day max air temp
- \item wmo_av_temp    weather station day average air temp
- \item wmo_prec    weather station precipication in cm
- \item seas_wmo    season value adjusted to make may as part of wet season as often rain in this month (i.e. season acc to month of year AND WMO data).  wet season MAY- oct, dry nov- april)
- \item duration    cleaned duration data- combining durat_verb and duration.amina
- \item Heure    time of survey
- \item water_level.v    water level as recorded in original dataset (low, med, high, in flood)
- \item water_level3    water level edited to 3 levels only (some of in flood records the water depth is recorded as low)
- \item tz tz
- \item year year
- \item Latitude latitude
- \item Longitude longitude
+\item locality    nearby village. 20 in total
+\item site_irn    site code unique in dataset
+\item visit_no    number allocated to each monthly survey- e.g. 1 for first field mission in late july 2011- to 48 for last one in jan 2016
+\item coll_date    collection date
+\item month    month
+\item Bulinus_tot    total of all Bulinus spp. collected
+\item Bulinus_pos_tot    total of all Bulinus spp. positive for infection collected
+\item BP_tot    Biomphalaria pfeifferi total count/collected
+\item BP_pos_tot    Biomphalaria pfeifferi positive for infection total no collected
+\item BF_tot    total of Bulinus forskalii collected
+\item BF_pos_tot    total of Bulinus forskalii positive for infection collected
+\item BF_prev    B. forskalii total positive/total collected *100 to give prevalence
+\item BT_tot    total of Bulinus truncatus collected
+\item BT_pos_tot    total of Bulinus truncatus positive for infection collected
+\item BT_prev    B. truncatus total positive/total collected *100 to give prevalence
+\item bp_pres    Biomphalaria pfeifferi present- n/y
+\item bt_pres    Bulinus truncatus present- y/n
+\item site_type    can.2= secondary irrigation canal, canal.3= tertiary irrigation canal, rice.p = rice paddy
+\item L_tot    total of Lymnaea natalensis collected
+\item Temp_Air    air temperature
+\item Temp_Water    water temperature
+\item water_speed_ms    water speed in m per sec
+\item water_depth    water depth in cm
+\item pH    pH reading from flow metre
+\item Cond    conductivity in ppm
+\item PPM    ppm water param data value
+\item Latitude.verb    latitude verbatim
+\item Longitude.verb    longitude verbatim
+\item Stagnante    no flow y/n
+\item wmo_min_temp    weather station day minimum air temp
+\item wmo_max_temp    weather station day max air temp
+\item wmo_av_temp    weather station day average air temp
+\item wmo_prec    weather station precipication in cm
+\item seas_wmo    season value adjusted to make may as part of wet season as often rain in this month (i.e. season acc to month of year AND WMO data).  wet season MAY- oct, dry nov- april)
+\item duration    cleaned duration data- combining durat_verb and duration.amina
+\item Heure    time of survey
+\item water_level.v    water level as recorded in original dataset (low, med, high, in flood)
+\item water_level3    water level edited to 3 levels only (some of in flood records the water depth is recorded as low)
+\item tz tz
+\item year year
+\item Latitude latitude
+\item Longitude longitude
 }
-
 
 Dataset is from Rabone, 2019
 }

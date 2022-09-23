@@ -7,13 +7,13 @@
 \format{
 A 'data.frame': 33 obs. of 8 variables:
 \describe{
- \item{wing}{ (numeric).}
- \item{Lnalt}{Altitude at which a species is found (numeric).}
- \item{patch}{ (numeric).}
- \item{colour}{ (numeric).}
- \item{Frequency}{ (numeric).}
- \item{Length}{ (numeric).}
- \item{Lnote}{Length of the note in the bird's respective song (numeric).}
+\item{wing}{ (numeric).}
+\item{Lnalt}{Altitude at which a species is found (numeric).}
+\item{patch}{ (numeric).}
+\item{colour}{ (numeric).}
+\item{Frequency}{ (numeric).}
+\item{Length}{ (numeric).}
+\item{Lnote}{Length of the note in the bird's respective song (numeric).}
 }
 }
 \source{

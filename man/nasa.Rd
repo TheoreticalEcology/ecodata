@@ -17,46 +17,46 @@ Nasa asteroids
 A collection about asteroids and their characteristics from \url{https://www.kaggle.com/shrutimehta/nasa-asteroids-classification}. The aim is to predict whether the asteroids are hazardous or not.
 
 \describe{
- \item{Neo.Reference.ID }{ID (int).}
- \item{Name}{Asteroid name (int).}
- \item{Absolute.Magnitude}{Asteroid absolute magnitude side (numeric).}
- \item{Est.Dia.in.KM.min.}{Estimated diameter in KM minimum (numeric).}
- \item{Est.Dia.in.KM.max.}{Estimated diameter in KM maximum (numeric).}
- \item{Est.Dia.in.M.min}{Estimated diameter in meter minimum (numeric).}
- \item{Est.Dia.in.M.max}{Estimated diameter in meter maximum (numeric).}
- \item{Est.Dia.in.Miles.min.}{Estimated diameter in miles minimum (numeric).}
- \item{Est.Dia.in.Miles.max.}{Estimated diameter in miles maximum (numeric).}
- \item{Est.Dia.in.Feet.min.}{Estimated diameter in feet minimum (numeric).}
- \item{Est.Dia.in.Feet.max.}{Estimated diameter in feet maximum (numeric).}
- \item{Close.Approach.Date}{Asteroid closes approach date (factor).}
- \item{Epoch.Date.Close.Approach}{}
- \item{Relative.Velocity.km.per.sec}{Asteroid relative velocity speed in km per seconds (numeric).}
- \item{Relative.Velocity.km.per.hr}{Asteroid relative velocity speed in km per hours (numeric).}
- \item{Miles.per.hour}{Asteroid relative velocity speed in miles per hours (numeric).}
- \item{Miss.Dist..Astronomical.}{Asteroid miss distance in astronomical units (numeric).}
- \item{Miss.Dist..lunar.}{Asteroid miss distance in lunar units (numeric).}
- \item{Miss.Dist..kilometers.}{Asteroid miss distance in kilometers (numeric).}
- \item{Miss.Dist..miles.}{Asteroid miss distance in miles (numeric).}
- \item{Orbiting.Body}{Number of orbiting bodys (factor).}
- \item{Orbit.ID}{Orbit ID (int).}
- \item{Orbit.Determination.Date}{Orbit determination date (factor).}
- \item{Orbit.Uncertainity}{Orbit uncertainty (int).}
- \item{Minimum.Orbit.Intersection}{Orbit minimum intersection distance (numeric).}
- \item{Jupiter.Tisserand.Invariant}{Jupiter tisserand invariant.}
- \item{Epoch.Osculation}{Epoch Osculation.}
- \item{Eccentricity}{Measure of the non-circularity of an orbit (numeric).}
- \item{Semi.Major.Axis}{Major axis of an ellipse is its longest diameter.}
- \item{Inclination}{Orbital inclination measures the tilt of an object's orbit around a celestial body (numeric).}
- \item{Asc.Node.Longitude}{Longitude of the ascending node (numeric).}
- \item{Orbital.Period}{Orbital period as the time the astronomical object takes to complete one orbit around another object (numeric).}
- \item{Perihelion.Distance}{Distace of perihelion (numeric).}
- \item{Perihelion.Arg}{Argument of perihelion (numeric).}
- \item{Aphelion.Dist}{Aphelion distance (numeric).}
- \item{Perihelion.Time}{Perihelion Time (numeric).}
- \item{Mean.Anomaly}{Mean.Anomaly (numeric.)}
- \item{Mean.Motion}{Mean.Motion (numeric).}
- \item{Equinox}{}
- \item{Hazardous}{Response variable (0 or 1).}
+\item{Neo.Reference.ID }{ID (int).}
+\item{Name}{Asteroid name (int).}
+\item{Absolute.Magnitude}{Asteroid absolute magnitude side (numeric).}
+\item{Est.Dia.in.KM.min.}{Estimated diameter in KM minimum (numeric).}
+\item{Est.Dia.in.KM.max.}{Estimated diameter in KM maximum (numeric).}
+\item{Est.Dia.in.M.min}{Estimated diameter in meter minimum (numeric).}
+\item{Est.Dia.in.M.max}{Estimated diameter in meter maximum (numeric).}
+\item{Est.Dia.in.Miles.min.}{Estimated diameter in miles minimum (numeric).}
+\item{Est.Dia.in.Miles.max.}{Estimated diameter in miles maximum (numeric).}
+\item{Est.Dia.in.Feet.min.}{Estimated diameter in feet minimum (numeric).}
+\item{Est.Dia.in.Feet.max.}{Estimated diameter in feet maximum (numeric).}
+\item{Close.Approach.Date}{Asteroid closes approach date (factor).}
+\item{Epoch.Date.Close.Approach}{}
+\item{Relative.Velocity.km.per.sec}{Asteroid relative velocity speed in km per seconds (numeric).}
+\item{Relative.Velocity.km.per.hr}{Asteroid relative velocity speed in km per hours (numeric).}
+\item{Miles.per.hour}{Asteroid relative velocity speed in miles per hours (numeric).}
+\item{Miss.Dist..Astronomical.}{Asteroid miss distance in astronomical units (numeric).}
+\item{Miss.Dist..lunar.}{Asteroid miss distance in lunar units (numeric).}
+\item{Miss.Dist..kilometers.}{Asteroid miss distance in kilometers (numeric).}
+\item{Miss.Dist..miles.}{Asteroid miss distance in miles (numeric).}
+\item{Orbiting.Body}{Number of orbiting bodys (factor).}
+\item{Orbit.ID}{Orbit ID (int).}
+\item{Orbit.Determination.Date}{Orbit determination date (factor).}
+\item{Orbit.Uncertainity}{Orbit uncertainty (int).}
+\item{Minimum.Orbit.Intersection}{Orbit minimum intersection distance (numeric).}
+\item{Jupiter.Tisserand.Invariant}{Jupiter tisserand invariant.}
+\item{Epoch.Osculation}{Epoch Osculation.}
+\item{Eccentricity}{Measure of the non-circularity of an orbit (numeric).}
+\item{Semi.Major.Axis}{Major axis of an ellipse is its longest diameter.}
+\item{Inclination}{Orbital inclination measures the tilt of an object's orbit around a celestial body (numeric).}
+\item{Asc.Node.Longitude}{Longitude of the ascending node (numeric).}
+\item{Orbital.Period}{Orbital period as the time the astronomical object takes to complete one orbit around another object (numeric).}
+\item{Perihelion.Distance}{Distace of perihelion (numeric).}
+\item{Perihelion.Arg}{Argument of perihelion (numeric).}
+\item{Aphelion.Dist}{Aphelion distance (numeric).}
+\item{Perihelion.Time}{Perihelion Time (numeric).}
+\item{Mean.Anomaly}{Mean.Anomaly (numeric.)}
+\item{Mean.Motion}{Mean.Motion (numeric).}
+\item{Equinox}{}
+\item{Hazardous}{Response variable (0 or 1).}
 }
 }
 \examples{

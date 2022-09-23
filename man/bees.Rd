@@ -7,13 +7,13 @@
 \format{
 A 'data.frame': 72 obs. of 7 variables:
 \describe{
- \item{Rawdata}{??? (numeric).}
- \item{Spobee}{Response variable. Density of spores (numeric).}
- \item{Hive}{ID of the respective hive. (integer, 1 - 24).}
- \item{X}{Assuming coordinates (integer).}
- \item{Y}{Assuming coordinates (numeric).}
- \item{Infection}{Degree of infection. (integer: 0 (none), 1 (minor), 2 (moderate), 3 (major)).}
- \item{BeesN}{Bees per hive (integer).}
+\item{Rawdata}{??? (numeric).}
+\item{Spobee}{Response variable. Density of spores (numeric).}
+\item{Hive}{ID of the respective hive. (integer, 1 - 24).}
+\item{X}{Assuming coordinates (integer).}
+\item{Y}{Assuming coordinates (numeric).}
+\item{Infection}{Degree of infection. (integer: 0 (none), 1 (minor), 2 (moderate), 3 (major)).}
+\item{BeesN}{Bees per hive (integer).}
 }
 }
 \usage{

@@ -7,11 +7,11 @@
 \format{
 A 'data.frame': 84 obs. of 5 variables:
 \describe{
- \item{ID}{Patient ID.}
- \item{Treatment}{Factor indicating treatment (Placebo, Treated).}
- \item{Sex}{Factor indicating sex (Female, Male).}
- \item{Age}{Age of patient.}
- \item{Improved}{Ordered factor indicating treatment outcome (None, Some, Marked).}
+\item{ID}{Patient ID.}
+\item{Treatment}{Factor indicating treatment (Placebo, Treated).}
+\item{Sex}{Factor indicating sex (Female, Male).}
+\item{Age}{Age of patient.}
+\item{Improved}{Ordered factor indicating treatment outcome (None, Some, Marked).}
 }
 }
 \source{

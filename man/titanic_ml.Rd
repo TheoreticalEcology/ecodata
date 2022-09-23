@@ -7,22 +7,22 @@
 \format{
 A 'data.frame': 1309 obs. of 14 variables:
 \describe{
- \item{pclass}{Passenger class (int).}
- \item{survived}{Did the passenger survive (int, 1 = survived).}
- \item{name}{Pasenger name (character).}
- \item{sex}{Passenger sex (character).}
- \item{age}{Passenger age (numeric).}
- \item{sibsp}{Number of siblings / spouses aboard the Titanic (int).}
- \item{parch}{Number of parents / children aboard the Titanic (int).}
- \item{ticket}{Ticket number (character).}
- \item{fare}{Passenger fare (numeric).}
- \item{cabin}{Cabin number (character).}
- \item{embarked}{Port of Embarkation (character).}
- \item{boat}{Passenger rescue boat number (character).}
- \item{body}{Passenger body size (int).}
- \item{home.dest}{Passenger home destination (character).}
+\item{pclass}{Passenger class (int).}
+\item{survived}{Did the passenger survive (int, 1 = survived).}
+\item{name}{Pasenger name (character).}
+\item{sex}{Passenger sex (character).}
+\item{age}{Passenger age (numeric).}
+\item{sibsp}{Number of siblings / spouses aboard the Titanic (int).}
+\item{parch}{Number of parents / children aboard the Titanic (int).}
+\item{ticket}{Ticket number (character).}
+\item{fare}{Passenger fare (numeric).}
+\item{cabin}{Cabin number (character).}
+\item{embarked}{Port of Embarkation (character).}
+\item{boat}{Passenger rescue boat number (character).}
+\item{body}{Passenger body size (int).}
+\item{home.dest}{Passenger home destination (character).}
 }
-Survival status is unknown for 50% of the passengers and must be predicted.
+Survival status is unknown for 50\% of the passengers and must be predicted.
 }
 \source{
 \url{http://biostat.mc.vanderbilt.edu/wiki/Main/DataSets} \url{https://www.kaggle.com/c/titanic}

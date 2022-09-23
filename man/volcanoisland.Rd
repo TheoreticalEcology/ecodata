@@ -19,14 +19,12 @@ We are looking at the Maunga Whau (Mt Eden), one of about 50 volcanos in the Auc
 A crazy ecologist has created 100 permanent beetle observation plots across the volcano (random), and monitored them for 10 years, so you have one observation each year. Below a visualization of the terrain
 
 We have also a bunch of other things going on. For example,
-
-* Actually, we have two types of beetles. The second type is much more complicated, I'm curious if you find out what's going on with them
-
-* There is the wind, which might depend on other variables
-
-* There are lizards on the island that eat beetles. The lizards always live at the same place, however, they are hard to spot, so that the ecologist didn't always notice them. However, every time they were spotted, they were also observed.
-
-* Moreover, the ecologist also did a beetle survival study each year at each site. Don't ask me how he did it, but you have get for each year and each site how many of 20 beetles survived.
+\itemize{
+\item Actually, we have two types of beetles. The second type is much more complicated, I'm curious if you find out what's going on with them
+\item There is the wind, which might depend on other variables
+\item There are lizards on the island that eat beetles. The lizards always live at the same place, however, they are hard to spot, so that the ecologist didn't always notice them. However, every time they were spotted, they were also observed.
+\item Moreover, the ecologist also did a beetle survival study each year at each site. Don't ask me how he did it, but you have get for each year and each site how many of 20 beetles survived.
+}
 
 The main question of the study was to understand how beetle abudance depends on altitude. Here is an overview of counts per site and year.
 }

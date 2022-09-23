@@ -7,34 +7,34 @@
 \format{
 A 'data.frame': 146,028 obs. of 28 variables:
 \describe{
- \item{playershort}{Short player ID.}
- \item{player}{Player name.}
- \item{club}{Player club.}
- \item{leagueCountry}{Country of player club (England, Germany, France, and Spain).}
- \item{birthday}{Player birthday.}
- \item{height}{Player height (in cm).}
- \item{weight}{Player weight (in kg).}
- \item{position}{Detailed player position.}
- \item{games}{Number of games in the player-referee dyad.}
- \item{victories}{Victories in the player-referee dyad.}
- \item{ties}{Ties in the player-referee dyad.}
- \item{defeats}{Losses in the player-referee dyad.}
- \item{goals}{Goals scored by a player in the player-referee dyad.}
- \item{yellowCards}{Number of yellow cards player received from referee.}
- \item{yellowReds}{Number of yellow-red cards player received from referee.}
- \item{redCards}{Number of red cards player received from referee.}
- \item{photoID}{ID of player photo (if available).}
- \item{rater1}{Skin rating of photo by rater 1 (5-point scale ranging from very light skin, to very dark skin).}
- \item{rater2}{Skin rating of photo by rater 2 (5-point scale ranging from very light skin, to very dark skin).}
- \item{refNum}{Unique referee ID number (referee name removed for anonymizing purposes).}
- \item{refCountry}{Unique referee country ID number (country name removed for anonymizing purposes).}
- \item{Alpha_3}{Unique referee country ID number (country name removed for anonymizing purposes).}
- \item{meanIAT}{Mean implicit bias score (using the race IAT) for referee country, higher values correspond to faster white | good, black | bad associations.}
- \item{nIAT}{Sample size for race IAT in that particular country.}
- \item{seIAT}{Standard error for mean estimate of race IAT.}
- \item{meanExp}{Mean explicit bias score (using a racial thermometer task) for referee country, higher values correspond to greater feelings of warmth toward whites versus blacks.}
- \item{nExp}{Sample size for explicit bias in that particular country.}
- \item{seExp}{Standard error for mean estimate of explicit bias measure.}
+\item{playershort}{Short player ID.}
+\item{player}{Player name.}
+\item{club}{Player club.}
+\item{leagueCountry}{Country of player club (England, Germany, France, and Spain).}
+\item{birthday}{Player birthday.}
+\item{height}{Player height (in cm).}
+\item{weight}{Player weight (in kg).}
+\item{position}{Detailed player position.}
+\item{games}{Number of games in the player-referee dyad.}
+\item{victories}{Victories in the player-referee dyad.}
+\item{ties}{Ties in the player-referee dyad.}
+\item{defeats}{Losses in the player-referee dyad.}
+\item{goals}{Goals scored by a player in the player-referee dyad.}
+\item{yellowCards}{Number of yellow cards player received from referee.}
+\item{yellowReds}{Number of yellow-red cards player received from referee.}
+\item{redCards}{Number of red cards player received from referee.}
+\item{photoID}{ID of player photo (if available).}
+\item{rater1}{Skin rating of photo by rater 1 (5-point scale ranging from very light skin, to very dark skin).}
+\item{rater2}{Skin rating of photo by rater 2 (5-point scale ranging from very light skin, to very dark skin).}
+\item{refNum}{Unique referee ID number (referee name removed for anonymizing purposes).}
+\item{refCountry}{Unique referee country ID number (country name removed for anonymizing purposes).}
+\item{Alpha_3}{Unique referee country ID number (country name removed for anonymizing purposes).}
+\item{meanIAT}{Mean implicit bias score (using the race IAT) for referee country, higher values correspond to faster white | good, black | bad associations.}
+\item{nIAT}{Sample size for race IAT in that particular country.}
+\item{seIAT}{Standard error for mean estimate of race IAT.}
+\item{meanExp}{Mean explicit bias score (using a racial thermometer task) for referee country, higher values correspond to greater feelings of warmth toward whites versus blacks.}
+\item{nExp}{Sample size for explicit bias in that particular country.}
+\item{seExp}{Standard error for mean estimate of explicit bias measure.}
 }
 }
 \source{
@@ -49,7 +49,7 @@ This is a data set from the English premier league. The data was compiled to tes
 \details{
 Soccer red cards data set
 
-The data was analyzed in a many-analysed project. The estimated effect sizes ranged from 0.89 to 2.93 (Mdn = 1.31) in odds-ratio units. Twenty teams (69%) found a statistically significant positive effect, and 9 teams (31%) did not observe a significant relationship. The variation is explained by the statistical approach and the choice of predictor variables.
+The data was analyzed in a many-analysed project. The estimated effect sizes ranged from 0.89 to 2.93 (Mdn = 1.31) in odds-ratio units. Twenty teams (69\%) found a statistically significant positive effect, and 9 teams (31\%) did not observe a significant relationship. The variation is explained by the statistical approach and the choice of predictor variables.
 }
 \examples{
 redCards_df <- redCards
