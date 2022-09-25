@@ -208,8 +208,7 @@ usethis::use_data(plantHeight, overwrite = T)
 
 
 
-## Plant Height
-
+## SOEP
 
 ```{r}
 library(haven)
@@ -221,12 +220,11 @@ str(soep)
 usethis::use_data(soep, overwrite = T)
 ```
 
-
-
 ## Snails 
 
 ```{r}
 snails = readRDS("snails.RDS")
+snails = as.data.frame(snails)
 usethis::use_data(snails, overwrite = T)
 ```
 
@@ -244,6 +242,12 @@ seedBank = SB %>%
   filter(Source == "Measured") %>% 
   select(-Source) %>% 
   left_join(y = additional_variables, by = c("Site"="Plot", "Species")) 
+
+seedBank = as.data.frame(seedBank)
+
+colnames(seedBank)[33:35] = c(
+  "Temp", "Humidity", "Nitrogen"
+)
 
 usethis::use_data(seedBank, overwrite = T)
 ```

@@ -5,7 +5,7 @@
 \alias{snails}
 \title{Snails data}
 \format{
-An object of class \code{grouped_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 2928 rows and 43 columns.
+An object of class \code{data.frame} with 2928 rows and 43 columns.
 }
 \usage{
 snails

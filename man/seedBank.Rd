@@ -5,7 +5,7 @@
 \alias{seedBank}
 \title{Seed bank data}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2213 rows and 36 columns.
+An object of class \code{data.frame} with 2213 rows and 36 columns.
 }
 \usage{
 seedBank
