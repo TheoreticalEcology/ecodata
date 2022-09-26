@@ -252,8 +252,6 @@ colnames(seedBank)[33:35] = c(
   "Temp", "Humidity", "Nitrogen"
 )
 
-seedBank$SBDensity = as.numeric(seedBank$SBDensity)
-
 usethis::use_data(seedBank, overwrite = T)
 ```
 
