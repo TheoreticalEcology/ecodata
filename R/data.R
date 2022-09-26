@@ -771,16 +771,33 @@ dataset_flower = function() {
 "soep"
 
 
-
-
 #### seedBank ####
 
 #' Seed bank data
 #' 
+#' @description 
 #' Data for species with seed traits, environmental factors, and information about their ability to form natural seed banks.
 #' 
 #' 
+#' @details  
+#' The dataset comes from a study from Rosbakh, 2022a (environmental factors were obtained from Rosbakh, 2022b) and includes information about plant species, their vegetative and seed traits, environmental factors, and their ability to form natural seed banks.
 #' 
+#' The objective of this dataset is to identify which traits and environmental factors are responsible if species can naturally produce a seed bank. The ability to form seed banks is encoded as presence-absence and as a density. Data was collected at 17 sites for 286 species.
+#' 
+#' **Task:** Which environmental factors and traits explain the density or occurrence of a seed bank?
+#' 
+#' 
+#' **Tip:**
+#' 
+#' | Effects        | Variables                                                                         |
+#' |-------------------------|----------------------------------------------|
+#' | Response       | SBPA, SBDensity                                                                   |
+#' | Fixed effects  | Altitude, SeedMass, SeedShape, SeedN, SeedPr, DormRank, Temp, Hum, Nitrogen, Grazing |
+#' | Random effects | Site, species                                                                     |
+#' 
+#' 
+#' **Variables:**
+#'  
 #' Species information:
 #' 
 #' \itemize{
@@ -838,18 +855,21 @@ dataset_flower = function() {
 #'   \item Endosperm Endosperm
 #' }
 #' 
+#' @note 
 #' 
-#' The dataset is originally from Rosbakh, 2022a but environmental factors were obtained from Rosbakh, 2022b
-#' 
-#' 
+#' * start with lme4 (model checks are easier because of conditional simulations and the plotting option for residuals ~ random effects to identify random slopes (`plot(model, fitted(.)~sAltitude | Site))`)
+#' * use `dispformula`in glmmTMB if there is heteroskedasticity
+#' * scale your variables
 #' 
 #' @references 
 #' Rosbakh, S., Chalmandrier, L., Phartyal, S., & Poschlod, P. (2022). Inferring community assembly processes from functional seed trait variation along elevation gradient. Journal of Ecology.
 #' 
 #' Rosbakh, S., Pichler, M., & Poschlod, P. (2022). Machine‐learning algorithms predict soil seed bank persistence from easily available traits. Applied Vegetation Science, 25(2), e12660.
-#' 
+#'
+#' @example inst/examples/seedBank.R
 #' @author Maximilian Pichler
 "seedBank"
+
 
 
 
@@ -934,10 +954,28 @@ dataset_flower = function() {
 #### Snails ####
 #' Snails data
 #' 
-#' Temporal and spatial distribution of (infected) freshwater snailsfrom 92 sites
+#' @description 
+#' Temporal and spatial distribution of (infected) 4 freshwater snail species from 92 sites
 #' 
+#' @details 
 #' 
-#' Variables:
+#' The dataset comes from a study from Rabone et al., 2019 and includes information about the distribution of four snail species (healthy and infected) in the Niger River Valley. Freshwater snails are known to be intermediate hosts of schistosomiasis (a parasit).
+#' 
+#' The objective of Rabone et al., 2019 was to model the total abundance of the snail species as well as the proporation of the infected individuals. The hypothesis is that the total abundance and the infection depends on environmental and on seasonal factors. Data were collected at 92 (20 localities) sites over a 6-year period (2011-2016).
+#' 
+#' **Task:**
+#' Rabone et al., 2019 found differences for the species. Start with one species (total abundance + infection rate) and if you have time, go for other species.
+#' 
+#' **Tip:**
+#' 
+#' | Effects        | Variables                                                                              |
+#' |------------------------|-----------------------------------------------|
+#' | Response       | Bulinus_tot, BP_tot, BF_tot, BT_tot total                                              |
+#' | Fixed effects  | Temp_Water, pH, water_speed_ms, water_depth, Cond, wmo_prec, locality, site_type, year |
+#' | Random effects | Locality, site_irn, coll_date                                                          |
+#' | offset         | duration  
+#' 
+#' **Variables:**
 #' 
 #' \itemize{
 #'  \item locality    nearby village. 20 in total
@@ -985,11 +1023,17 @@ dataset_flower = function() {
 #' }
 #' 
 #' 
-#' Dataset is from Rabone, 2019 
+#' @note
 #' 
+#' * start with lme4 (model checks are easier because of conditional simulations and the plotting option for residuals \~ random effects to identify random slopes (`plot(model, fitted(.)~sTemp_Water | coll_date))`)
+#' * check for underdispersion
+#' * check for temporal or spatial trends/autocorrelation 
+#' * scale your variables
 #' 
 #' @references 
 #'  Rabone, M., Wiethase, J. H., Allan, F., Gouvras, A. N., Pennance, T., Hamidou, A. A., ... & Rollinson, D. (2019). Freshwater snails of biomedical importance in the Niger River Valley: evidence of temporal and spatial patterns in abundance, distribution and infection with Schistosoma spp. Parasites & vectors, 12(1), 1-20.
+#' 
+#' @example inst/examples/snails.R
 #' 
 #' @author Maximilian Pichler
 "snails"

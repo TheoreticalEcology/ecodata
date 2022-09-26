@@ -14,6 +14,22 @@ seedBank
 Data for species with seed traits, environmental factors, and information about their ability to form natural seed banks.
 }
 \details{
+The dataset comes from a study from Rosbakh, 2022a (environmental factors were obtained from Rosbakh, 2022b) and includes information about plant species, their vegetative and seed traits, environmental factors, and their ability to form natural seed banks.
+
+The objective of this dataset is to identify which traits and environmental factors are responsible if species can naturally produce a seed bank. The ability to form seed banks is encoded as presence-absence and as a density. Data was collected at 17 sites for 286 species.
+
+\strong{Task:} Which environmental factors and traits explain the density or occurrence of a seed bank?
+
+\strong{Tip:}\tabular{ll}{
+   Effects \tab Variables \cr
+   Response \tab SBPA, SBDensity \cr
+   Fixed effects \tab Altitude, SeedMass, SeedShape, SeedN, SeedPr, DormRank, Temp, Hum, Nitrogen, Grazing \cr
+   Random effects \tab Site, species \cr
+}
+
+
+\strong{Variables:}
+
 Species information:
 
 \itemize{
@@ -68,8 +84,38 @@ Seed traits:
 \item SYN	Synchrony of germination
 \item Endosperm Endosperm
 }
+}
+\note{
+\itemize{
+\item start with lme4 (model checks are easier because of conditional simulations and the plotting option for residuals ~ random effects to identify random slopes (\verb{plot(model, fitted(.)~sAltitude | Site))})
+\item use \code{dispformula}in glmmTMB if there is heteroskedasticity
+\item scale your variables
+}
+}
+\examples{
+# SB density (for lm or lmm):
+hist(seedBank$SBDensity)
 
-The dataset is originally from Rosbakh, 2022a but environmental factors were obtained from Rosbakh, 2022b
+# SB presence-absence (for glm or glmm)
+table(seedBank$SBPA)
+
+# Scale and remove NA:
+data = as.data.frame(seedBank)
+data$sAltitude = scale(data$Altitude)
+data$sSeedMass = scale(data$SeedMass)
+data$sSeedShape = scale(data$SeedShape)
+data$sSeedN = scale(data$SeedN)
+data$sSeedPr = scale(data$SeedPr)
+data$sDormRank = scale(data$DormRank)
+data$sTemp = scale(data$Temp)
+data$sHum = scale(data$Humidity)
+data$sNitro = scale(data$Nitrogen)
+data$sGrazing = scale(data$Grazing)
+
+rows = rownames(model.matrix(~sAltitude + sSeedMass + sSeedShape + sSeedN +
+                               sSeedPr + sDormRank + sTemp + sHum + sNitro + 
+                               sGrazing + Site + Species, data = data))
+data = data[rows, ]
 }
 \references{
 Rosbakh, S., Chalmandrier, L., Phartyal, S., & Poschlod, P. (2022). Inferring community assembly processes from functional seed trait variation along elevation gradient. Journal of Ecology.
