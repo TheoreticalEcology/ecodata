@@ -7,9 +7,9 @@
 \format{
 A 'data.frame': 40 obs. of 3 variables:
 \describe{
- \item{Root}{Root biomass (numeric).}
- \item{Fruit}{Fruit biomass (numeric).}
- \item{Grazing}{Grazed or not (factor).}
+\item{Root}{Root biomass (numeric).}
+\item{Fruit}{Fruit biomass (numeric).}
+\item{Grazing}{Grazed or not (factor).}
 }
 }
 \usage{

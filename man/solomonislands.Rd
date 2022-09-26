@@ -7,10 +7,10 @@
 \format{
 A 'data.frame': 40 obs. of 3 variables:
 \describe{
- \item{Island}{Island name (character).}
- \item{Species}{Species richness on the respective island (numeric).}
- \item{Area}{Island area (numeric).}
- \item{Distance}{Distance to mainland (numeric).}
+\item{Island}{Island name (character).}
+\item{Species}{Species richness on the respective island (numeric).}
+\item{Area}{Island area (numeric).}
+\item{Distance}{Distance to mainland (numeric).}
 }
 }
 \usage{

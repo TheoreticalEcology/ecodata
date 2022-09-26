@@ -7,14 +7,14 @@
 \format{
 A 'data.frame': 56 obs. of 8 variables:
 \describe{
- \item{SITE}{Site ID.}
- \item{ABUND}{Bird abundance.}
- \item{AREA}{Area.}
- \item{DIST}{Distance to the next forest fragment.}
- \item{LDIST}{Distance to the next large forest fragment}
- \item{YR.ISOL}{Years since the site was isolated / fragmented.}
- \item{GRAZE}{Grazing intensity in the surrounding.}
- \item{ALT}{Altitude.}
+\item{SITE}{Site ID.}
+\item{ABUND}{Bird abundance.}
+\item{AREA}{Area.}
+\item{DIST}{Distance to the next forest fragment.}
+\item{LDIST}{Distance to the next large forest fragment}
+\item{YR.ISOL}{Years since the site was isolated / fragmented.}
+\item{GRAZE}{Grazing intensity in the surrounding.}
+\item{ALT}{Altitude.}
 }
 }
 \source{

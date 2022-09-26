@@ -5,7 +5,7 @@
 \alias{seedBank}
 \title{Seed bank data}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2213 rows and 36 columns.
+An object of class \code{data.frame} with 2213 rows and 36 columns.
 }
 \usage{
 seedBank
@@ -17,60 +17,57 @@ Data for species with seed traits, environmental factors, and information about 
 Species information:
 
 \itemize{
-  \item Species species
-  \item SBPA presence or absence of seed bank
-  \item SBDensity seed bank density
+\item Species species
+\item SBPA presence or absence of seed bank
+\item SBDensity seed bank density
 }
-
 
 Environmental factors:
 
 \itemize{
-  \item Site Site id (17 sites)
-  \item Altitude Altitude
-  \item Temp Landolt's temperature
-  \item Humidity Landolt's F
-  \item Nitrogen Landolt's N
-  \item Grazing Grazing 
+\item Site Site id (17 sites)
+\item Altitude Altitude
+\item Temp Landolt's temperature
+\item F Landolt's F
+\item N Landolt's N
+\item Grazing Grazing
 }
-
 
 Vegetative traits:
 
 \itemize{
-  \item SLA specific leaf aera
-  \item CanopyHeight canopy height
-  \item LeafN leaf nitrogen content
-  \item LeafC foliar frost sensitivity
+\item SLA specific leaf aera
+\item CanopyHeight canopy height
+\item LeafN leaf nitrogen content
+\item LeafC foliar frost sensitivity
 }
 
 Seed traits:
 
 \itemize{
-  \item SeedMass	Seed morphology
-  \item SeedShape	Seed morphology
-  \item SeedN	Seed morphology
-  \item SeedPr	Seed morphology
-  \item SRH	Seed releasing height
-  \item TV	Terminal velocity
-  \item WingLoad	Wing loading
-  \item EpiStein	Attachement potential (Steinschaf)
-  \item EpiCow	Attachement potential (Cow)
-  \item EpiMerino	Attachement potential (Merino)
-  \item Endozoo	Potential for endozoochorous dispersal
-  \item DormRank	Dormancy 'depth'
-  \item T5	Base germination temperature
-  \item T50	Temperature for 50% germination
-  \item T95	Temperature for 95% germination
-  \item Jwidth	Germination niche width (temperature)
-  \item MGT	Mean germination time
-  \item MGR	Mean germiation rate
-  \item GSP	Germination speed
-  \item UNC	Synchrony of germination
-  \item SYN	Synchrony of germination
-  \item Endosperm Endosperm
+\item SeedMass	Seed morphology
+\item SeedShape	Seed morphology
+\item SeedN	Seed morphology
+\item SeedPr	Seed morphology
+\item SRH	Seed releasing height
+\item TV	Terminal velocity
+\item WingLoad	Wing loading
+\item EpiStein	Attachement potential (Steinschaf)
+\item EpiCow	Attachement potential (Cow)
+\item EpiMerino	Attachement potential (Merino)
+\item Endozoo	Potential for endozoochorous dispersal
+\item DormRank	Dormancy 'depth'
+\item T5	Base germination temperature
+\item T50	Temperature for 50\% germination
+\item T95	Temperature for 95\% germination
+\item Jwidth	Germination niche width (temperature)
+\item MGT	Mean germination time
+\item MGR	Mean germiation rate
+\item GSP	Germination speed
+\item UNC	Synchrony of germination
+\item SYN	Synchrony of germination
+\item Endosperm Endosperm
 }
-
 
 The dataset is originally from Rosbakh, 2022a but environmental factors were obtained from Rosbakh, 2022b
 }

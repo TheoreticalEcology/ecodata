@@ -7,24 +7,24 @@
 \format{
 A 'data.frame': 20,480 obs. of 18 variables:
 \describe{
- \item{crop}{Plant name.}
- \item{insect}{Insect name.}
- \item{type}{Type of plant (arboreous or herbaceous).}
- \item{season}{Flowering season.}
- \item{diameter}{Flower diameter in mm.}
- \item{corolla}{Corolla shape (open, campanulate, or tubular).}
- \item{colour}{Flower colour.}
- \item{nectar}{Nectar (yes or no).}
- \item{b.symstem}{Bloom system (type of pollination: insects, insects / wind, or insects / birds).}
- \item{s.pollination}{Self pollination (yes or no).}
- \item{inflorescence}{Inflorescence (yes, solitary, solitary/pairs, solitary / clusters).}
- \item{composite}{Composite flowers (yes or no).}
- \item{guild}{Five pollinator traits: Guild (bumblebees, butterflies etc.).}
- \item{tongue}{Tongue length in mm.}
- \item{body}{Body size in mm.}
- \item{sociality}{Soziality (yes or no).}
- \item{feeding}{Feeding behaviour (oligolectic, polylectic, or parasitic).}
- \item{interaction}{Interaction between insect and plant (yes or no).}
+\item{crop}{Plant name.}
+\item{insect}{Insect name.}
+\item{type}{Type of plant (arboreous or herbaceous).}
+\item{season}{Flowering season.}
+\item{diameter}{Flower diameter in mm.}
+\item{corolla}{Corolla shape (open, campanulate, or tubular).}
+\item{colour}{Flower colour.}
+\item{nectar}{Nectar (yes or no).}
+\item{b.symstem}{Bloom system (type of pollination: insects, insects / wind, or insects / birds).}
+\item{s.pollination}{Self pollination (yes or no).}
+\item{inflorescence}{Inflorescence (yes, solitary, solitary/pairs, solitary / clusters).}
+\item{composite}{Composite flowers (yes or no).}
+\item{guild}{Five pollinator traits: Guild (bumblebees, butterflies etc.).}
+\item{tongue}{Tongue length in mm.}
+\item{body}{Body size in mm.}
+\item{sociality}{Soziality (yes or no).}
+\item{feeding}{Feeding behaviour (oligolectic, polylectic, or parasitic).}
+\item{interaction}{Interaction between insect and plant (yes or no).}
 }
 }
 \source{

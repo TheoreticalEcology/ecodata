@@ -8,9 +8,9 @@ dataset_flower()
 }
 \value{
 \itemize{
- \item train - Images for training
- \item labels - Labels for train split, 0 - 4
- \item test - Images for testing
+\item train - Images for training
+\item labels - Labels for train split, 0 - 4
+\item test - Images for testing
 }
 }
 \description{

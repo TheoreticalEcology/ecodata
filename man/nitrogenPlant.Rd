@@ -19,30 +19,29 @@ Questions: Nitrogen ~ CO2+...?
 Variables:
 
 \itemize{
-  \item Species species
-  \item Year Year
-  \item Altitude Altitude
-  \item Discr carbon isotope discrimination
-  \item WUEi intrinsic water use efficiency 
-  \item WUEt instantaneous water use efficiency
-  \item FoliarN foliar N contents
-  \item FoliarCN foliar CN contents
-  \item Foliad15N foliar N stable isotope composition
-  \item Foliard13C foliar 13 C stable isotope composition
-  \item Foliard13C_corrALT2000 foliar 13 C stable isotope composition corrected at Altitude = 20000
-  \item 13Cair delta 13 C for atmospheric CO
-  \item cica ratio of intercellular to ambient CO2 concentrations
-  \item CO2conc CO2 concentration 
-  \item VDP_Hpbg vapor pressure deficit at Hohenpeissenberg at 977 m a.s.l. 
-  \item VDP_Alt vapor pressure deficit at altitude
-  \item SiteID Site ID
-  \item Collectiondate Collection date
-  \item Latitude Latitude
-  \item Longitude Longitude
-  \item SampleID Sample ID
-  \item Collectionsite Collection site
+\item Species species
+\item Year Year
+\item Altitude Altitude
+\item Discr carbon isotope discrimination
+\item WUEi intrinsic water use efficiency
+\item WUEt instantaneous water use efficiency
+\item FoliarN foliar N contents
+\item FoliarCN foliar CN contents
+\item Foliad15N foliar N stable isotope composition
+\item Foliard13C foliar 13 C stable isotope composition
+\item Foliard13C_corrALT2000 foliar 13 C stable isotope composition corrected at Altitude = 20000
+\item 13Cair delta 13 C for atmospheric CO
+\item cica ratio of intercellular to ambient CO2 concentrations
+\item CO2conc CO2 concentration
+\item VDP_Hpbg vapor pressure deficit at Hohenpeissenberg at 977 m a.s.l.
+\item VDP_Alt vapor pressure deficit at altitude
+\item SiteID Site ID
+\item Collectiondate Collection date
+\item Latitude Latitude
+\item Longitude Longitude
+\item SampleID Sample ID
+\item Collectionsite Collection site
 }
-
 
 Dataset is from Rosbakh, 2021.
 }

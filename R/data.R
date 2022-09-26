@@ -899,6 +899,38 @@ dataset_flower = function() {
 "nitrogenPlant"
 
 
+
+#### Scouting Ants ####
+#' Scouting Ants data
+#' 
+#' An experiment to test if there are scouting ants in the species Lasius niger.
+#' 
+#' 
+#' @details The idea of this experiment was to see if there are certain individuals that do not follow pheromone trails (scouts). The idea for this originated because pheromone following behavior in Lasius niger is only around 70%, unusually low for ants. The question is thus if they just often don't follow on average, or if there are specialized individuals that do not follow pheromone trails.
+#' 
+#' In the experiments, ants were put 2 times in a y-maze. We want to see if their behaviour in the first visit predicts their behavior in the second visit. If that was the case, we would conclude that there are individuals that predictably do not follow pheromone trails (which may indicate that they are scouts, but could of course also mean that their sense of smell is impaired).
+#' 
+#' Variables:
+#' 
+#' * ant_group - for the first visit, whether the ant followed the pheromone trail or not, for the second visit, whether there was a switch or not
+#' * ant_group_main - aggregation of ant_group - for observations of the first visit, just "Firstvisit", for the second visit, split by decision
+#' * first.visit	a logical column returning 1 if this is the first visit, and 0 if it is not
+#' * went.phero	a logical column returning 1 if the ant went towards the pheromone, and 0 if it did not
+#' * phero.orientation	whether the Y maze arm marked with a pheromone trail was facing into the room, or towards the wall
+#' * where.phero	whether the Y maze arm marked with a pheromone trail was on the right or lef, from the perspective of the Y-maze stem
+#' * Orientation	Whether the left arm was facing towards the wall or towards the room
+#' * Treatment	The direct of the pheromone trail (L or R) at the first or second test
+#' * Colony	a unique ID for each colony
+#' 
+#' @note It may make sense to re-define factors / contrasts. For example, you could create a factor to see whether ants went left or right, or whether they switched their direction on the second visit. 
+#' 
+#' @example inst/examples/scoutingAnts.R
+#' @references Koch, Alexandra, and Tomer J. Czaczkes. "No specialist pheromone-ignoring ants in Lasius niger." Ecological Entomology 46 (2020): 677-680.
+#' 
+#' @author Florian Hartig
+"scoutingAnts"
+
+
 #### Snails ####
 #' Snails data
 #' 

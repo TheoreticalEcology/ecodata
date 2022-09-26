@@ -37,7 +37,7 @@ Suggests:
     ape,
     phytools,
     geiger,
-    bipartide,
+    bipartite,
     caper,
     vegan,
     lavaan,
@@ -50,6 +50,7 @@ URL: https://github.com/TheoreticalEcology/
 BugReports: https://github.com/TheoreticalEcology/ecodata/issues
 Encoding: UTF-8
 LazyData: true
+Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
 VignetteBuilder: knitr
 Config/testthat/edition: 3
