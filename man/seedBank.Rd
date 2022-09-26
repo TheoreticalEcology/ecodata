@@ -28,8 +28,8 @@ Environmental factors:
 \item Site Site id (17 sites)
 \item Altitude Altitude
 \item Temp Landolt's temperature
-\item F Landolt's F
-\item N Landolt's N
+\item Humidity Landolt's F
+\item Nitrogen Landolt's N
 \item Grazing Grazing
 }
 
