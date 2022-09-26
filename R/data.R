@@ -796,6 +796,8 @@ dataset_flower = function() {
 #' | Random effects | Site, species                                                                     |
 #' 
 #' 
+#' Note that predictors and REs are "potential predictors" - it is not necessarily optimal to use them all.
+#' 
 #' **Variables:**
 #'  
 #' Species information:
@@ -871,6 +873,19 @@ dataset_flower = function() {
 "seedBank"
 
 
+#### Plant Phylo ####
+#' Plant Phylogeny
+#' 
+#' @description 
+#' Phylogeny of 5122 plant species 
+#' 
+#' @details 
+#' 
+#' Can be used e.g. together with `seedBank`.
+#' 
+#' @example inst/examples/plantPhylo.R
+#' @author Maximilian Pichler
+"plantPhylo"
 
 
 #### nitrogen Plant ####

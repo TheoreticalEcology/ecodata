@@ -104,8 +104,8 @@ data$syear = scale(data$year)
 data$sLat = scale(data$Latitude)
 data$sLon = scale(data$Longitude)
 
-rows = rownames(model.matrix(~sTemp_Water + spH + sLat + sLon + sCond + 
-                               seas_wmo+ swmo_prec + swater_speed_ms + 
+rows = rownames(model.matrix(Bulinus_tot~sTemp_Water + spH + sLat + sLon + 
+                               sCond + seas_wmo+ swmo_prec + swater_speed_ms + 
                                swater_depth + syear + duration + locality + 
                                site_irn + coll_date, data = data))
 data = data[rows, ]

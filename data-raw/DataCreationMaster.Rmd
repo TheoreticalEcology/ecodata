@@ -255,6 +255,13 @@ colnames(seedBank)[33:35] = c(
 usethis::use_data(seedBank, overwrite = T)
 ```
 
+## Seed bank phylogeny
+```{r}
+library(ape)
+tree = ape::read.tree("PlantPhylo.tre")
+plantPhylo = tree
+usethis::use_data(plantPhylo, overwrite = T)
+```
 
 
 ## Nitrogen concentration 
