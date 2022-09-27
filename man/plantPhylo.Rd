@@ -14,7 +14,7 @@ plantPhylo
 Phylogeny of 5122 plant species
 }
 \details{
-Can be, for example, used together with \code{seedBank}.
+Can be used e.g. together with \code{seedBank}.
 }
 \examples{
 library(ape)

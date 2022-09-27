@@ -112,7 +112,6 @@
 #'
 #' @format A 'data.frame': 72 obs. of 7 variables:
 #' \describe{
-#'  \item{Rawdata}{??? (numeric).}
 #'  \item{Spobee}{Response variable. Density of spores (numeric).}
 #'  \item{Hive}{ID of the respective hive. (integer, 1 - 24).}
 #'  \item{X}{Assuming coordinates (integer).}
@@ -1052,4 +1051,32 @@ dataset_flower = function() {
 #' 
 #' @author Maximilian Pichler
 "snails"
+
+
+
+#' GPA data
+#' 
+#' The GPA (college grade point average) data is a longitudinal data set in which 200 college students and their GPA have been followed 6 consecutive semesters. 
+#' 
+#' Variables: 
+#' 
+#' * student - student ID
+#' * occass - time 
+#' * gpa - the students gpa
+#' * job - how much the student worked
+#' * sex - sex
+#' * highgpa - high school gpa
+#' * admitted - whether a student has been admitted to the university of their choice. Since not every student applies to a university, this variable has many missing values.
+#' 
+#' For convenience, there are additionally the variables 
+#' * year
+#' * semester
+#' * occasion
+#' 
+#' which are essentially a re-coding of ocasss
+#' 
+#' @example inst/examples/gpa.R
+#' 
+#' @author Florian Hartig
+"gpa"
 

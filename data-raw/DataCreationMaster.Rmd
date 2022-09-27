@@ -118,6 +118,7 @@ usethis::use_data(students, overwrite = T)
 
 ```{r}
 bees = read.table("Bees.txt", header = T)
+bees$Rawdata = NULL # removed because seems to be identical to Spobee
 usethis::use_data(bees, overwrite = T)
 ```
 

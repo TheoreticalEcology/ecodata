@@ -28,6 +28,8 @@ The objective of this dataset is to identify which traits and environmental fact
 }
 
 
+Note that predictors and REs are "potential predictors" - it is not necessarily optimal to use them all.
+
 \strong{Variables:}
 
 Species information:
