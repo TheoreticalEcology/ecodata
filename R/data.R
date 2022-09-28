@@ -293,6 +293,18 @@ dataset_flower = function() {
 "plantcounts"
 
 
+
+
+#### Plant Height ####
+#' Plant height
+#' 
+#' A trait dataset with plant height, location and environmental covariates
+#' 
+#' @source https://environmentalcomputing.net/statistics/linear-models/linear-regression/
+#' @author Florian Hartig
+"plantHeight"
+
+
 #### Plant Pollinators ####
 
 #' Plant Pollinators
