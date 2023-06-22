@@ -1121,6 +1121,10 @@ dataset_flower = function() {
 #' Dataset on N composition 
 #' 
 #' Detailed explanation at https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.3940
-
+#' 
+#' @example inst/examples/elemental.R
+#' 
+#' @author Florian Hartig
+"elemental"
 
 

@@ -6,6 +6,6 @@ summary(m1)
 
 # beta regression
 library(glmmTMB)
-m2 <- glmmTMB(N_dec ~ (Year + Site) * Species, family = beta_family, data = elemental )
+m2 <- glmmTMB(N_dec ~ Year + Site + Species, family = beta_family, data = elemental )
 summary(m2)
 
