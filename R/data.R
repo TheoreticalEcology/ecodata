@@ -1099,7 +1099,7 @@ dataset_flower = function() {
 
 #' Elephant
 #' 
-#' Species distribution and prediction data for the African elephant (Loxodonta).
+#' Species distribution and prediction data for the African elephant (Loxodonta), originally from ([Angelov, 2020](https://zenodo.org/record/4048271)). The dataset was used in [Ryo et al., 2020](https://onlinelibrary.wiley.com/doi/full/10.1111/ecog.05360) to demonstrate the idea of explainable AI .
 #' 
 #' This dataset consists of two datasets, which are presented as a list 
 #' 
@@ -1107,8 +1107,10 @@ dataset_flower = function() {
 #' 
 #' 2) elephant$predictionData data with environmental predictors for spatial predictions
 #' 
+#' The environmental data consists of 19 environmental variables, called bio1 through bio19, which are public and globally available bioclimatic variables (see [https://www.worldclim.org/data/bioclim.html](https://www.worldclim.org/data/bioclim.html) for a description of the variables). For example, bio1 is the mean annual temperature. 
 #' 
-#' @example inst/examples/elephants.R
+#' 
+#' @example inst/examples/elephant.R
 #' 
 #' @author Maximilian Pichler, Florian Hartig
 "elephant"

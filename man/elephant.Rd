@@ -11,7 +11,7 @@ An object of class \code{list} of length 2.
 elephant
 }
 \description{
-Species distribution and prediction data for the African elephant (Loxodonta).
+Species distribution and prediction data for the African elephant (Loxodonta), originally from (\href{https://zenodo.org/record/4048271}{Angelov, 2020}). The dataset was used in \href{https://onlinelibrary.wiley.com/doi/full/10.1111/ecog.05360}{Ryo et al., 2020} to demonstrate the idea of explainable AI .
 }
 \details{
 This dataset consists of two datasets, which are presented as a list
@@ -19,6 +19,12 @@ This dataset consists of two datasets, which are presented as a list
 \item elephant$occurenceData contains presence / absence data as well as bioclim variables (environmental predictors) for the African elephant
 \item elephant$predictionData data with environmental predictors for spatial predictions
 }
+
+The environmental data consists of 19 environmental variables, called bio1 through bio19, which are public and globally available bioclimatic variables (see \url{https://www.worldclim.org/data/bioclim.html} for a description of the variables). For example, bio1 is the mean annual temperature.
+}
+\examples{
+str(elephant$occurenceData)
+plot(elephant$predictionData$bio1)
 }
 \author{
 Maximilian Pichler, Florian Hartig
