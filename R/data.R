@@ -1065,6 +1065,7 @@ dataset_flower = function() {
 "snails"
 
 
+#### GPA ####
 
 #' GPA data
 #' 
@@ -1091,4 +1092,24 @@ dataset_flower = function() {
 #' 
 #' @author Florian Hartig
 "gpa"
+
+
+#### Elephant ####
+
+
+#' Elephant
+#' 
+#' Species distribution and prediction data for the African elephant (Loxodonta).
+#' 
+#' This dataset consists of two datasets, which are presented as a list 
+#' 
+#' 1) elephant$occurenceData contains presence / absence data as well as bioclim variables (environmental predictors) for the African elephant
+#' 
+#' 2) elephant$predictionData data with environmental predictors for spatial predictions
+#' 
+#' 
+#' @example inst/examples/elephants.R
+#' 
+#' @author Maximilian Pichler, Florian Hartig
+"elephant"
 

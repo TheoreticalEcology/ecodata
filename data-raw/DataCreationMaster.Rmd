@@ -291,6 +291,20 @@ usethis::use_data(scoutingAnts, overwrite = T)
 
 
 
+## Scouting Ants
+
+```{r}
+load("elephant_data.RData")
+elephant = list(occurenceData = elephant_data, predictionData = elephant_new_data)
+usethis::use_data(elephant, overwrite = T)
+```
+
+
+
+
+
+
+
 
 
 # Simulated Datasets 
