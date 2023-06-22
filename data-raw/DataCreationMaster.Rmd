@@ -291,7 +291,7 @@ usethis::use_data(scoutingAnts, overwrite = T)
 
 
 
-## Scouting Ants
+## Elephant
 
 ```{r}
 load("elephant_data.RData")
@@ -300,6 +300,15 @@ usethis::use_data(elephant, overwrite = T)
 ```
 
 
+
+## Elemental
+
+```{r}
+elemental <- read.csv("elemental-composition.csv")
+elemental$N_arc <- asin(sqrt(elemental$N_dec))
+
+usethis::use_data(elemental, overwrite = T)
+```
 
 
 

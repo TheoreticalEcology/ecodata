@@ -1115,3 +1115,12 @@ dataset_flower = function() {
 #' @author Maximilian Pichler, Florian Hartig
 "elephant"
 
+
+#' Elemental 
+#' 
+#' Dataset on N composition 
+#' 
+#' Detailed explanation at https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.3940
+
+
+

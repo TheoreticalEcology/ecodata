@@ -1,0 +1,13 @@
+"This dataset was derived from C13-NMR analysis on soil samples collected in Newfoundland and Labrador, as part of the Newfoundland and Labrador Boreal Ecosystem Latitudinal Transect (NL-BELT) led by Dr. Susan Ziegler. "	
+All analyses were conducted at Memorial University of Newfoundland. 	
+Funding for this data is through NSERC-CRSNG Stategic Partnerships Program (grant number: SPG#479224)	
+	
+Parameters	Description
+Region	"Region represents the 3 study regions where soil samples were collected for NMR; Eagle River (ER), Salmon River (SR) and Grand Codroy (GC)"
+Site	Site represents the site number within each region
+Layer	Layer represents soil layers 
+CC	"CC is Carbonyl Carbon, derived by C13-NMR"
+AC	"AC is Alkyl Carbon, derived by C13-NMR"
+
+This dataset will be publicly available with its associated primary publication. 
+For further inquires, please contact Dr. Sue Ziegler (sziegler@mun.ca), Professor and Canada Research Chair in Boreal Biogeochemistry, Department of Earth Sciences, Memorial University
