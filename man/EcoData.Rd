@@ -2,6 +2,7 @@
 % Please edit documentation in R/EcoData.R
 \docType{package}
 \name{EcoData}
+\alias{EcoData-package}
 \alias{EcoData}
 \title{EcoData - A collection of ecological data sets for teaching}
 \description{
@@ -12,6 +13,14 @@ See index / vignette for details
 }
 \examples{
 vignette("EcoData", package="EcoData")
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/TheoreticalEcology/}
+  \item Report bugs at \url{https://github.com/TheoreticalEcology/ecodata/issues}
+}
+
 }
 \author{
 Florian Hartig
