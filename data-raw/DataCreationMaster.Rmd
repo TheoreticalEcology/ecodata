@@ -310,11 +310,13 @@ elemental$N_arc <- asin(sqrt(elemental$N_dec))
 usethis::use_data(elemental, overwrite = T)
 ```
 
+## Elk data 
 
-
-
-
-
+```{r}
+load("elk_data.RData")
+elk = elk_data
+usethis::use_data(elk, overwrite = T)
+```
 
 # Simulated Datasets 
 

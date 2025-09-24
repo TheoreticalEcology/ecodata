@@ -1116,6 +1116,8 @@ dataset_flower = function() {
 "elephant"
 
 
+#### Elemental ####
+
 #' Elemental 
 #' 
 #' Dataset on N composition 
@@ -1126,5 +1128,32 @@ dataset_flower = function() {
 #' 
 #' @author Florian Hartig
 "elemental"
+
+
+#### Elk ####
+
+#' Elk 
+#' 
+#' Data of elk presence in Canada
+#' 
+#' @details The dataset contains presence / absence data of elks in Canada. 
+#' 
+#' An interesting goal for an analysis is to examine the effect of roads on elk presence, where one can find effect sizes switching (Simpson's paradox) depending on what covariates are adjusted for. 
+#' 
+#' @format A data frame with 3848 rows and 6 variables::
+#' \describe{
+#'   \item{dist_roads}{distance of the observation to the next road in m}
+#'   \item{NDVI}{Normalised Difference Vegetation Index = greeness of the vegetation, proxy for vegetation health and productivity}
+#'   \item{ruggedness}{unevenness of the terrain}
+#'   \item{dem}{digitale elevation model = elevation}
+#'   \item{presence}{0 = absence / 1 = presence of elks at the location}
+#'   \item{habitat}{factor with two levels: "forest","open"}
+#' }
+#' 
+#' @example inst/examples/elk.R
+#' 
+#' @author Florian Hartig
+"elk"
+
 
 
