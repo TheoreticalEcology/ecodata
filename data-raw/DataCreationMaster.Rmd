@@ -218,6 +218,10 @@ soep = sjlabelled::remove_all_labels(soep)
 soep = data.frame(soep)
 #soep <- utilities::rm.attr(soep)
 str(soep)
+soep$sex <- as.factor(soep$sex)
+soep$erwerb <- as.factor(soep$erwerb)
+soep$branche <- as.factor(soep$branche)
+str(soep)
 usethis::use_data(soep, overwrite = T)
 ```
 
