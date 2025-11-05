@@ -221,8 +221,6 @@ str(soep)
 soep$sex <- as.factor(soep$sex)
 soep$erwerb <- as.factor(soep$erwerb)
 soep$branche <- as.factor(soep$branche)
-soep$gesund_org <- as.factor(soep$gesund_org)
-soep$lebensz_org <- as.factor(soep$lebensz_org)
 str(soep)
 usethis::use_data(soep, overwrite = T)
 ```
