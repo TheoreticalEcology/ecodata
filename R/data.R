@@ -732,7 +732,7 @@ dataset_flower = function() {
 #### SOEP ####
 #' Data from the german socio-economic panel
 #' 
-#' @details The following information is copied from the origina data provider at https://www.diw.de/en/diw_01.c.836543.en/soep_practice_dataset.html:
+#' @details The following information is copied from the original data provider at https://git.soep.de/opendata/open-data-package
 #' 
 #' This dataset  is based on the original SOEP data, but provides the data in significantly altered and fully anonymous form. This means that the practice dataset can be used without the need for any contracts or user agreements. The practice dataset consists of original variables, covers five time points, and is available in the “long” format. The dataset is provided in German and English.
 #' 
@@ -740,7 +740,6 @@ dataset_flower = function() {
 #' 
 #' Title: SOEP practice dataset
 #' 
-#' DOI info : 10.5684/soep.practice.v36
 #' Collection period: 2015-2019
 #' Publication Date: 31.01.2022
 #' 
@@ -750,21 +749,137 @@ dataset_flower = function() {
 #' 
 #' 
 #' \itemize{
-#'   \item id		Person ID 
-#'   \item syear		Survey Year
-#'   \item sex		Sex
-#'   \item alter		Age of Individual
-#'   \item anz_pers		Number of Persons in Household
-#'   \item anz_kind		Number of Children in Household
-#'   \item bildung		Number of Years of Education 
-#'   \item erwerb		Employment Status
-#'   \item branche		Industry Current Occupation
+#'   \item id		          Person ID 
+#'   \item syear		      Survey Year
+#'   \item sex		        Sex of Individual. Either 1 (male) or 0 (female)
+#'   \item alter		      Age of Individual
+#'   \item anz_pers		    Number of Persons in Household
+#'   \item anz_kind		    Number of Children in Household
+#'   \item bildung		    Number of Years of Education
+#'                        The standard computation for schooling. The school years and the additional vocational training are added together.
+#'                        no degree	7
+#'                        lower school degree	9
+#'                        intermediary school	10
+#'                        degree for a professional college	12
+#'                        high school degree	13
+#'                        other	10
+#'                        additional occupational training (includes universities)
+#'                        apprenticeship	1.5
+#'                        technical schools (incl. health)	2
+#'                        civil servants apprenticeship	1.5
+#'                        higher technical college	3
+#'                        university degree	5
+#'   \item erwerb		      Employment Status
+#'                        1: Full-Time Employment
+#'                        2: Regular Part-Time Employment
+#'                        3: Vocational Training
+#'                        4: Marginal, Irregular Part-Time Employment
+#'                        5: Not Employed
+#'                        6: Sheltered Workshop
+#'                        7: In short-time work 
+#'   \item branche		    Industry Current Occupation
+#'                        1: Crop and animal production, hunting and related service activities
+#'                        2: Forestry and logging
+#'                        3: Fishing and aquaculture
+#'                        5: Mining of coal and lignite
+#'                        6: Extraction Of Crude Petroleum And Natural Gas
+#'                        7: Mining Of Metal Ores
+#'                        8: Other Mining And Quarrying
+#'                        9: Mining support service activities
+#'                        10: Manufacture of food products
+#'                        11: Manufacture of beverages
+#'                        12: Manuf Tobacco Products
+#'                        13: Manuf Textiles
+#'                        14: Manuf Wearing Apparel, Dressing And Dyeing Of Fur
+#'                        15: Manufacture of leather and related products
+#'                        16: Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials
+#'                        17: Manuf Pulp, Paper And Paper Products
+#'                        18: Printing and reproduction of recorded media
+#'                        19: Manufacture of coke and refined petroleum products
+#'                        20: Manuf Chemicals And Chemical Products
+#'                        21: Manufacture of basic pharmaceutical products and pharmaceutical preparations
+#'                        22: Manuf Rubber And Plastic Products
+#'                        23: Manufacture of other non-metallic mineral products
+#'                        24: Manuf Basic Metals
+#'                        25: Manuf Fabricated Metal Prod., Ex. Machinery And Equip
+#'                        26: Manufacture of computer, electronic and optical products
+#'                        27: Manufacture of electrical equipment
+#'                        28: Manuf Machinery And Equipment NEC
+#'                        29: Manuf Motor Vehicles, Trailers And Semi-trailers
+#'                        30: Manuf Other Transport Equipment
+#'                        31: Manufacture of furniture
+#'                        32: Other manufacturing
+#'                        33: Repair and installation of machinery and equipment
+#'                        35: Electricity, Gas, Steam And Hot Water Supply
+#'                        36: Collection, Purification And Distribution Of Water
+#'                        37: Sewerage
+#'                        38: Waste collection, treatment and disposal activities; materials recovery
+#'                        39: Remediation activities and other waste management services
+#'                        41: Construction of buildings
+#'                        42: Civil engineering
+#'                        43: Specialized construction activities
+#'                        45: Wholesale and retail trade of motor vehicles and motorcycles
+#'                        46 Wholesale trade, except of motor vehicles and motorcycles
+#'                        47: Retail trade, except of motor vehicles and motorcycles
+#'                        49: Land transport and transport via pipelines
+#'                        50: Water Transport
+#'                        51: Air Transport
+#'                        52: Warehousing and support activities for transportation
+#'                        53: Postal and courier activities
+#'                        55: Accommodation
+#'                        56: Food and beverage service activities
+#'                        58: Publishing activities
+#'                        59: Motion picture, video and television programme production, sound recording and music publishing activities
+#'                        60: Programming and broadcasting activities
+#'                        61: Telecommunications
+#'                        62: Computer programming, consultancy and related activities
+#'                        63: Information service activities
+#'                        64: Financial service activities, except insurance and pension funding
+#'                        65: Insurance, reinsurance and pension funding, except compulsory social security
+#'                        66: Activities auxiliary to financial services and insurance activities
+#'                        68: Real Estate, Property Activities
+#'                        69: Legal and accounting activities
+#'                        70: Activities of head offices
+#'                        71: Architectural and engineering activities, technical testing and analysis
+#'                        72: Research And Development
+#'                        73: Advertising and market research
+#'                        74: Other professional, scientific and technical activities
+#'                        75: Veterinary activities
+#'                        77: Rental and leasing activities
+#'                        78: Employment activities
+#'                        79: Travel agency, tour operator and other reservation service and related activities
+#'                        80: Security and investigation activities
+#'                        81: Services to buildings
+#'                        82: Office administrative, office support and other business support activities
+#'                        84: Public Administration And Defense, Compulsory SocSec
+#'                        85: Education
+#'                        86: Health Service
+#'                        87: Residential care activities
+#'                        88: Social work activities without accommodation
+#'                        90: Creative, arts and entertainment activities
+#'                        91: Libraries, archives, museums and other cultural activities
+#'                        92: Gambling and betting activities
+#'                        93: Sports activities and amusement and recreation activities
+#'                        94: Activities of membership organisations
+#'                        95: Repair of computers and personal and household goods
+#'                        96: Other personal service activities
+#'                        97: Private Households With Employed Persons
+#'                        98: Undifferentiated goods- and services-producing activities of private households for own use
+#'                        99: Extra-territorial Organizations And Bodies
 #'   \item einkommenj1		Gross Income from Main Job/Year
 #'   \item einkommenj2		Gross Income from Secondary Employment/Year
 #'   \item einkommenm1		Gross Income from Main Job/Month
 #'   \item einkommenm2		Gross Income from Secondary Employment/Month
-#'   \item gesund_org		subj. Health
-#'   \item lebensz_org		Life Satisfaction
+#'   \item gesund_org		  subj. Health
+#'                        1: Very good
+#'                        2: Good
+#'                        3: Satisfactory
+#'                        4: Poor
+#'                        5: Bad
+#'   \item lebensz_org		Life Satisfaction. Integer number between 0 and 10
+#'                        [0:10]
+#'                        0:  Completely dissatisfied
+#'                        10: Completely satisfied
 #' }
 #' 
 #' Selection: To anonymize the variables, an algorithm was used that largely maintains the longitudinal consistency in the original data.
@@ -775,7 +890,7 @@ dataset_flower = function() {
 #' 
 #' This data is licenced under CC BY-SA 4.0
 #' 
-#' @source https://environmentalcomputing.net/statistics/linear-models/linear-regression/
+#' @source https://git.soep.de/opendata/open-data-package
 #' 
 #' @author Florian Hartig
 "soep"
